@@ -10,17 +10,19 @@ from collections import namedtuple  # ooops, i use it because it was on lecture
 from string import ascii_lowercase, digits, printable, punctuation, whitespace
 from typing import List
 
+# Вопрос
+# 1) How to read \uxxxx symbols
+# 2) What i should do in get_longest_diverse_symbols
+# 3) How to test hw1
 
+# TO DO make 1st task
 def get_longest_diverse_words(file_path: str) -> List[str]:
     """This function find 10 longest words consisting from largest
     amount of unique symbols"""
     with open(file_path) as fin:
         text = set(fin.read().split())
-
-    UniqWord = namedtuple("UniqWord", ["count_uniq", "word"])
-    top_ten_words = [UniqWord(0, "") for _ in range(10)]
+    top_ten_words = {0: '' for _ in range(10)}
     the_shortest_word_in_top_ten = 0
-
     for word in text:
         if len(set(word)) > the_shortest_word_in_top_ten:
             for index, word_from_top_ten in enumerate(top_ten_words):
