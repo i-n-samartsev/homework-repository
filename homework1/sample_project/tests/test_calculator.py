@@ -9,3 +9,11 @@ def test_positive_case():
 def test_negative_case():
     """Testing that non-powers of 2 give False"""
     assert not check_power_of_2(12)    
+
+def test_negative_case():
+    """Testing that non-powers of 2 give False"""
+    assert not check_power_of_2(0)
+
+def test_negative_case():
+        """Testing that non-powers of 2 give False"""
+        assert not check_power_of_2('ororo')
