@@ -14,22 +14,23 @@ def read_ascii_file(file_path: str) -> str:
     r"""This function read text with \uXXXX symbols"""
     with open(file_path) as fin:
         text = fin.read()
-    return bytes(text, 'ascii').decode('unicode-escape')
+    return bytes(text, "ascii").decode("unicode-escape")
 
 
 def get_longest_diverse_words(file_path: str) -> List[str]:
     """This function find 10 longest words consisting from largest
     amount of unique symbols"""
     text = set(read_ascii_file(file_path).split())
-    top_ten_words = [(0, '') for _ in range(10)]
+    top_ten_words = [(0, "") for _ in range(10)]
     the_shortest_word_in_top_ten = 0
     for word in text:
         if len(set(word)) > the_shortest_word_in_top_ten:
             for index, top_word in enumerate(top_ten_words):
                 if top_word[0] < len(word):
                     top_ten_words[index] = (len(word), word)
-                    the_shortest_word_in_top_ten = min(top_ten_words,
-                                                       key=lambda l: l[0])[0]
+                    the_shortest_word_in_top_ten = min(
+                        top_ten_words, key=lambda l: l[0]
+                    )[0]
                     break
     return [word[1] for word in top_ten_words]
 
@@ -38,7 +39,7 @@ def get_rarest_char(file_path: str) -> str:
     """This function find rarest symbol for document"""
     char_counter = {}  # 'char': 'count'
     for char in read_ascii_file(file_path).lower():
-        if char not in whitespace + punctuation + digits + '‹›—«»':
+        if char not in whitespace + punctuation + digits + "‹›—«»":
             char_counter.setdefault(char, 0)
             char_counter[char] += 1
     try:
@@ -51,7 +52,7 @@ def count_punctuation_chars(file_path: str) -> int:
     """This function count every punctuation char"""
     counter = 0
     for char in read_ascii_file(file_path):
-        if char in punctuation + '‹›':
+        if char in punctuation + "‹›":
             counter += 1
     return counter
 

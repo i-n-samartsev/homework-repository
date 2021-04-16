@@ -14,7 +14,7 @@ assert combinations([1, 2], [3, 4]) == [
     [2, 4],
 ]
 """
-from typing import List, Any
+from typing import Any, List
 
 
 def _combinations(*args: List[Any]) -> List[List]:
@@ -33,18 +33,20 @@ def _combinations(*args: List[Any]) -> List[List]:
             for list2_elem in args[1]:
                 for list3_elem in args[2]:
                     # faster then invent a function :).
-                    all_combo.extend([[list1_elem, list2_elem, list3_elem],
-                                      [list1_elem, list3_elem, list2_elem],
-                                      ])
+                    all_combo.extend(
+                        [
+                            [list1_elem, list2_elem, list3_elem],
+                            [list1_elem, list3_elem, list2_elem],
+                        ]
+                    )
         return all_combo
-    return _combinations(_combinations(*args[:k // 2]),
-                         _combinations(*args[k // 2:]))
+    return _combinations(_combinations(*args[: k // 2]), _combinations(*args[k // 2 :]))
 
 
 def combinations(*args: List[Any]) -> List[List]:
     """This function takes K lists as arguments and returns all possible
-        lists of K items where the first element is from the first list,
-        the second is from the second and so one."""
+    lists of K items where the first element is from the first list,
+    the second is from the second and so one."""
     combos = []
     for combo in _combinations(*args):
         while len(combo) != len(args):

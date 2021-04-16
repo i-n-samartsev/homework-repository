@@ -22,8 +22,8 @@ from typing import List, Tuple
 
 def major_and_minor_elem(inp: List) -> Tuple[int, int]:
     """This function find the most common and the least common element in "inp".
-     Array must be non-empty and the most common element always exist in the
-     array."""
+    Array must be non-empty and the most common element always exist in the
+    array."""
     most_common = least_common = None, 0
     for uniq_obj in set(inp):
         number_of_obj = uniq_obj, inp.count(uniq_obj)
