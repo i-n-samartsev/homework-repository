@@ -19,8 +19,8 @@ from typing import List, Any
 
 def _combinations(*args: List[Any]) -> List[List]:
     """This function returns all possible k-combinations (k = number of lists)
-        of values from input lists. All combinations splitting by 2-3 values per
-        lists. They needed processing"""
+    of values from input lists. All combinations splitting by 2-3 values.
+    They needed processing"""
     k = len(args)
     all_combo = []
     if k == 2:

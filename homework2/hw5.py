@@ -9,9 +9,13 @@ it behaves as range function:
 import string
 
 
-assert = custom_range(string.ascii_lowercase, 'g') == ['a', 'b', 'c', 'd', 'e', 'f']
-assert = custom_range(string.ascii_lowercase, 'g', 'p') == ['g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
-assert = custom_range(string.ascii_lowercase, 'p', 'g', -2) == ['p', 'n', 'l', 'j', 'h']
+assert = custom_range(string.ascii_lowercase, 'g') \
+== ['a', 'b', 'c', 'd', 'e', 'f']
+assert = custom_range(string.ascii_lowercase, 'g', 'p') \
+== ['g', 'h', 'i', 'j', 'k',
+ 'l', 'm', 'n', 'o']
+assert = custom_range(string.ascii_lowercase, 'p', 'g', -2) \
+== ['p', 'n', 'l', 'j', 'h']
 
 """
 
@@ -27,22 +31,24 @@ def custom_range(iterable: Iterable[AnyStr],
     """This function implement range function for iterable. Iterable must
      yield chars/strings"""
     # Check that arguments is correct
+    kwargs_not_none = start is None or stop is None or step is None
+    pos_args_not_none = _arg1 is None or _arg2 is None or _arg3 is None
+
     if _arg1 is not None and _arg2 is None and _arg3 is None \
-            and start is None and stop is None and step is None:
+            and kwargs_not_none:
         stop = _arg1
         step = 1
     elif _arg1 is not None and _arg2 is not None and _arg3 is None \
-            and start is None and stop is None and step is None:
+            and kwargs_not_none:
         start = _arg1
         stop = _arg2
         step = 1
     elif _arg1 is not None and _arg2 is not None \
-            and _arg3 is not None \
-            and start is None and stop is None and step is None:
+            and _arg3 is not None and kwargs_not_none:
         start = _arg1
         stop = _arg2
         step = _arg3
-    elif _arg1 is None and _arg2 is None and _arg3 is None:
+    elif pos_args_not_none:
         if start is None and stop is not None and step is None:
             step = 1
         elif start is not None and stop is not None \
@@ -69,15 +75,3 @@ def custom_range(iterable: Iterable[AnyStr],
     for i in range(start, stop, step):
         output_list.append(iterable[i])
     return output_list
-
-
-import string
-
-
-assert custom_range(string.ascii_lowercase, 'g')\
-       == ['a', 'b', 'c', 'd', 'e', 'f']
-assert custom_range(string.ascii_lowercase, 'g', 'p')\
-       == ['g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
-assert custom_range(string.ascii_lowercase, 'p', 'g', -2)\
-       == ['p', 'n', 'l', 'j', 'h']
-
