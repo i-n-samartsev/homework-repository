@@ -2,22 +2,22 @@ from typing import List
 
 
 def check_sum_of_four(a: List[int], b: List[int], c: List[int], d: List[int]) -> int:
-    di = {}
+    dict = {}
     count = 0
 
     for i in range(len(a)):
         for j in range(len(a)):
-            sum = a[i] + b[j]
-            if sum in di:
-                di[sum] += 1
+            summa = a[i] + b[j]
+            if summa in dict:
+                dict[summa] += 1
             else:
-                di[sum] = 1
+                dict[summa] = 1
 
-    for k in range (len(a)):
-        for l in range (len(a)):
-            sum = c[k] + d[l]
-            if -sum in di:
-                count += di.get(-sum)
+    for k in range(len(a)):
+        for l in range(len(a)):
+            summa = c[k] + d[l]
+            if -summa in dict:
+                count += dict.get(-summa)
 
     return count
 

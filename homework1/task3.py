@@ -9,4 +9,5 @@ def find_maximum_and_minimum(file_name: str) -> Tuple[int, int]:
             new_list.append(value)
         minimum = min(new_list)
         maximum = max(new_list)
+
         return minimum, maximum
