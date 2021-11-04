@@ -1,4 +1,4 @@
-import pytest  # noqa: F401; pylint: disable=unused-import
+#import pytest  # noqa: F401; pylint: disable=unused-import
 from calculator.calc import check_power_of_2
 
 
