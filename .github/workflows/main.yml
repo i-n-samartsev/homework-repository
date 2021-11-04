@@ -14,6 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run script
+        working-directory: ./homework1/sample_project 
         run: |
           pip install flake8 isort pytest
           ls -la
