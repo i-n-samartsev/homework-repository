@@ -22,18 +22,19 @@ def flatten(lines):
 
 
 def read_file(file_name: str) -> list:
-    lines = []
+    minimum, maximum = 0, 0
     with open(file_name) as f:
         for line in f:
-            lines.append(list(map(int, line.split())))
-    print(flatten(lines))
-    """
-    np.ndarray.flatten sometimes returns same list -> good old hand flatten
+            if len(line.strip()) > 0:
+                value = int(line.strip())
+                if value > maximum:
+                    maximum = value
+                elif value < minimum:
+                    minimum = value
 
-    """
-    return flatten(lines)
+    return minimum, maximum
 
 
 def find_maximum_and_minimum(file_name: str) -> Tuple[int, int]:
-    lines = read_file(file_name)
-    return (min(lines), max(lines))
+    minimum, maximum = read_file(file_name)
+    return (minimum, maximum)
