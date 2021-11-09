@@ -17,10 +17,6 @@ with open("some_file.txt") as fi:
 from typing import Tuple
 
 
-def flatten(lines):
-    return [item for sublist in lines for item in sublist]
-
-
 def read_file(file_name: str) -> list:
     minimum, maximum = 0, 0
     with open(file_name) as f:
