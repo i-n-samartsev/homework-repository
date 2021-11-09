@@ -15,7 +15,7 @@ from typing import List
 
 def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
     ans = 0
-    nums.sort()
+    nums.sort(reverse=True)
     for i in range(k):
         if nums[i] <= 0:
             break
