@@ -14,10 +14,16 @@ with open("some_file.txt") as fi:
         ...
 
 """
+import os
 from typing import Tuple
 
 
 def read_file(file_name: str) -> list:
+    if not os.path.isfile(file_name):
+        return (None, None)
+    if os.stat(file_name).st_size == 0:
+        return (None, None)
+
     minimum, maximum = 0, 0
     with open(file_name) as f:
         for line in f:
