@@ -1,11 +1,14 @@
+import pytest
 from taks.task02 import check_fibonacci
 
 
-def test_positive_case():
-    """Testing that actual powers of 2 give True"""
-    assert check_fibonacci([0, 1, 1, 2, 3, 5])
-
-
-def test_negative_case():
-    """Testing that non-powers of 2 give False"""
-    assert not check_fibonacci([0, 1, 2])
+@pytest.mark.parametrize(
+    "input_data, output_data",
+    [([0, 1, 1, 2, 3], True), 
+     ([0, 1], True), 
+     ([1, 0, 1], False), 
+     ([0], False),
+     ([-1, 0, 1], False)]
+)
+def test_check_fibonacci(input_data, output_data):
+    assert check_fibonacci(input_data) == output_data
