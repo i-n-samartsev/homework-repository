@@ -11,6 +11,8 @@ Examples:
 """
 from typing import List
 
+""" Find a sub-array with length less or equal to "k" """
+
 
 def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
     if len(nums) < k or k == 0:
@@ -29,20 +31,19 @@ def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
     return res
 
 
-# def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
-#     if len(nums) < k or k == 0:
-#         return 0
+""" Find a sub-array with length equal to "k"
+def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
+    if len(nums) < k or k == 0:
+        return 0
 
-#     sum = 0
-#     for i in range(k):
-#         sum += nums[i]
+    sum = 0
+    for i in range(k):
+        sum += nums[i]
 
-#     res = 0
-#     for i in range(k, len(nums)):
-#         sum += nums[i] - nums[i-k]
-#         res = max(res, sum)
+    res = 0
+    for i in range(k, len(nums)):
+        sum += nums[i] - nums[i-k]
+        res = max(res, sum)
 
-#     return res
-
-if __name__ == "__main__":
-    print(find_maximal_subarray_sum([1, 3, -1, -3, 5, 3, 6, 7], 3))
+    return res
+"""
