@@ -6,6 +6,11 @@ def test_regular_case():
     assert find_maximal_subarray_sum([1, 3, -1, -3, 5, 3, 6, 7], 3) == 16
 
 
+def test_less_than_k_case():
+    """Testing regular example"""
+    assert find_maximal_subarray_sum([1, 3, -1, -3, 5, -2, 6, 7], 3) == 13
+
+
 def test_k1_case():
     """Testing k = 1 example"""
     assert find_maximal_subarray_sum([1, 3, -1, -3, 5, 3, 6, 7], 1) == 7

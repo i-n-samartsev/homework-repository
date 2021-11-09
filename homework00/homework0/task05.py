@@ -16,13 +16,33 @@ def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
     if len(nums) < k or k == 0:
         return 0
 
-    sum = 0
-    for i in range(k):
-        sum += nums[i]
-
     res = 0
-    for i in range(k, len(nums)):
-        sum += nums[i] - nums[i-k]
-        res = max(res, sum)
+    for j in range(1, k + 1):
+        sum = 0
+        for i in range(j):
+            sum += nums[i]
+
+        for i in range(j, len(nums)):
+            sum += nums[i] - nums[i-j]
+            res = max(res, sum)
 
     return res
+
+
+# def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
+#     if len(nums) < k or k == 0:
+#         return 0
+
+#     sum = 0
+#     for i in range(k):
+#         sum += nums[i]
+
+#     res = 0
+#     for i in range(k, len(nums)):
+#         sum += nums[i] - nums[i-k]
+#         res = max(res, sum)
+
+#     return res
+
+if __name__ == "__main__":
+    print(find_maximal_subarray_sum([1, 3, -1, -3, 5, 3, 6, 7], 3))
