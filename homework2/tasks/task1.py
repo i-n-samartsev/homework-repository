@@ -23,7 +23,7 @@ def count_punctuation_chars(file_path: str) -> int:
     with open(file_path + ".txt") as fi:
         for line in fi:
             for i in line:
-                if ord(i) < 48 and ord(i) > 32:
+                if 48 > ord(i) > 32:
                     counter += 1
     return counter
 
