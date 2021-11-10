@@ -9,4 +9,5 @@ from homework1.task05 import find_maximal_subarray_sum
      (([0, -12, -10, 22, 5], 3), 27)]
 )
 def test_find_maximal_subarray_sum(input_data, output_data):
-    assert find_maximal_subarray_sum(input_data) == output_data
+    nums, k = input_data
+    assert find_maximal_subarray_sum(nums, k) == output_data
