@@ -1,5 +1,5 @@
 import pytest
-from taks.task05 import find_maximal_subarray_sum
+from tasks.task05 import find_maximal_subarray_sum
 
 
 @pytest.mark.parametrize(
