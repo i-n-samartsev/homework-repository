@@ -41,4 +41,5 @@ def major_and_minor_elem(inp: List) -> Tuple[int, int]:
         if v < min_count:
             min_count = v
             min_value = k
+
     return max_value, min_value
