@@ -18,9 +18,9 @@ from typing import Tuple
 
 
 def find_maximum_and_minimum(file_name: str) -> Tuple[int, int]:
-    max_value = - float('inf')
+    max_value = float('-inf')
     min_value = float('inf')
-    with open(file_name) as file:
+    with open(file=file_name, mode='r') as file:
         for line in file:
             numbers = list(map(int, line.split()))
             max_value = max(max_value, *numbers)

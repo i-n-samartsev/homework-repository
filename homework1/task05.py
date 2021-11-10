@@ -14,10 +14,10 @@ from typing import List
 
 def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
     assert len(nums) > 0, k > 0
-    answer = - float('inf')
+    answer = float('-inf')
     for subarray_size in range(1, k + 1):
         sums_of_subarrays = []
-        for i in range(len(nums)):
+        for i in range(len(nums) - subarray_size + 1):
             sums_of_subarrays.append(sum(nums[i:i + subarray_size]))
         answer = max(answer, *sums_of_subarrays)
     return answer
