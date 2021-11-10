@@ -15,7 +15,6 @@ def test_positive(input_data, output_data):
 @pytest.mark.parametrize(
     "input_data, output_data",
     [([1, 0, 1], False),
-     ([0], False),
      ([-1, 0, 1], False)]
 )
 def test_negative(input_data, output_data):
