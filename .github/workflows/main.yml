@@ -7,7 +7,7 @@ on: push
 jobs:
   code_quality:
     runs-on: ubuntu-latest
-    name: Checks with black, isort and possibly run tests
+    name: Checks with flake8, isort and possibly run tests
     container: python:3.9
 
     steps:
