@@ -22,12 +22,8 @@ def find_maximum_and_minimum(file_name: str) -> Tuple[int, int]:
     min_val = 1.5
     with open(file_name) as fi:
         for line in fi:
-            if max_val == 1.5:
+            if max_val < int(line) or max_val == 1.5:
                 max_val = int(line)
-            if min_val == 1.5:
-                min_val = int(line)
-            if max_val < int(line):
-                max_val = int(line)
-            if min_val > int(line):
+            if min_val > int(line) or min_val == 1.5:
                 min_val = int(line)
     return min_val, max_val
