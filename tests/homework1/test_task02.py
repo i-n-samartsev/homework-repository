@@ -18,4 +18,4 @@ def test_positive(input_data, output_data):
      ([-1, 0, 1], False)]
 )
 def test_negative(input_data, output_data):
-    assert not check_fibonacci(input_data) == output_data
+    assert check_fibonacci(input_data) == output_data
