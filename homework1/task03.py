@@ -14,7 +14,6 @@ with open("some_file.txt") as fi:
         ...
 
 """
-import os
 from typing import Tuple
 
 
