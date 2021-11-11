@@ -9,7 +9,6 @@ We guarantee, that all A, B, C, D have same
 length of N where 0 ≤ N ≤ 1000.
 """
 import itertools
-
 from typing import List
 
 
