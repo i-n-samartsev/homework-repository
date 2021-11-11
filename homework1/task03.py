@@ -14,13 +14,14 @@ with open("some_file.txt") as fi:
         ...
 
 """
+import os
 from typing import Tuple
 
 
 def find_maximum_and_minimum(file_name: str) -> Tuple[int, int]:
     max_val = 1.5
     min_val = 1.5
-    with open(file_name) as fi:
+    with open(os.getcwd() + r"\" + file_name) as fi:
         for line in fi:
             if max_val < int(line) or max_val == 1.5:
                 max_val = int(line)
