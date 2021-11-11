@@ -30,4 +30,4 @@ def find_maximum_and_minimum(file_name: str) -> Tuple[int, int]:
                 max_val = int(line)
             if min_val > int(line):
                 min_val = int(line)
-    return min_value, max_value
+    return min_val, max_val
