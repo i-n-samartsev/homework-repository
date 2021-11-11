@@ -14,11 +14,11 @@ from typing import List
 
 
 def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
-    ans = 0
-    nums_work = [i for i in nums]
-    nums_work.sort(reverse=True)
-    for i in range(k):
-        if nums_work[i] <= 0:
-            break
-        ans += nums_work[i]
+    ans = 1.5
+    for j in range(len(nums) - k + 1):
+        sum_nums = 0
+        for i in range(k):
+            sum_nums += nums[i + j]
+        if ans < sum_nums or ans == 1.5:
+            ans = sum_nums
     return ans
