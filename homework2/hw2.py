@@ -23,6 +23,6 @@ from collections import Counter
 
 def major_and_minor_elem(inp: List) -> Tuple[int, int]:
     occurrences = Counter(inp).most_common()
-    most_common = occurrences[0][0]
-    least_common = occurrences[-1][0]
-    return most_common, least_common
+    most_common_element = occurrences[0][0]
+    least_common_element = occurrences[-1][0]
+    return most_common_element, least_common_element
