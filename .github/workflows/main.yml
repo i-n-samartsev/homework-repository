@@ -19,6 +19,5 @@ jobs:
           ls -la
           flake8 .
           isort --check .
-          black --line-length 80 .
-          black --check .
+          black  --line-length 80 --check .
           py.test tests
