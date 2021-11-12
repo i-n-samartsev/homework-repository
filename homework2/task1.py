@@ -25,7 +25,23 @@ def get_longest_diverse_words(file_path: str) -> List[str]:
 
 
 def get_rarest_char(file_path: str) -> str:
-    ...
+    dict_letters = {}
+    with open(file_path) as fi:
+        for line in fi:
+            for letter in line:
+                if dict_letters.get(letter, -1) == -1:
+                    dict_letters.update([(letter, 1)])
+                else:
+                    dict_letters[letter] += 1
+
+    min_letter, min_number = dict_letters.popitem()
+    while len(dict_letters) > 0:
+        letter, number = dict_letters.popitem()
+        if number < min_number:
+            min_number = number
+            min_letter = letter
+
+    return min_letter
 
 
 def count_punctuation_chars(file_path: str) -> int:
