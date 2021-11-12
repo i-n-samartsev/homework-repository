@@ -10,7 +10,18 @@ from typing import List
 
 
 def get_longest_diverse_words(file_path: str) -> List[str]:
-    ...
+    ans_words = ["" for i in range(10)]
+    len_words = [0 for i in range(10)]
+    with open(file_path) as fi:
+        for line in fi:
+            words = line.split()
+            for word in words:
+                set_letters = set(word)
+                i_min_len = len_words.index(min(len_words))
+                if len(set_letters) > len_words[i_min_len]:
+                    ans_words[i_min_len] = word
+                    len_words[i_min_len] = len(set_letters)
+    return ans_words
 
 
 def get_rarest_char(file_path: str) -> str:
