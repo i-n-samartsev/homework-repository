@@ -14,7 +14,10 @@ def _check_window(x: int, y: int, z: int) -> bool:
 
 
 def check_fibonacci(data: Sequence[int]) -> bool:
-    assert len(data) >= 3
+
+    if len(data) < 3:
+        raise IndexError('Sequence contains less than 3 elements')
+
     while len(data) >= 3:
         a, b, c = data[0], data[1], data[2]
         if not _check_window(a, b, c):

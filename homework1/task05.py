@@ -13,7 +13,12 @@ from typing import List
 
 
 def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
-    assert len(nums) > 0, k > 0
+
+    if len(nums) == 0:
+        raise IndexError('Sequence is empty')
+    if k <= 0:
+        raise ValueError('Parameter "k" must be > 0')
+
     answer = float('-inf')
     for subarray_size in range(1, k + 1):
         sums_of_subarrays = []

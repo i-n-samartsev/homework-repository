@@ -12,11 +12,18 @@ from typing import List
 
 def check_sum_of_four(a: List[int], b: List[int],
                       c: List[int], d: List[int]) -> int:
-    result = 0
+
+    quantity = 0
+    sums = {}
     for i in a:
         for j in b:
-            for k in c:
-                for m in d:
-                    if i + j + k + m == 0:
-                        result += 1
-    return result
+            if i + j in sums:
+                sums[i + j] += 1
+            else:
+                sums[i + j] = 1
+    for i in c:
+        for j in d:
+            if (- i - j) in sums:
+                quantity += sums[- i - j]
+
+    return quantity
