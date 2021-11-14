@@ -1,5 +1,5 @@
-import pytest
 import string
+import pytest
 
 from homework2.task5 import custom_range
 
