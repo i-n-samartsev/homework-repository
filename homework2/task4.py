@@ -18,8 +18,10 @@ val_2 = cache_func(*some)
 assert val_1 is val_2
 
 """
+from functools import lru_cache
 from typing import Callable
 
 
+@lru_cache
 def cache(func: Callable) -> Callable:
-    ...
+    return func
