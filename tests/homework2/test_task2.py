@@ -11,4 +11,4 @@ from homework2.task2 import major_and_minor_elem
     ],
 )
 def test_positive(input_data, output_data):
-    assert major_and_minor_elem(input_data) == *output_data
+    assert major_and_minor_elem(input_data) == output_data
