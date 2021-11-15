@@ -18,7 +18,6 @@ Output: 2, 1
 
 """
 import sys
-
 from typing import List, Tuple
 
 
