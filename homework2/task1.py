@@ -5,8 +5,6 @@ Given a file containing text. Complete using only default collections:
     3) Count every punctuation char
     4) Count every non ascii char
     5) Find most common non ascii char for document
-"""
-"""
 Given an array of size n, find the most common and the least common elements.
 The most common element is the element that appears more than n // 2 times.
 The least common element is the element that appears fewer than other.
