@@ -20,6 +20,6 @@ from typing import Any, List
 
 def combinations(*args: List[Any]) -> List[List]:
     ans = []
-    for i in itertools.product(args):
-        ans.append(i[0])
+    for comb in itertools.product(*args):
+        ans.append(list(elem for elem in comb))
     return ans
