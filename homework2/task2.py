@@ -21,25 +21,18 @@ from typing import List, Tuple
 
 
 def major_and_minor_elem(inp: List) -> Tuple[int, int]:
-    d = {}
-    for i in inp:
-        if d.get(i, -1) == -1:
-            d.update([(i, 1)])
-        else:
-            d[i] += 1
+    major_count = 1
+    major_elem = inp[0]
+    minor_count = 1
+    minor_elem = inp[0]
 
-    k, v = d.popitem()
-    max_count = v
-    max_value = k
-    min_count = v
-    min_value = k
-    while len(d) > 0:
-        k, v = d.popitem()
-        if v > max_count:
-            max_count = v
-            max_value = k
-        if v < min_count:
-            min_count = v
-            min_value = k
+    for elem in inp:
+        elem_count = inp.count(elem)
+        if elem_count > major_count:
+            major_count = elem_count
+            major_elem = elem
+        if elem_count < minor_count:
+            minor_count = elem_count
+            minor_elem = elem
 
-    return max_value, min_value
+    return major_elem, minor_elem
