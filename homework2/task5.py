@@ -21,31 +21,9 @@ from typing import Any, List
 
 
 def custom_range(values: List[Any], *args) -> List[Any]:
-    ans = []
     if len(args) == 1:
-        for val in values:
-            if val < args[0]:
-                ans.append(val)
-
+        return values[:values.index(args[0])]
     elif len(args) == 2:
-        for val in values:
-            if args[0] <= val < args[1]:
-                ans.append(val)
-
+        return values[values.index(args[0]):values.index(args[1])]
     elif len(args) == 3:
-        if args[2] < 0:
-            index_step = 0
-            for val in reversed(values):
-                if args[1] < val <= args[0] and index_step == 0:
-                    ans.append(val)
-                index_step += 1
-                index_step %= abs(args[2])
-        else:
-            index_step = 0
-            for val in values:
-                if args[0] <= val < args[1] and index_step == 0:
-                    ans.append(val)
-                index_step += 1
-                index_step %= abs(args[2])
-
-    return ans
+        return values[values.index(args[0]):values.index(args[1]):args[2]]
