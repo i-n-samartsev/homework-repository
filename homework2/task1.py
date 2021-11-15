@@ -87,10 +87,10 @@ def get_most_common_non_ascii_char(file_path: str) -> str:
                     dict_letters[letter] += 1
 
     print(dict_letters)
-    max_letter, max_number = dict_letters.popitem()
+    max_letter, max_number = "", 0
     while len(dict_letters) > 0:
         letter, number = dict_letters.popitem()
-        if number > max_number:
+        if number > max_number and letter.isascii():
             max_number = number
             max_letter = letter
 
