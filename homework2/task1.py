@@ -6,6 +6,26 @@ Given a file containing text. Complete using only default collections:
     4) Count every non ascii char
     5) Find most common non ascii char for document
 """
+"""
+Given an array of size n, find the most common and the least common elements.
+The most common element is the element that appears more than n // 2 times.
+The least common element is the element that appears fewer than other.
+
+You may assume that the array is non-empty and the most common element
+always exist in the array.
+
+Example 1:
+
+Input: [3,2,3]
+Output: 3, 2
+
+Example 2:
+
+Input: [2,2,1,1,1,2,2]
+Output: 2, 1
+
+"""
+import sys
 from typing import List
 
 
@@ -25,23 +45,18 @@ def get_longest_diverse_words(file_path: str) -> List[str]:
 
 
 def get_rarest_char(file_path: str) -> str:
-    dict_letters = {}
-    with open(file_path, encoding="unicode-escape") as fi:
-        for line in fi:
-            for letter in line:
-                if dict_letters.get(letter, -1) == -1:
-                    dict_letters.update([(letter, 1)])
-                else:
-                    dict_letters[letter] += 1
+    minor_letter = None
+    minor_count = -1
+    fi = open(file_path, encoding="unicode-escape")
+    text_file = fi.read()
+    for letter in text_file:
+        if text_file.count(letter) < minor_count or minor_count == -1:
+            minor_count = text_file.count(letter)
+            minor_letter = letter
 
-    min_letter, min_number = dict_letters.popitem()
-    while len(dict_letters) > 0:
-        letter, number = dict_letters.popitem()
-        if number < min_number:
-            min_number = number
-            min_letter = letter
-
-    return min_letter
+    if not minor_letter:
+        sys.exit()
+    return minor_letter
 
 
 def count_punctuation_chars(file_path: str) -> int:
@@ -62,26 +77,19 @@ def count_non_ascii_chars(file_path: str) -> int:
             for letter in line:
                 if not letter.isascii():
                     ans += 1
-
     return ans
 
 
 def get_most_common_non_ascii_char(file_path: str) -> str:
-    dict_letters = {}
-    with open(file_path, encoding="unicode-escape") as fi:
-        for line in fi:
-            for letter in line:
-                if dict_letters.get(letter, -1) == -1:
-                    dict_letters.update([(letter, 1)])
-                else:
-                    dict_letters[letter] += 1
+    major_letter = None
+    major_count = -1
+    fi = open(file_path, encoding="unicode-escape")
+    text_file = fi.read()
+    for letter in text_file:
+        if (text_file.count(letter) < major_count or major_count == -1) and not letter.isascii():
+            major_count = text_file.count(letter)
+            major_letter = letter
 
-    print(dict_letters)
-    max_letter, max_number = "", 0
-    while len(dict_letters) > 0:
-        letter, number = dict_letters.popitem()
-        if number > max_number and letter.isascii():
-            max_number = number
-            max_letter = letter
-
-    return max_letter
+    if not major_letter:
+        sys.exit()
+    return major_letter
