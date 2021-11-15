@@ -57,21 +57,11 @@ def count_punctuation_chars(file_path: str) -> int:
 
 def count_non_ascii_chars(file_path: str) -> int:
     ans = 0
-    dict_letters = {}
     with open(file_path, encoding="unicode-escape") as fi:
         for line in fi:
             for letter in line:
-                if dict_letters.get(letter, -1) == -1:
-                    dict_letters.update([(letter, 1)])
-                else:
-                    dict_letters[letter] += 1
-
-    while len(dict_letters) > 0:
-        letter, number = dict_letters.popitem()
-        if letter.isascii():
-            continue
-        else:
-            ans += number
+                if not letter.isascii():
+                    ans += 1
 
     return ans
 
