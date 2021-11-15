@@ -86,7 +86,9 @@ def get_most_common_non_ascii_char(file_path: str) -> str:
     fi = open(file_path, encoding="unicode-escape")
     text_file = fi.read()
     for letter in text_file:
-        if (text_file.count(letter) < major_count or major_count == -1) and not letter.isascii():
+        if (
+            text_file.count(letter) < major_count or major_count == -1
+        ) and not letter.isascii():
             major_count = text_file.count(letter)
             major_letter = letter
 
