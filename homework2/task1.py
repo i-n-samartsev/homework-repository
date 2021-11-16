@@ -43,18 +43,22 @@ def get_longest_diverse_words(file_path: str) -> List[str]:
 
 
 def get_rarest_char(file_path: str) -> str:
-    """If there are no symbols in the file, SystemExit"""
-    minor_letter = None
-    minor_count = -1
-    fi = open(file_path, encoding="unicode-escape")
-    text_file = fi.read()
-    for letter in text_file:
-        if text_file.count(letter) < minor_count or minor_count == -1:
-            minor_count = text_file.count(letter)
-            minor_letter = letter
+    dict_letters = {}
+    with open(file_path, encoding="unicode-escape") as fi:
+        for line in fi:
+            for letter in line:
+                if dict_letters.get(letter, -1) == -1:
+                    dict_letters.update([(letter, 1)])
+                else:
+                    dict_letters[letter] += 1
 
-    if not minor_letter:
-        sys.exit()
+    minor_letter, minor_count = dict_letters.popitem()
+    while len(dict_letters) > 0:
+        letter, count = dict_letters.popitem()
+        if count < minor_count:
+            minor_letter = letter
+            minor_count = count
+
     return minor_letter
 
 
@@ -81,16 +85,24 @@ def count_non_ascii_chars(file_path: str) -> int:
 
 def get_most_common_non_ascii_char(file_path: str) -> str:
     """If there are no non-ascii characters in the file, SystemExit"""
+    dict_letters = {}
+    with open(file_path, encoding="unicode-escape") as fi:
+        for line in fi:
+            for letter in line:
+                if dict_letters.get(letter, -1) == -1:
+                    dict_letters.update([(letter, 1)])
+                else:
+                    dict_letters[letter] += 1
+
     major_letter = None
     major_count = -1
-    fi = open(file_path, encoding="unicode-escape")
-    text_file = fi.read()
-    for letter in text_file:
+    while len(dict_letters) > 0:
+        letter, count = dict_letters.popitem()
         if (
-            text_file.count(letter) < major_count or major_count == -1
+                count > major_count or major_count == -1
         ) and not letter.isascii():
-            major_count = text_file.count(letter)
             major_letter = letter
+            major_count = count
 
     if not major_letter:
         sys.exit()
