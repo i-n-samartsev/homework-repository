@@ -22,8 +22,8 @@ from typing import Any, List
 
 def custom_range(values: List[Any], *args) -> List[Any]:
     if len(args) == 1:
-        return values[: values.index(args[0])]
+        return values[:values.index(args[0])]
     elif len(args) == 2:
-        return values[values.index(args[0]) : values.index(args[1])]
+        return values[values.index(args[0]):values.index(args[1])]
     elif len(args) == 3:
-        return values[values.index(args[0]) : values.index(args[1]) : args[2]]
+        return values[values.index(args[0]):values.index(args[1]):args[2]]
