@@ -43,6 +43,7 @@ def get_longest_diverse_words(file_path: str) -> List[str]:
 
 
 def get_rarest_char(file_path: str) -> str:
+    """If there are no symbols in the file, SystemExit"""
     minor_letter = None
     minor_count = -1
     fi = open(file_path, encoding="unicode-escape")
@@ -79,6 +80,7 @@ def count_non_ascii_chars(file_path: str) -> int:
 
 
 def get_most_common_non_ascii_char(file_path: str) -> str:
+    """If there are no non-ascii characters in the file, SystemExit"""
     major_letter = None
     major_count = -1
     fi = open(file_path, encoding="unicode-escape")
