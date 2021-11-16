@@ -1,4 +1,4 @@
-from homework3.task03 import sample_data, make_filter
+from homework3.task03 import make_filter, sample_data
 
 
 def test_make_filter_return_first_entry():
