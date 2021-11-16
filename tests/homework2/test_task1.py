@@ -1,3 +1,5 @@
+import os
+
 from homework2.task1 import (
     get_longest_diverse_words,
     get_rarest_char,
