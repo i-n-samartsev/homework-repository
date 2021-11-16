@@ -31,7 +31,7 @@ def test_get_rarest_char():
 
 def test_count_punctuation_chars():
     assert (
-        count_punctuation_chars(
+        homework2.task1.count_punctuation_chars(
             os.getcwd() + "/homework2/" + "test_task1_data.txt"
         )
         == 3916
