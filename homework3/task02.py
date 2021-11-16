@@ -5,7 +5,6 @@ import time
 from multiprocessing import Pool
 from typing import Any, Callable, Sequence
 
-
 # Here's a not very efficient calculation function
 # that calculates something important:
 

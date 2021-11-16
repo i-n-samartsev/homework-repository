@@ -1,4 +1,5 @@
 from time import time
+
 from homework3.task02 import calculating_of_total_sum, slow_calculate
 
 
