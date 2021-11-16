@@ -22,7 +22,7 @@ assert = custom_range(string.ascii_lowercase, 'p', 'g', -2) == ['p', 'n', 'l',
 
 """
 
-from typing import Sequence, Any, List
+from typing import Any, List, Sequence
 
 
 def custom_range(data: Sequence[Any], start: Any, stop: Any = None,
