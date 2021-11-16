@@ -23,7 +23,6 @@ Input: [2,2,1,1,1,2,2]
 Output: 2, 1
 
 """
-import sys
 from typing import List
 
 
@@ -52,14 +51,11 @@ def get_rarest_char(file_path: str) -> str:
                 else:
                     dict_letters[letter] += 1
 
-    minor_letter, minor_count = dict_letters.popitem()
-    while len(dict_letters) > 0:
-        letter, count = dict_letters.popitem()
-        if count < minor_count:
-            minor_letter = letter
-            minor_count = count
-
-    return minor_letter
+    minor_count = min(dict_letters.values())
+    print(dict_letters)
+    for key in dict_letters.keys():
+        if dict_letters[key] == minor_count:
+            return key
 
 
 def count_punctuation_chars(file_path: str) -> int:
@@ -89,19 +85,13 @@ def get_most_common_non_ascii_char(file_path: str) -> str:
     with open(file_path, encoding="unicode-escape") as fi:
         for line in fi:
             for letter in line:
-                if dict_letters.get(letter, -1) == -1:
-                    dict_letters.update([(letter, 1)])
-                else:
-                    dict_letters[letter] += 1
+                if not letter.isascii():
+                    if dict_letters.get(letter, -1) == -1:
+                        dict_letters.update([(letter, 1)])
+                    else:
+                        dict_letters[letter] += 1
 
-    major_letter = None
-    major_count = -1
-    while len(dict_letters) > 0:
-        letter, count = dict_letters.popitem()
-        if (count > major_count or major_count == -1) and not letter.isascii():
-            major_letter = letter
-            major_count = count
-
-    if not major_letter:
-        sys.exit()
-    return major_letter
+    major_count = max(dict_letters.values())
+    for key in dict_letters.keys():
+        if dict_letters[key] == major_count:
+            return key

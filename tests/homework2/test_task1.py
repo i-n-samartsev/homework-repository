@@ -25,7 +25,7 @@ def test_get_rarest_char():
         homework2.task1.get_rarest_char(
             os.getcwd() + "/homework2/" + "test_task1_data.txt"
         )
-        == ")"
+        == "›"
     )
 
 
