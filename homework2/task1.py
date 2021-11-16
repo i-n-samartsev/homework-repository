@@ -98,9 +98,7 @@ def get_most_common_non_ascii_char(file_path: str) -> str:
     major_count = -1
     while len(dict_letters) > 0:
         letter, count = dict_letters.popitem()
-        if (
-                count > major_count or major_count == -1
-        ) and not letter.isascii():
+        if (count > major_count or major_count == -1) and not letter.isascii():
             major_letter = letter
             major_count = count
 
