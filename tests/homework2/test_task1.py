@@ -1,16 +1,10 @@
 import os
 
-from homework2.task1 import (
-    count_non_ascii_chars,
-    count_punctuation_chars,
-    get_longest_diverse_words,
-    get_most_common_non_ascii_char,
-    get_rarest_char,
-)
+import homework2.task1
 
 
 def test_get_longest_diverse_words():
-    assert get_longest_diverse_words(
+    assert homework2.task1.get_longest_diverse_words(
         os.getcwd() + "/homework2/" + "test_task1_data.txt"
     ) == [
         "Kollektivschuldiger,",
@@ -28,7 +22,9 @@ def test_get_longest_diverse_words():
 
 def test_get_rarest_char():
     assert (
-        get_rarest_char(os.getcwd() + "/homework2/" + "test_task1_data.txt")
+        homework2.task1.get_rarest_char(
+            os.getcwd() + "/homework2/" + "test_task1_data.txt"
+        )
         == ")"
     )
 
@@ -44,7 +40,7 @@ def test_count_punctuation_chars():
 
 def test_count_non_ascii_chars():
     assert (
-        count_non_ascii_chars(
+        homework2.task1.count_non_ascii_chars(
             os.getcwd() + "/homework2/" + "test_task1_data.txt"
         )
         == 2237
@@ -53,7 +49,7 @@ def test_count_non_ascii_chars():
 
 def test_get_most_common_non_ascii_char():
     assert (
-        get_most_common_non_ascii_char(
+        homework2.task1.get_most_common_non_ascii_char(
             os.getcwd() + "/homework2/" + "test_task1_data.txt"
         )
         == "ä"
