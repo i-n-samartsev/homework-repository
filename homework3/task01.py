@@ -33,7 +33,6 @@ from typing import Callable
 
 
 def decorator_cache(times: int) -> Callable:
-
     def cache(func: Callable) -> Callable:
         saved_data = {}
 
