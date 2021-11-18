@@ -44,14 +44,9 @@ sample_data = [
         "name": "Bill",
         "last_name": "Gilbert",
         "occupation": "was here",
-        "type": "person"
+        "type": "person",
     },
-    {
-        "is_dead": True,
-        "kind": "parrot",
-        "type": "bird",
-        "name": "polly"
-    }
+    {"is_dead": True, "kind": "parrot", "type": "bird", "name": "polly"},
 ]
 
 
