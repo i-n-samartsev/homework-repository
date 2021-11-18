@@ -1,7 +1,7 @@
 """
 Here's a not very efficient calculation function that calculates
 something important::
-    
+
     import time
     import struct
     import random
