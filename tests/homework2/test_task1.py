@@ -46,7 +46,7 @@ def test_count_non_ascii_chars():
             os.getcwd() + "/homework2/" + "test_task1_data.txt",
             "unicode-escape",
         )
-        == 2971
+        == 2972
     )
 
 
