@@ -17,7 +17,7 @@ class Filter:
 
 """
 example of usage:
-positive_even = Filter(lamba a: a % 2 == 0, lambda a: a > 0,
+positive_even = Filter(lambda a: a % 2 == 0, lambda a: a > 0,
 lambda a: isinstance(int, a)))
 positive_even.apply(range(100)) should return only even numbers from 0 to 99
 """
@@ -30,8 +30,10 @@ def make_filter(**keywords):
     filter_funcs = []
     for key, value in keywords.items():
 
-        def keyword_filter_func(value):
-            return value[key] == value
+        def keyword_filter_func(value_sample):
+            if key not in value_sample.keys():
+                return False
+            return value == value_sample[key]
 
         filter_funcs.append(keyword_filter_func)
     return Filter(filter_funcs)
@@ -42,10 +44,16 @@ sample_data = [
         "name": "Bill",
         "last_name": "Gilbert",
         "occupation": "was here",
-        "type": "person",
+        "type": "person"
     },
-    {"is_dead": True, "kind": "parrot", "type": "bird", "name": "polly"},
+    {
+        "is_dead": True,
+        "kind": "parrot",
+        "type": "bird",
+        "name": "polly"
+    }
 ]
+
 
 # make_filter(name='polly', type='bird').apply(sample_data)
 # should return only second entry from the list
