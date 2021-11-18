@@ -13,7 +13,7 @@ Example::
 
     @cache(times=2)
     def f():
-        return input('? ')   
+        return input('? ')
         # careful with input() in python2, use raw_input() instead
 
     >>> f()
@@ -33,7 +33,7 @@ from typing import Callable
 
 
 def decorator_cache(times: int) -> Callable:
-    
+
     def cache(func: Callable) -> Callable:
         saved_data = {}
 
