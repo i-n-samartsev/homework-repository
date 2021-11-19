@@ -30,23 +30,19 @@ Example::
 from typing import Callable
 
 
-def decorator_cache(times: int) -> Callable:
+def cache(func: Callable, times: int) -> Callable:
+    saved_data = {}
     times_call_func = 0
 
-    def cache(func: Callable) -> Callable:
-        saved_data = {}
+    def compute(*args):
+        nonlocal times_call_func
+        if args in saved_data.keys() and times_call_func < times:
+            times_call_func += 1
+            return saved_data[args]
+        else:
+            times_call_func = 0
+            val_func = func(*args)
+            saved_data.update([(args, val_func)])
+            return val_func
 
-        def helper(*args):
-            nonlocal times_call_func
-            if args in saved_data.keys() and times_call_func < times:
-                times_call_func += 1
-                return saved_data[args]
-            else:
-                times_call_func = 0
-                val_func = func(*args)
-                saved_data.update([(args, val_func)])
-                return val_func
-
-        return helper
-
-    return cache
+    return compute
