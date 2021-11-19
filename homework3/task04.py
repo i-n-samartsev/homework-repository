@@ -21,8 +21,10 @@ number in functionaly style:
 
 
 def is_armstrong(number: int) -> bool:
-    ...
+    digits = [int(digit) for digit in list(str(number))]
+    degree = len(digits)
+    return sum([digit ** degree for digit in digits]) == number
 
 
-assert is_armstrong(153) is True, "Is Armstrong number"
-assert is_armstrong(10) is False, "Is not Armstrong number"
+# assert is_armstrong(153) is True, "Is Armstrong number"
+# assert is_armstrong(10) is False, "Is not Armstrong number"
