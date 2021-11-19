@@ -2,6 +2,9 @@
 # object from a list of keyword parameters:
 
 
+from functools import partial
+
+
 class Filter:
     """
     Helper filter class. Accepts a list of single-argument
@@ -23,6 +26,12 @@ positive_even.apply(range(100)) should return only even numbers from 0 to 99
 """
 
 
+def keyword_filter_func(key, value, value_sample):
+    if key not in value_sample.keys():
+        return False
+    return value == value_sample[key]
+
+
 def make_filter(**keywords):
     """
     Generate filter object for specified keywords
@@ -30,12 +39,7 @@ def make_filter(**keywords):
     filter_funcs = []
     for key, value in keywords.items():
 
-        def keyword_filter_func(value_sample):
-            if key not in value_sample.keys():
-                return False
-            return value == value_sample[key]
-
-        filter_funcs.append(keyword_filter_func)
+        filter_funcs.append(partial(keyword_filter_func, key, value))
     return Filter(filter_funcs)
 
 
