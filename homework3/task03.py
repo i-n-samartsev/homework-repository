@@ -38,7 +38,6 @@ def make_filter(**keywords):
     """
     filter_funcs = []
     for key, value in keywords.items():
-
         filter_funcs.append(partial(keyword_filter_func, key, value))
     return Filter(filter_funcs)
 
