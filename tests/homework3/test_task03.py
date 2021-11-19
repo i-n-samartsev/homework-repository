@@ -1,4 +1,4 @@
-from homework3.task03 import make_filter, Filter
+from homework3.task03 import make_filter, Filter.apply
 
 
 sample_data = [
