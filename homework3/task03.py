@@ -3,7 +3,6 @@
 
 
 from functools import partial
-
 from typing import Any
 
 
