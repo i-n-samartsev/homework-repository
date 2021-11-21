@@ -32,7 +32,7 @@ def major_and_minor_elem(inp: List) -> Tuple[int, int]:
     major_elem = list(dict_elems.keys())[
         list(dict_elems.values()).index(major_count)
     ]
-    minor_count = max(dict_elems.values())
+    minor_count = min(dict_elems.values())
     minor_elem = list(dict_elems.keys())[
         list(dict_elems.values()).index(minor_count)
     ]
