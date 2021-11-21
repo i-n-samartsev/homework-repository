@@ -32,7 +32,7 @@ def slow_calculate(value):
     return sum(struct.unpack("<" + "B" * len(data), data))
 
 
-def stopswatch(value):
+def count_time(value):
     time_start = time.time()
     with Pool(60) as pool:
         print(sum(pool.map(slow_calculate, value)))
