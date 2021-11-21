@@ -8,20 +8,14 @@ Given a file containing text. Complete using only default collections:
 Given an array of size n, find the most common and the least common elements.
 The most common element is the element that appears more than n // 2 times.
 The least common element is the element that appears fewer than other.
-
 You may assume that the array is non-empty and the most common element
 always exist in the array.
-
 Example 1:
-
 Input: [3,2,3]
 Output: 3, 2
-
 Example 2:
-
 Input: [2,2,1,1,1,2,2]
 Output: 2, 1
-
 """
 from typing import List
 
@@ -54,9 +48,9 @@ def get_rarest_char(file_path: str, encoding="utf-8", errors="ignore") -> str:
                     dict_letters[letter] += 1
 
     minor_count = min(dict_letters.values())
-    for key in dict_letters.keys():
-        if dict_letters[key] == minor_count:
-            return key
+    return list(dict_letters.keys())[
+        list(dict_letters.values()).index(minor_count)
+    ]
 
 
 def count_punctuation_chars(
@@ -99,6 +93,6 @@ def get_most_common_non_ascii_char(
                         dict_letters[letter] += 1
 
     major_count = max(dict_letters.values())
-    for key in dict_letters.keys():
-        if dict_letters[key] == major_count:
-            return key
+    return list(dict_letters.keys())[
+        list(dict_letters.values()).index(major_count)
+    ]
