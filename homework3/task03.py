@@ -2,6 +2,7 @@
 # object from a list of keyword parameters:
 
 
+from typed import Any
 from functools import partial
 
 
@@ -26,10 +27,10 @@ positive_even.apply(range(100)) should return only even numbers from 0 to 99
 """
 
 
-def keyword_filter_func(key, value, value_sample):
-    if key not in value_sample:
+def keyword_filter_func(key: Any, value: Any, value_check_sample: Any) -> bool:
+    if key not in value_check_sample:
         return False
-    return value == value_sample[key]
+    return value == value_check_sample[key]
 
 
 def make_filter(**keywords):
