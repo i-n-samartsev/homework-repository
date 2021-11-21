@@ -4,7 +4,7 @@
 
 from functools import partial
 
-from typed import Any
+from typing import Any
 
 
 class Filter:
