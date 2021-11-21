@@ -17,25 +17,23 @@ Input: [2,2,1,1,1,2,2]
 Output: 2, 1
 
 """
-import sys
 from typing import List, Tuple
 
 
 def major_and_minor_elem(inp: List) -> Tuple[int, int]:
-    major_count = -1
-    major_elem = None
-    minor_count = -1
-    minor_elem = None
-
+    dict_elems = {}
     for elem in inp:
-        elem_count = inp.count(elem)
-        if elem_count > major_count or major_count == -1:
-            major_count = elem_count
-            major_elem = elem
-        if elem_count < minor_count or minor_count == -1:
-            minor_count = elem_count
-            minor_elem = elem
+        if dict_elems.get(elem, -1) == -1:
+            dict_elems.update([(elem, 1)])
+        else:
+            dict_elems[elem] += 1
 
-    if not (minor_elem and major_elem):
-        sys.exit()
+    major_count = max(dict_elems.values())
+    major_elem = list(dict_elems.keys())[
+        list(dict_elems.values()).index(major_count)
+    ]
+    minor_count = max(dict_elems.values())
+    minor_elem = list(dict_elems.keys())[
+        list(dict_elems.values()).index(minor_count)
+    ]
     return major_elem, minor_elem
