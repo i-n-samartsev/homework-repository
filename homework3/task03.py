@@ -2,8 +2,9 @@
 # object from a list of keyword parameters:
 
 
-from typed import Any
 from functools import partial
+
+from typed import Any
 
 
 class Filter:
