@@ -6,8 +6,10 @@ and false otherwise.
 In case of any error, a ValueError should be thrown.
 
 Write a test for that function using pytest library.
-You should create files required for the testing inside the test run and remove them after the test run.
-(Opposite to previous homeworks when you used files created manually before the test.)
+You should create files required for the testing inside the test run and
+remove them after the test run.
+(Opposite to previous homeworks when you used files created manually
+before the test.)
 
 Definition of done:
  - function is created
@@ -19,14 +21,26 @@ You will learn:
  - how to test Exceptional cases
  - how to clean up after tests
  - how to check if file exists**
- - how to handle*** and raise**** exceptions in test. Use sample from the documentation.
+ - how to handle*** and raise**** exceptions in test. Use sample from
+ the documentation.
 
 * https://en.wikipedia.org/wiki/Interval_(mathematics)#Terminology
 ** https://docs.python.org/3/library/os.path.html
 *** https://docs.python.org/3/tutorial/errors.html#handling-exceptions
 **** https://docs.python.org/3/tutorial/errors.html#raising-exceptions
 """
+from os.path import exists
 
 
 def read_magic_number(path: str) -> bool:
-    ...
+
+    if not exists(path=path):
+        raise ValueError('Invalid path passed')
+
+    try:
+        with open(file=path, mode='r', encoding='utf8') as file:
+            first_line = float(file.readline())
+    except Exception as exp:
+        raise ValueError(exp.args)
+
+    return True if 1 <= first_line < 3 else False
