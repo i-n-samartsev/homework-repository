@@ -21,12 +21,12 @@ number in functionaly style:
 from functools import partial, reduce
 
 
-def func(degree, a, b):
+def helper(degree, a, b):
     return int(a) + int(b) ** degree
 
 
 def is_armstrong(number: int) -> bool:
-    ans = reduce(partial(func, len(str(number))), list("0" + str(number)))
+    ans = reduce(partial(helper, len(str(number))), list("0" + str(number)))
     return ans == number
 
 
