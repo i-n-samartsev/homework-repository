@@ -32,15 +32,14 @@ from typing import Callable
 
 def cache(func: Callable, times: int) -> Callable:
     saved_data = {}
-    times_call_func = 0
+    times_call_func = {}
 
     def compute(*args):
-        nonlocal times_call_func
-        if args in saved_data.keys() and times_call_func < times:
-            times_call_func += 1
+        if args in saved_data.keys() and times_call_func[args] < times:
+            times_call_func[args] += 1
             return saved_data[args]
         else:
-            times_call_func = 0
+            times_call_func[args] = 0
             val_func = func(*args)
             saved_data.update([(args, val_func)])
             return val_func
