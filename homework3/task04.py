@@ -18,7 +18,7 @@ number in functionaly style:
 
 ### Example function signature and call
 """
-from functools import reduce, partial
+from functools import partial, reduce
 
 
 def func(degree, a, b):
