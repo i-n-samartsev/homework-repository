@@ -27,21 +27,25 @@ Example::
     ? 2
     '2'
 """
+from functools import lru_cache
 from typing import Callable
 
+TIMES_CALL_FUNC = {}
 
-def cache(func: Callable, times: int) -> Callable:
-    saved_data = {}
-    times_call_func = {}
 
-    def compute(*args):
-        if args in saved_data.keys() and times_call_func[args] < times:
-            times_call_func[args] += 1
-            return saved_data[args]
-        else:
-            times_call_func[args] = 0
-            val_func = func(*args)
-            saved_data.update([(args, val_func)])
-            return val_func
+@lru_cache()
+def compute(func: Callable, *args):
+    return func(*args)
 
-    return compute
+
+def cache(func: Callable, times: int, *args):
+    global TIMES_CALL_FUNC
+    if args not in TIMES_CALL_FUNC:
+        TIMES_CALL_FUNC.update([(args, 0)])
+    elif TIMES_CALL_FUNC[args] < times:
+        TIMES_CALL_FUNC[args] += 1
+    else:
+        TIMES_CALL_FUNC[args] = 0
+        compute.cache_clear()
+
+    return compute(func, *args)
