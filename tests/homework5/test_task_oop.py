@@ -27,6 +27,7 @@ def test_use_method():
     create_homework_too = teacher.create_homework
     oop_homework = create_homework_too("create 2 simple classes", 5)
 
-    assert student.do_homework(
-        oop_homework
-    ) == oop_homework and student.do_homework(expired_homework)
+    assert (
+        student.do_homework(oop_homework) == oop_homework
+        and student.do_homework(expired_homework) == None
+    )
