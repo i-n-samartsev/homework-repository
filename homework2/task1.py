@@ -20,6 +20,14 @@ Output: 2, 1
 from typing import List
 
 
+def sort_dict(dictionary):
+    sorted_dict = {}
+    sorted_keys = sorted(dictionary, key=dictionary.get)
+    for key in sorted_keys:
+        sorted_dict[key] = dictionary[key]
+    return sorted_dict
+
+
 def get_longest_diverse_words(
     file_path: str, encoding="utf-8", errors="ignore"
 ) -> List[str]:
@@ -47,10 +55,8 @@ def get_rarest_char(file_path: str, encoding="utf-8", errors="ignore") -> str:
                 else:
                     dict_letters[letter] += 1
 
-    minor_count = min(dict_letters.values())
-    return list(dict_letters.keys())[
-        list(dict_letters.values()).index(minor_count)
-    ]
+    sort_dict_letters = sort_dict(dict_letters)
+    return list(sort_dict_letters.keys())[0]
 
 
 def count_punctuation_chars(
@@ -92,7 +98,5 @@ def get_most_common_non_ascii_char(
                     else:
                         dict_letters[letter] += 1
 
-    major_count = max(dict_letters.values())
-    return list(dict_letters.keys())[
-        list(dict_letters.values()).index(major_count)
-    ]
+    sort_dict_letters = sort_dict(dict_letters)
+    return list(sort_dict_letters.keys())[-1]
