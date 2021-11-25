@@ -20,6 +20,14 @@ Output: 2, 1
 from typing import List, Tuple
 
 
+def sort_dict(dictionary):
+    sorted_dict = {}
+    sorted_keys = sorted(dictionary, key=dictionary.get)
+    for key in sorted_keys:
+        sorted_dict[key] = dictionary[key]
+    return sorted_dict
+
+
 def major_and_minor_elem(inp: List) -> Tuple[int, int]:
     dict_elems = {}
     for elem in inp:
@@ -28,12 +36,5 @@ def major_and_minor_elem(inp: List) -> Tuple[int, int]:
         else:
             dict_elems[elem] += 1
 
-    major_count = max(dict_elems.values())
-    major_elem = list(dict_elems.keys())[
-        list(dict_elems.values()).index(major_count)
-    ]
-    minor_count = min(dict_elems.values())
-    minor_elem = list(dict_elems.keys())[
-        list(dict_elems.values()).index(minor_count)
-    ]
-    return major_elem, minor_elem
+    sort_dict_elem = sort_dict(dict_elems)
+    return list(sort_dict_elem.keys())[-1], list(sort_dict_elem.keys())[0]
