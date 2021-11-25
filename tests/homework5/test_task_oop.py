@@ -1,6 +1,6 @@
 import datetime
 
-from homework5.oop_1 import Homework, Student, Teacher
+from homework5.oop_1 import Student, Teacher
 
 
 def test_create_person():
@@ -29,5 +29,5 @@ def test_use_method():
 
     assert (
         student.do_homework(oop_homework) == oop_homework
-        and student.do_homework(expired_homework) == None
+        and student.do_homework(expired_homework)
     )
