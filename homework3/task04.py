@@ -18,18 +18,16 @@ number in functionaly style:
 
 ### Example function signature and call
 """
+from functools import reduce, partial
+
+
+def func(degree, a, b):
+    return int(a) + int(b) ** degree
 
 
 def is_armstrong(number: int) -> bool:
-    return (
-        sum(
-            [
-                digit ** len([int(digit) for digit in str(number)])
-                for digit in [int(digit) for digit in str(number)]
-            ]
-        )
-        == number
-    )
+    ans = reduce(partial(func, len(str(number))), list("0" + str(number)))
+    return ans == number
 
 
 # assert is_armstrong(153) is True, "Is Armstrong number"
