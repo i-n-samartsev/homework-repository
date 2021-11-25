@@ -29,5 +29,5 @@ def test_use_method():
 
     assert (
         student.do_homework(oop_homework) == oop_homework
-        and student.do_homework(expired_homework) == None
+        and student.do_homework(expired_homework) != expired_homework
     )
