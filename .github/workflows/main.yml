@@ -8,7 +8,7 @@ jobs:
   code_quality:
     runs-on: ubuntu-latest
     name: Checks with black, isort and possibly run tests
-    container: python:3.9
+    container: python:3.7
 
     steps:
       - name: Checkout code
@@ -19,4 +19,4 @@ jobs:
           ls -la
           flake8 .
           isort --check .
-          py.test tests
+          py.test -v
