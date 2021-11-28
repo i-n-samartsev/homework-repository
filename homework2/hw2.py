@@ -18,11 +18,23 @@ Output: 2, 1
 
 """
 from collections import Counter
-from typing import List, Tuple
+from dataclasses import dataclass
+from typing import Any, List
 
 
-def major_and_minor_elem(inp: List) -> Tuple[int, int]:
-    occurrences = Counter(inp).most_common()
-    most_common_element = occurrences[0][0]
-    least_common_element = occurrences[-1][0]
-    return most_common_element, least_common_element
+@dataclass
+class MajorMinorElements:
+    major_elem: Any
+    number_of_major_elem: int
+    minor_elem: Any
+    number_of_minor_elem: int
+
+
+def major_and_minor_elem(inp: List) -> MajorMinorElements:
+    """
+    Find the most common and the least common elements.
+    """
+    elements = Counter(inp).most_common()
+    most_common = elements[0]
+    least_common = elements[-1]
+    return MajorMinorElements(*most_common, *least_common)
