@@ -6,7 +6,7 @@ Given a cell with "it's a fib sequence" from slideshow,
 We guarantee, that the given sequence contain >= 0 integers inside.
 
 """
-from typing import Sequence, Generator, Iterable
+from typing import Generator, Iterable, Sequence
 
 
 def fibonacci_generator(starting_item: int = 0,

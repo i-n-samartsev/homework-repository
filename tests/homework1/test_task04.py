@@ -1,7 +1,8 @@
-from homework1.task04 import check_sum_of_four
-from random import randint
 from itertools import product
+from random import randint
 from typing import List
+
+from homework1.task04 import check_sum_of_four
 
 
 def check_sum_with_product(a: List[int], b: List[int],
