@@ -14,15 +14,25 @@ with open("some_file.txt") as fi:
         ...
 
 """
-from typing import Tuple
+from dataclasses import dataclass
 
 
-def find_maximum_and_minimum(file_name: str) -> Tuple[int, int]:
+@dataclass
+class MinMaxValues:
+    min: int
+    max: int
+
+
+def find_maximum_and_minimum(file_name: str) -> MinMaxValues:
+    """
+    Reads input line-by-line and find maximum and minimum values.
+    """
     max_value = float('-inf')
     min_value = float('inf')
     with open(file=file_name, mode='r') as file:
         for line in file:
             numbers = list(map(int, line.split()))
-            max_value = max(max_value, *numbers)
-            min_value = min(min_value, *numbers)
-    return min_value, max_value
+            if numbers:
+                max_value = max(max_value, *numbers)
+                min_value = min(min_value, *numbers)
+    return MinMaxValues(min_value, max_value)
