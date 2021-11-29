@@ -25,16 +25,22 @@ assert = custom_range(string.ascii_lowercase, 'p', 'g', -2) == ['p', 'n', 'l',
 from typing import Any, List, Sequence
 
 
-def custom_range(data: Sequence[Any], start: Any, stop: Any = None,
-                 step: [int] = 1) -> List[Any]:
+def custom_range(data: Sequence[Any], *args: (Any, Any, int)) -> List[Any]:
+    """
+    Returns a subarray from the passed sequence.
+    Examples of application:
 
-    if stop is None:
-        start, stop = 0, start
+    custom_range(data, elem) --> subarray from beginning to 'elem'
 
-    for i, element in enumerate(data):
-        if element == stop:
-            stop = i
-        elif element == start:
-            start = i
+    custom_range(data, elem1, elem2) --> subarray from 'elem1' to 'elem2'
 
+    custom_range(data, elem1, elem2, step) --> subarray from 'elem1' to
+    'elem2' with 'step'
+    """
+    if 0 >= len(args) > 3:
+        raise ValueError('Wrong number of parameters')
+
+    start = data.index(args[0]) if len(args) > 1 else 0
+    stop = data.index(args[1]) if len(args) > 1 else data.index(args[0])
+    step = args[2] if len(args) == 3 else 1
     return list(data[start:stop:step])
