@@ -24,8 +24,8 @@ def save_original_func_info(func: Callable) -> Callable:
     """
     Saves original function and its information.
     """
+
     def decorator_with_original_info(wrapper):
-        nonlocal func
         wrapper.__name__ = func.__name__
         wrapper.__doc__ = func.__doc__
         wrapper.__original_func = func
