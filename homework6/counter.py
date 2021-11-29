@@ -13,7 +13,7 @@ reset_instances_counter - сбросить счетчик экземпляров
 def instances_counter(cls):
     cls.counter_class_instance = 0
 
-    def new_init():
+    def new_init(self):
         cls.counter_class_instance += 1
 
     cls.__init__ = new_init
