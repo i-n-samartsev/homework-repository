@@ -25,7 +25,7 @@ Homework)
 
 3. Teacher
 Атрибуты:
-     last_name
+     last_name
      first_name
 Методы:
     create_homework - текст задания и количество дней на это задание,
@@ -37,49 +37,57 @@ PEP8 соблюдать строго.
 К названием остальных переменных, классов и тд. подходить ответственно -
 давать логичные подходящие имена.
 """
-import datetime
+from datetime import datetime, timedelta
 
 
 class Homework:
-    """"""
+    """
+    Student's homework with text and deadline.
+    Deadline - number of days to complete.
+    """
 
-    def __init__(self, text, deadline):
+    def __init__(self, text: str, deadline: int):
         self.text = text
-        self.deadline = deadline
-        self.created = datetime
+        self.deadline = timedelta(days=deadline)
+        self.created = datetime.today()
 
-    def is_active(self):
-        return self
+    def is_active(self) -> bool:
+        """
+        Checks that the homework is not expired.
+        """
+        return self.created + self.deadline > datetime.today()
 
 
 class Student:
-    """"""
 
-    def __init__(self, first_name, last_name):
-        self.first_name = first_name
-        self.last_name = last_name
-
-    def do_homework(self, homework: Homework):
-        return homework
-
-
-class Teacher:
-    """"""
-
-    def __init__(self, first_name, last_name):
+    def __init__(self, first_name: str, last_name: str):
         self.first_name = first_name
         self.last_name = last_name
 
     @staticmethod
-    def create_homework(text, deadline):
+    def do_homework(homework: Homework) -> Homework:
+        if not homework.is_active():
+            print('You are late')
+        else:
+            return homework
+
+
+class Teacher:
+
+    def __init__(self, first_name: str, last_name: str):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    @staticmethod
+    def create_homework(text: str, deadline: int) -> Homework:
         return Homework(text, deadline)
 
 
 if __name__ == '__main__':
     teacher = Teacher('Daniil', 'Shadrin')
     student = Student('Roman', 'Petrov')
-    print(teacher.last_name)  # Daniil
-    print(student.first_name)  # Petrov
+    print(teacher.last_name)  # Shadrin
+    print(student.first_name)  # Roman
 
     expired_homework = teacher.create_homework('Learn functions', 0)
     print(expired_homework.created)  # Example: 2019-05-26 16:44:30.688762
