@@ -7,31 +7,90 @@ Given a file containing text. Complete using only default collections:
     5) Find most common non ascii char for document
 """
 import string
-from collections import Counter, defaultdict
+from collections import Counter
 from typing import List
+from unicodedata import category
+from dataclasses import dataclass
 
 
-def get_longest_diverse_words(file_path: str) -> List[str]:
-    words_stat = defaultdict(list)
+@dataclass
+class Token:
+    kind: str
+    value: str
 
-    with open(file_path, mode='r', encoding='unicode-escape',
-              errors='ignore') as file:
-        for line in file:
-            words = line.split()
-            for word in words:
-                words_stat[len(word)].append(word.strip(string.punctuation))
 
-    sorted_length = sorted(words_stat, reverse=True)
-    answer = []
+def file_opener_1(file_path: str, mode: str = 'r', encoding: str = 'utf8',
+                  errors: str = 'strict'):
+    with open(file_path, mode=mode, encoding=encoding, errors=errors) as file:
+        return file
 
-    for length in sorted_length:
-        if not words_stat[length]:
-            continue
-        answer.append(words_stat[length].pop())
-        if len(answer) > 9:
-            break
 
-    return answer
+def file_opener_2(file_path: str, mode: str = 'r', encoding: str = 'utf8',
+                  errors: str = 'strict'):
+    try:
+        file = open(file_path, mode=mode, encoding=encoding, errors=errors)
+        return file
+    finally:
+        file.close()
+
+
+
+
+def awesome_parse(path_or_file):
+    if isinstance(path_or_file, basestring):
+        f = file_to_close = open(path_or_file, 'rb')
+    else:
+        f = path_or_file
+        file_to_close = None
+    try:
+        return do_stuff(f)
+    finally:
+        if file_to_close:
+            file_to_close.close()
+
+
+def tokenize(open_file):
+    buffer = ''
+    for symbol in open_file:
+        if category(symbol).startswith('L'):
+            buffer += symbol
+        else:
+            if buffer:
+                yield Token(kind='word', value=buffer)
+                buffer = ''
+            yield Token(kind='symbol', value=symbol)
+
+
+def get_longest_diverse_words(file_path: str, encoding: str = 'utf8',
+                              errors: str = 'strict') -> List[str]:
+    words_stat = {}
+    file = file_opener(file_path, encoding=encoding, errors=errors)
+    print(file.closed)
+    for word in tokenize(file):
+        print(word)
+
+
+get_longest_diverse_words('data.txt', encoding='unicode_escape',
+                          errors='ignore')
+
+    # with open(file_path, mode='r', encoding='unicode-escape',
+    #           errors='ignore') as file:
+    #     for line in file:
+    #         words = line.split()
+    #         for word in words:
+    #             words_stat[len(word)].append(word.strip(string.punctuation))
+    #
+    # sorted_length = sorted(words_stat, reverse=True)
+    # answer = []
+    #
+    # for length in sorted_length:
+    #     if not words_stat[length]:
+    #         continue
+    #     answer.append(words_stat[length].pop())
+    #     if len(answer) > 9:
+    #         break
+    #
+    # return answer
 
 
 def get_rarest_char(file_path: str) -> str:
