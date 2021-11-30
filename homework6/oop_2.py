@@ -100,7 +100,6 @@ class Person:
 
 
 class Student(Person):
-
     def do_homework(self, homework: Homework, solution):
         if homework.created + homework.deadline > datetime.date.today():
             return HomeworkResult(homework, solution, self)
