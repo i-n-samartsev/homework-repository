@@ -1,6 +1,6 @@
 import datetime
 
-from homework6.oop_2 import HomeworkResult, Student, Teacher
+from homework6.oop_2 import Student, Teacher
 
 
 def test_create_person():
