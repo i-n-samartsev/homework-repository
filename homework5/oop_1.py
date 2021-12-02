@@ -54,9 +54,6 @@ class Homework:
 
 
 class Student:
-    last_name = None
-    first_name = None
-
     def __init__(self, last_name, first_name):
         self.last_name = last_name
         self.first_name = first_name
@@ -71,9 +68,6 @@ class Student:
 
 
 class Teacher:
-    last_name = None
-    first_name = None
-
     def __init__(self, last_name, first_name):
         self.last_name = last_name
         self.first_name = first_name
