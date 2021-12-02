@@ -58,10 +58,6 @@ class DeadlineError(Exception):
 
 
 class Homework:
-    text = ""
-    deadline = None
-    created = None
-
     def __init__(self, text, num_of_days):
         self.text = text
         self.deadline = datetime.timedelta(num_of_days)
@@ -75,11 +71,6 @@ class Homework:
 
 
 class HomeworkResult:
-    homework = None
-    solution = ""
-    author = None
-    created = None
-
     def __init__(self, homework, solution, author):
         if not isinstance(homework, Homework):
             raise TypeError("You gave a not Homework object")
@@ -91,9 +82,6 @@ class HomeworkResult:
 
 
 class Person:
-    last_name = ""
-    first_name = ""
-
     def __init__(self, last_name, first_name):
         self.last_name = last_name
         self.first_name = first_name
@@ -115,16 +103,16 @@ class Teacher(Person):
         return Homework(text, num_of_days)
 
     @staticmethod
-    def check_homework(homework_result):
+    def check_homework(homework_done, homework_result):
         if len(homework_result.solution) > 5:
-            Teacher.homework_done[homework_result.homework] = homework_result
+            homework_done[homework_result.homework] = homework_result
             return True
         else:
             return False
 
     @staticmethod
-    def reset_results(homework=None):
+    def reset_results(homework_done, homework=None):
         if homework:
-            Teacher.homework_done.pop(homework)
+            homework_done.pop(homework)
         else:
-            Teacher.homework_done.clear()
+            homework_done.clear()
