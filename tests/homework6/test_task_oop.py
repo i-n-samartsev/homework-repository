@@ -30,7 +30,6 @@ def test_check_homework():
 
 def test_homework_request():
     opp_teacher = Teacher("Daniil", "Shadrin")
-    advanced_python_teacher = Teacher("Aleksandr", "Smetanin")
 
     lazy_student = Student("Roman", "Petrov")
     good_student = Student("Lev", "Sokolov")
