@@ -41,9 +41,9 @@ import datetime
 
 
 class Homework:
-    text = ""
-    deadline = 0
-    created = 0
+    text = None
+    deadline = None
+    created = None
 
     def __init__(self, text, num_of_days):
         self.text = text
@@ -58,14 +58,15 @@ class Homework:
 
 
 class Student:
-    last_name = ""
-    first_name = ""
+    last_name = None
+    first_name = None
 
     def __init__(self, last_name, first_name):
         self.last_name = last_name
         self.first_name = first_name
 
-    def do_homework(self, homework: Homework):
+    @staticmethod
+    def do_homework(homework: Homework):
         if homework.created + homework.deadline > datetime.date.today():
             return homework
         else:
@@ -74,12 +75,13 @@ class Student:
 
 
 class Teacher:
-    last_name = ""
-    first_name = ""
+    last_name = None
+    first_name = None
 
     def __init__(self, last_name, first_name):
         self.last_name = last_name
         self.first_name = first_name
 
-    def create_homework(self, text, num_of_days):
+    @staticmethod
+    def create_homework(text, num_of_days):
         return Homework(text, num_of_days)
