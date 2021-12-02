@@ -41,10 +41,6 @@ import datetime
 
 
 class Homework:
-    text = None
-    deadline = None
-    created = None
-
     def __init__(self, text, num_of_days):
         self.text = text
         self.deadline = datetime.timedelta(num_of_days)
