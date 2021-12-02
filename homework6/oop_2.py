@@ -79,6 +79,7 @@ class HomeworkResult:
         self.solution = solution
         self.author = author
         self.created = datetime.date.today()
+        self.grade = 0
 
 
 class Person:
@@ -94,6 +95,13 @@ class Student(Person):
         else:
             raise DeadlineError("You are late")
 
+    def homework_request(self, homework_done, grade=5):
+        return [
+            hw_result
+            for hw_result in homework_done.values()
+            if hw_result.author == self and hw_result.grade == grade
+        ]
+
 
 class Teacher(Person):
     homework_done = defaultdict(HomeworkResult)
@@ -103,8 +111,9 @@ class Teacher(Person):
         return Homework(text, num_of_days)
 
     @staticmethod
-    def check_homework(homework_done, homework_result):
+    def check_homework(homework_done, homework_result, grade=5):
         if len(homework_result.solution) > 5:
+            homework_result.grade = grade
             homework_done[homework_result.homework] = homework_result
             return True
         else:
