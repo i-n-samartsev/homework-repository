@@ -79,7 +79,7 @@ def get_rarest_char(file_path: str, encoding: str = 'utf8',
     chars_stat = {}
 
     for symbol in get_file_text(file_path, encoding, errors, chunk_size=1):
-        add_to_stat(key=symbol, value=1, stat=chars_stat)
+        chars_stat[symbol] = chars_stat.get(symbol, 0) + 1
 
     rarest_char = sorted(chars_stat, key=chars_stat.get)[0]
     return rarest_char
@@ -118,12 +118,13 @@ def get_most_common_non_ascii_char(file_path: str, encoding: str = 'utf8',
     """
     Returns the most common non ascii char of the file.
     """
-    non_ascii_chars_stat = {}
+    non_ascii_stat = {}
 
     for symbol in get_file_text(file_path, encoding, errors, chunk_size=1):
         if not symbol.isascii():
-            add_to_stat(key=symbol, value=1, stat=non_ascii_chars_stat)
+            non_ascii_stat[symbol] = non_ascii_stat.get(symbol, 0) + 1
 
-    most_common_non_ascii_char = sorted(non_ascii_chars_stat,
-                                        key=non_ascii_chars_stat.get)[-1]
+    most_common_non_ascii_char = sorted(non_ascii_stat,
+                                        key=non_ascii_stat.get,
+                                        reverse=True)[0]
     return most_common_non_ascii_char
