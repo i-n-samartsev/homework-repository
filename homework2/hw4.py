@@ -28,7 +28,7 @@ def cache(function: Callable) -> Callable:
     baggage_room = {}
 
     def wrapper(*args, **kwargs):
-        kwargs = dict(sorted(kwargs.items(), key=lambda t: t[0]))
+        kwargs = {key: kwargs[key] for key in sorted(kwargs)}
         key = str(args) + str(kwargs)
         if key not in baggage_room:
             baggage_room[key] = function(*args, **kwargs)
