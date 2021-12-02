@@ -24,8 +24,7 @@ def test_use_method():
 
     expired_homework = teacher.create_homework("Learn functions", 0)
 
-    create_homework_too = teacher.create_homework
-    oop_homework = create_homework_too("create 2 simple classes", 5)
+    oop_homework = teacher.create_homework("create 2 simple classes", 5)
 
     assert (
         student.do_homework(oop_homework) == oop_homework
