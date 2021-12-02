@@ -67,7 +67,7 @@ class Student:
 
     @staticmethod
     def do_homework(homework: Homework):
-        if homework.created + homework.deadline > datetime.date.today():
+        if homework.created + homework.deadline > datetime.datetime.now():
             return homework
         else:
             print("You are late")
