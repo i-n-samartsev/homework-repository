@@ -6,21 +6,15 @@ Given a file containing text. Complete using only default collections:
     4) Count every non ascii char
     5) Find most common non ascii char for document
 """
-import string
-from collections import Counter
 from functools import partial
-from typing import List, Any, Hashable
+from typing import Any, Generator, Hashable, List
 from unicodedata import category
-from dataclasses import dataclass
-
-
-@dataclass
-class Token:
-    kind: str
-    value: str
 
 
 def add_to_stat(key: Hashable, value: Any, stat: dict):
+    """
+    Adds a new value to an existing value or creates a new one by key.
+    """
     if key in stat:
         stat[key] += value
     else:
@@ -28,112 +22,108 @@ def add_to_stat(key: Hashable, value: Any, stat: dict):
 
 
 def get_file_text(filename: str, encoding: str = 'utf8',
-                  errors: str = 'strict', chunk_size: int = 64):
+                  errors: str = 'strict',
+                  chunk_size: int = 64) -> Generator:
+    """
+    Generator that iterates over the file by chunks.
+    """
     with open(filename, mode='r', encoding=encoding, errors=errors) as file:
         for chunk in iter(partial(file.read, chunk_size), ''):
             yield chunk
 
 
-def tokenize(chunk):
+def get_word(file_path: str, encoding: str = 'utf8',
+             errors: str = 'strict') -> Generator:
+    """
+    Generator that yields only words from file.
+    """
     buffer = ''
-    for symbol in chunk:
+    for symbol in get_file_text(file_path, encoding=encoding, errors=errors,
+                                chunk_size=1):
         if category(symbol).startswith('L'):
             buffer += symbol
         else:
             if buffer:
-                yield Token(kind='word', value=buffer)
+                yield buffer
                 buffer = ''
-            yield Token(kind='symbol', value=symbol)
 
 
-# def get_longest_diverse_words(file_path: str, encoding: str = 'utf8',
-#                               errors: str = 'strict') -> List[str]:
-#     words_stat = {}
-#
-#     with open(file_path, mode='r', encoding='unicode-escape',
-#               errors='ignore') as file:
-#         for line in file:
-#             words = line.split()
-#             for word in words:
-#                 words_stat[len(word)].append(word.strip(string.punctuation))
-#
-#     sorted_length = sorted(words_stat, reverse=True)
-#     answer = []
-#
-#     for length in sorted_length:
-#         if not words_stat[length]:
-#             continue
-#         answer.append(words_stat[length].pop())
-#         if len(answer) > 9:
-#             break
-#
-#     return answer
+def get_longest_diverse_words(file_path: str, encoding: str = 'utf8',
+                              errors: str = 'strict',
+                              quantity: int = 10) -> List[str]:
+    """
+    Returns longest diverse word list of the file.
+    """
+    words_stat = {}
+
+    for word in get_word(file_path, encoding=encoding, errors=errors):
+        add_to_stat(len(word), [word], words_stat)
+
+    sorted_length = sorted(words_stat, reverse=True)
+    longest_words = []
+
+    for length in sorted_length:
+        while len(longest_words) < quantity and words_stat[length]:
+            next_word = words_stat[length].pop()
+            if next_word not in longest_words:
+                longest_words.append(next_word)
+
+    return longest_words
 
 
 def get_rarest_char(file_path: str, encoding: str = 'utf8',
                     errors: str = 'strict') -> str:
+    """
+    Returns the rarest char of the file.
+    """
     chars_stat = {}
 
-    for chunk in get_file_text(file_path, encoding=encoding, errors=errors):
-        for symbol in chunk:
-            add_to_stat(key=symbol, value=1, stat=chars_stat)
+    for symbol in get_file_text(file_path, encoding, errors, chunk_size=1):
+        add_to_stat(key=symbol, value=1, stat=chars_stat)
 
     rarest_char = sorted(chars_stat, key=chars_stat.get)[0]
     return rarest_char
 
 
-a = get_rarest_char('data.txt', encoding='unicode-escape', errors='ignore')
-print(a)
-
-
 def count_punctuation_chars(file_path: str, encoding: str = 'utf8',
                             errors: str = 'strict') -> int:
+    """
+    Returns quantity of punctuation chars of the file.
+    """
     number_of_punctuation_chars = 0
 
-    for chunk in get_file_text(file_path, encoding=encoding, errors=errors):
-        for symbol in chunk:
-            if category(symbol).startswith('P'):
-                number_of_punctuation_chars += 1
+    for symbol in get_file_text(file_path, encoding, errors, chunk_size=1):
+        if category(symbol).startswith('P'):
+            number_of_punctuation_chars += 1
 
     return number_of_punctuation_chars
 
 
-a = count_punctuation_chars('data.txt', encoding='unicode-escape',
-                            errors='ignore')
-print(a)
-
-
 def count_non_ascii_chars(file_path: str, encoding: str = 'utf8',
                           errors: str = 'strict') -> int:
+    """
+    Returns quantity of non ascii chars of the file.
+    """
     number_of_non_ascii_chars = 0
 
-    for chunk in get_file_text(file_path, encoding=encoding, errors=errors):
-        for symbol in chunk:
-            if not symbol.isascii():
-                number_of_non_ascii_chars += 1
+    for symbol in get_file_text(file_path, encoding, errors, chunk_size=1):
+        if not symbol.isascii():
+            number_of_non_ascii_chars += 1
 
     return number_of_non_ascii_chars
 
 
-a = count_non_ascii_chars('data.txt', encoding='unicode-escape',
-                          errors='ignore')
-print(a)
-
-
 def get_most_common_non_ascii_char(file_path: str, encoding: str = 'utf8',
                                    errors: str = 'strict') -> str:
+    """
+    Returns the most common non ascii char of the file.
+    """
     non_ascii_chars_stat = {}
 
-    for chunk in get_file_text(file_path, encoding=encoding, errors=errors):
-        for symbol in chunk:
-            if not symbol.isascii():
-                add_to_stat(key=symbol, value=1, stat=non_ascii_chars_stat)
+    for symbol in get_file_text(file_path, encoding, errors, chunk_size=1):
+        if not symbol.isascii():
+            add_to_stat(key=symbol, value=1, stat=non_ascii_chars_stat)
 
     most_common_non_ascii_char = sorted(non_ascii_chars_stat,
                                         key=non_ascii_chars_stat.get)[-1]
     return most_common_non_ascii_char
-
-
-a = get_most_common_non_ascii_char('data.txt', encoding='unicode-escape',
-                                   errors='ignore')
-print(a)
