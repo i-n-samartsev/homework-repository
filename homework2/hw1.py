@@ -7,18 +7,8 @@ Given a file containing text. Complete using only default collections:
     5) Find most common non ascii char for document
 """
 from functools import partial
-from typing import Any, Generator, Hashable, List
+from typing import Generator, List
 from unicodedata import category
-
-
-def add_to_stat(key: Hashable, value: Any, stat: dict):
-    """
-    Adds a new value to an existing value or creates a new one by key.
-    """
-    if key in stat:
-        stat[key] += value
-    else:
-        stat[key] = value
 
 
 def get_file_text(filename: str, encoding: str = 'utf8',
@@ -57,7 +47,7 @@ def get_longest_diverse_words(file_path: str, encoding: str = 'utf8',
     words_stat = {}
 
     for word in get_word(file_path, encoding=encoding, errors=errors):
-        add_to_stat(len(word), [word], words_stat)
+        words_stat[len(word)] = words_stat.get(len(word), []).append(word)
 
     sorted_length = sorted(words_stat, reverse=True)
     longest_words = []
