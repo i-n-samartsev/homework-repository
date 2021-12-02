@@ -33,6 +33,7 @@ class MajorMinorElements:
 def major_and_minor_elem(inp: List) -> MajorMinorElements:
     """
     Find the most common and the least common elements.
+    Returns MajorMinorElements object.
     """
     elements = Counter(inp).most_common()
     most_common = elements[0]
