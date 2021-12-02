@@ -47,7 +47,7 @@ def get_longest_diverse_words(file_path: str, encoding: str = 'utf8',
     words_stat = {}
 
     for word in get_word(file_path, encoding=encoding, errors=errors):
-        words_stat[len(word)] = words_stat.get(len(word), []).append(word)
+        words_stat[len(word)] = words_stat.get(len(word), []) + [word]
 
     sorted_length = sorted(words_stat, reverse=True)
     longest_words = []
