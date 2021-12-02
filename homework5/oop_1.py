@@ -48,7 +48,7 @@ class Homework:
     def __init__(self, text, num_of_days):
         self.text = text
         self.deadline = datetime.timedelta(num_of_days)
-        self.created = datetime.date.today()
+        self.created = datetime.datetime.now()
 
     def is_active(self):
         if self.created + self.deadline < datetime.date.today():
