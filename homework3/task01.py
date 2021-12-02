@@ -1,7 +1,18 @@
 # In previous homework task 4, you wrote a cache function that remembers other
 # function output value. Modify it to be a parametrized decorator.
 
-from typing import Callable
+from typing import Any, Callable
+from dataclasses import dataclass
+
+
+@dataclass
+class ValueNumber:
+    """
+    Keeps the function result and the number of times that it can be
+    taken from cache.
+    """
+    value: Any
+    number: int
 
 
 def cache(times: int) -> Callable:
@@ -13,13 +24,15 @@ def cache(times: int) -> Callable:
 
     def decorator(func: Callable) -> Callable:
 
-        def wrapper(*some):
-            if some not in baggage_room or not baggage_room[some][1]:
-                baggage_room[some] = [func(*some), times + 1]
+        def wrapper(*args, **kwargs):
+            kwargs = {key: kwargs[key] for key in sorted(kwargs)}
+            key = str(args) + str(kwargs)
 
-            baggage_room[some][1] -= 1
-            return baggage_room[some][0]
+            if key not in baggage_room or baggage_room[key].number == 0:
+                baggage_room[key] = ValueNumber(value=func(*args, **kwargs),
+                                                number=times + 1)
 
+            baggage_room[key].number -= 1
+            return baggage_room[key].value
         return wrapper
-
     return decorator
