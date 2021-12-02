@@ -38,19 +38,18 @@ PEP8 соблюдать строго.
 давать логичные подходящие имена.
 """
 import datetime
+import random
 
 
 class Homework:
-    def __init__(self, text, num_of_days):
+    def __init__(self, text, num_of_days, implementation=0):
         self.text = text
         self.deadline = datetime.timedelta(num_of_days)
         self.created = datetime.datetime.now()
+        self.implementation = implementation
 
     def is_active(self):
-        if self.created + self.deadline < datetime.date.today():
-            return False
-        else:
-            return True
+        return self.created + self.deadline > datetime.date.today()
 
 
 class Student:
@@ -59,11 +58,16 @@ class Student:
         self.first_name = first_name
 
     @staticmethod
-    def do_homework(homework: Homework):
-        if homework.created + homework.deadline > datetime.datetime.now():
+    def do_homework(homework: Homework, implementation=1, teach_help=False):
+        """Chance of passing without the help of a teacher 90 percent"""
+        if homework.created + homework.deadline <= datetime.datetime.now():
+            print("You are late")
+            return None
+        elif teach_help or random.random() < 0.9:
+            homework.implementation = implementation
             return homework
         else:
-            print("You are late")
+            print("You didn't pass")
             return None
 
 
