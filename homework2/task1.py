@@ -47,14 +47,7 @@ def get_rarest_char(file_path: str, encoding="utf-8", errors="ignore") -> str:
                 else:
                     dict_letters[letter] += 1
 
-    return list(
-        {
-            key: value
-            for key, value in sorted(
-                dict_letters, key=lambda key: dict_letters[key]
-            )
-        }
-    )[0][0]
+    return sorted(dict_letters, key=lambda x: dict_letters[x])[0]
 
 
 def count_punctuation_chars(
@@ -84,7 +77,7 @@ def count_non_ascii_chars(
 
 def get_most_common_non_ascii_char(
     file_path: str, encoding="utf-8", errors="ignore"
-) -> str:
+) -> dict:
     """If there are no non-ascii characters in the file, SystemExit"""
     dict_letters = {}
     with open(file_path, encoding=encoding, errors=errors) as fi:
@@ -96,11 +89,4 @@ def get_most_common_non_ascii_char(
                     else:
                         dict_letters[letter] += 1
 
-    return list(
-        {
-            key: value
-            for key, value in sorted(
-                dict_letters, key=lambda key: dict_letters[key]
-            )
-        }
-    )[-1][0]
+    return sorted(dict_letters, key=lambda x: dict_letters[x])[-1]
