@@ -42,10 +42,7 @@ def get_rarest_char(file_path: str, encoding="utf-8", errors="ignore") -> str:
     with open(file_path, encoding=encoding, errors=errors) as fi:
         for line in fi:
             for letter in line:
-                if dict_letters.get(letter, -1) == -1:
-                    dict_letters.update([(letter, 1)])
-                else:
-                    dict_letters[letter] += 1
+                dict_letters[letter] = dict_letters.get(letter, 0) + 1
 
     return sorted(dict_letters, key=lambda x: dict_letters[x])[0]
 
