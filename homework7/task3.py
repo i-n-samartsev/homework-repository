@@ -42,12 +42,7 @@ def tic_tac_toe_checker(board: List[List]) -> str:
     if all([board[i][len(board) - i - 1] == "o" for i in range(len(board))]):
         return "o wins!"
 
-    is_draw = True
     for line in board:
         if line.count("-") != 0:
-            is_draw = False
-            break
-    if is_draw:
-        return "draw!"
-    else:
-        return "unfinished"
+            return "unfinished"
+    return "draw!"
