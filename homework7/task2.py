@@ -23,7 +23,7 @@ Examples:
 def update_str(str_with_backspace: str) -> str:
     string_without_backspace = ""
     for num, letter in enumerate(str_with_backspace):
-        if str_with_backspace[num + 1: num + 2] != "#" and letter != "#":
+        if str_with_backspace[num + 1 : num + 2] != "#" and letter != "#":
             string_without_backspace += letter
     return string_without_backspace
 
