@@ -3,7 +3,7 @@
 
 
 from functools import partial
-from typing import Any
+from typing import Any, Dict
 
 
 class Filter:
@@ -27,7 +27,9 @@ positive_even.apply(range(100)) should return only even numbers from 0 to 99
 """
 
 
-def keyword_filter_func(key: str, value: Any, check_value: Dict[str, Any]) -> bool:
+def keyword_filter_func(
+    key: str, value: Any, check_value: Dict[str, Any]
+) -> bool:
     if key not in check_value:
         return False
     return value == check_value[key]
