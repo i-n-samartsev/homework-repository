@@ -78,9 +78,6 @@ def get_most_common_non_ascii_char(
     text = open(file_path, encoding=encoding, errors=errors).read()
     for letter in text:
         if not letter.isascii():
-            if dict_letters.get(letter, -1) == -1:
-                dict_letters.update([(letter, 1)])
-            else:
-                dict_letters[letter] += 1
+            dict_letters[letter] = dict_letters.get(letter, 0) + 1
 
     return sorted(dict_letters, key=lambda x: dict_letters[x])[-1]
