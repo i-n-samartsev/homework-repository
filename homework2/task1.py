@@ -77,7 +77,7 @@ def count_non_ascii_chars(
 
 def get_most_common_non_ascii_char(
     file_path: str, encoding="utf-8", errors="ignore"
-) -> dict:
+) -> str:
     """If there are no non-ascii characters in the file, SystemExit"""
     dict_letters = {}
     with open(file_path, encoding=encoding, errors=errors) as fi:
