@@ -9,44 +9,22 @@ Tree can only contains basic structures like:
 from typing import Any
 
 
-def find_occurrences_in_tuple_list(tree, element: Any):
+def find_occurrences(tree, element: Any):
+    if isinstance(tree, set):
+        values = list(tree)
+    elif isinstance(tree, dict):
+        values = tree.values()
+    else:
+        values = tree
     ans = 0
-    for value in tree:
+    for value in values:
         if value == element:
             ans += 1
-        elif isinstance(value, list) or isinstance(value, tuple):
-            ans += find_occurrences_in_tuple_list(value, element)
-        elif isinstance(value, dict):
+        elif (
+            isinstance(value, list)
+            or isinstance(value, tuple)
+            or isinstance(value, set)
+            or isinstance(value, dict)
+        ):
             ans += find_occurrences(value, element)
-        elif isinstance(value, set):
-            ans += find_occurrences_in_set(value, element)
-    return ans
-
-
-def find_occurrences_in_set(tree: set, element: Any) -> int:
-    ans = 0
-    while len(tree) > 0:
-        value = tree.pop()
-        if value == element:
-            ans += 1
-        elif isinstance(value, list) or isinstance(value, tuple):
-            ans += find_occurrences_in_tuple_list(value, element)
-        elif isinstance(value, dict):
-            ans += find_occurrences(value, element)
-        elif isinstance(value, set):
-            ans += find_occurrences_in_set(value, element)
-    return ans
-
-
-def find_occurrences(tree: dict, element: Any) -> int:
-    ans = 0
-    for value in tree.values():
-        if value == element:
-            ans += 1
-        elif isinstance(value, list) or isinstance(value, tuple):
-            ans += find_occurrences_in_tuple_list(value, element)
-        elif isinstance(value, dict):
-            ans += find_occurrences(value, element)
-        elif isinstance(value, set):
-            ans += find_occurrences_in_set(value, element)
     return ans
