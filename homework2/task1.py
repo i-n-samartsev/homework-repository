@@ -96,5 +96,11 @@ def get_most_common_non_ascii_char(
                     else:
                         dict_letters[letter] += 1
 
-    sort_dict_letters = sort_dict(dict_letters)
-    return list(sort_dict_letters.keys())[-1]
+    return list(
+        {
+            key: value
+            for key, value in sorted(
+                dict_letters, key=lambda key: dict_letters[key]
+            )
+        }
+    )[-1][0]
