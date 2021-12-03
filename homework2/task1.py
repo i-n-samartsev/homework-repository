@@ -39,11 +39,10 @@ def get_longest_diverse_words(
 
 def get_rarest_char(file_path: str, encoding="utf-8", errors="ignore") -> str:
     dict_letters = {}
-    with open(file_path, encoding=encoding, errors=errors) as fi:
-        for line in fi:
-            for letter in line:
-                dict_letters[letter] = dict_letters.get(letter, 0) + 1
-
+    fi = open(file_path, encoding=encoding, errors=errors)
+    for letter in fi.read():
+        dict_letters[letter] = dict_letters.get(letter, 0) + 1
+    fi.close()
     return sorted(dict_letters, key=lambda x: dict_letters[x])[0]
 
 
@@ -52,10 +51,11 @@ def count_punctuation_chars(
 ) -> int:
     """I count ascii characters with codes from 33 to 47"""
     counter = 0
-    text = open(file_path, encoding=encoding, errors=errors).read()
-    for letter in text:
+    fi = open(file_path, encoding=encoding, errors=errors)
+    for letter in fi.read():
         if 48 > ord(letter) > 32:
             counter += 1
+    fi.close()
     return counter
 
 
@@ -63,21 +63,21 @@ def count_non_ascii_chars(
     file_path: str, encoding="utf-8", errors="ignore"
 ) -> int:
     ans = 0
-    text = open(file_path, encoding=encoding, errors=errors).read()
-    for letter in text:
+    fi = open(file_path, encoding=encoding, errors=errors)
+    for letter in fi.read():
         if not letter.isascii():
             ans += 1
+    fi.close()
     return ans
 
 
 def get_most_common_non_ascii_char(
     file_path: str, encoding="utf-8", errors="ignore"
 ) -> str:
-    """If there are no non-ascii characters in the file, SystemExit"""
     dict_letters = {}
-    text = open(file_path, encoding=encoding, errors=errors).read()
-    for letter in text:
+    fi = open(file_path, encoding=encoding, errors=errors)
+    for letter in fi.read():
         if not letter.isascii():
             dict_letters[letter] = dict_letters.get(letter, 0) + 1
-
+    fi.close()
     return sorted(dict_letters, key=lambda x: dict_letters[x])[-1]
