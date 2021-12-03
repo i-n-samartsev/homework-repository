@@ -23,23 +23,23 @@ from typing import List
 
 
 def tic_tac_toe_checker(board: List[List]) -> str:
-    for i in range(3):
-        if board[i][0] == board[i][1] == board[i][2] == "x":
+    for i in range(len(board)):
+        if all([board[i][l] == "x" for l in range(len(board))]):
             return "x wins!"
-        if board[i][0] == board[i][1] == board[i][2] == "o":
+        if all([board[i][l] == "o" for l in range(len(board))]):
             return "o wins!"
-        if board[0][i] == board[1][i] == board[2][i] == "x":
+        if all([board[l][i] == "x" for l in range(len(board))]):
             return "x wins!"
-        if board[0][i] == board[1][i] == board[2][i] == "o":
+        if all([board[l][i] == "o" for l in range(len(board))]):
             return "o wins!"
 
-    if board[0][0] == board[1][1] == board[2][2] == "x":
+    if all([board[i][i] == "x" for i in range(len(board))]):
         return "x wins!"
-    if board[0][0] == board[1][1] == board[2][2] == "o":
+    if all([board[i][i] == "o" for i in range(len(board))]):
         return "o wins!"
-    if board[0][0] == board[1][1] == board[2][2] == "x":
+    if all([board[i][len(board) - i - 1] == "x" for i in range(len(board))]):
         return "x wins!"
-    if board[0][2] == board[1][1] == board[2][0] == "o":
+    if all([board[i][len(board) - i - 1] == "o" for i in range(len(board))]):
         return "o wins!"
 
     is_draw = True
