@@ -20,18 +20,13 @@ Examples:
 """
 
 
+def update_str(str_with_backspace: str) -> str:
+    string_without_backspace = ""
+    for num, letter in enumerate(str_with_backspace):
+        if str_with_backspace[num + 1: num + 2] != "#" and letter != "#":
+            string_without_backspace += letter
+    return string_without_backspace
+
+
 def backspace_compare(first: str, second: str):
-    first_change = []
-    second_change = []
-
-    for letter_f, letter_s in zip(first, second):
-        if letter_f == "#" and len(first_change) > 0:
-            first_change.pop()
-        else:
-            first_change.append(letter_f)
-        if letter_s == "#" and len(second_change) > 0:
-            second_change.pop()
-        else:
-            second_change.append(letter_s)
-
-    return first_change == second_change
+    return update_str(first) == update_str(second)
