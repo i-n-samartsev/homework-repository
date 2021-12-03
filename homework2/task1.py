@@ -47,7 +47,14 @@ def get_rarest_char(file_path: str, encoding="utf-8", errors="ignore") -> str:
                 else:
                     dict_letters[letter] += 1
 
-    return list({key : value for key, value in sorted(dict_letters, key=lambda key: dict_letters[key])})[0][0]
+    return list(
+        {
+            key: value
+            for key, value in sorted(
+                dict_letters, key=lambda key: dict_letters[key]
+            )
+        }
+    )[0][0]
 
 
 def count_punctuation_chars(
