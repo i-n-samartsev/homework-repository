@@ -32,9 +32,9 @@ def slow_calculate(value):
     return sum(struct.unpack("<" + "B" * len(data), data))
 
 
-def count_time(value):
+def count_time(value_for_check_fun):
     time_start = time.time()
     with Pool(60) as pool:
-        print(sum(pool.map(slow_calculate, value)))
+        print(sum(pool.map(slow_calculate, value_for_check_fun)))
     time_finish = time.time()
     return time_finish - time_start
