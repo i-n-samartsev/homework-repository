@@ -24,15 +24,14 @@ def backspace_compare(first: str, second: str):
     first_change = []
     second_change = []
 
-    for letter in first:
-        if letter == "#" and len(first_change) > 0:
+    for letter_f, letter_s in zip(first, second):
+        if letter_f == "#" and len(first_change) > 0:
             first_change.pop()
         else:
-            first_change += letter
-    for letter in second:
-        if letter == "#" and len(second_change) > 0:
+            first_change.append(letter_f)
+        if letter_s == "#" and len(second_change) > 0:
             second_change.pop()
         else:
-            second_change += letter
+            second_change.append(letter_s)
 
     return first_change == second_change
