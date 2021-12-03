@@ -55,11 +55,10 @@ def count_punctuation_chars(
 ) -> int:
     """I count ascii characters with codes from 33 to 47"""
     counter = 0
-    with open(file_path, encoding=encoding, errors=errors) as fi:
-        for line in fi:
-            for i in line:
-                if 48 > ord(i) > 32:
-                    counter += 1
+    text = open(file_path, encoding=encoding, errors=errors).read()
+    for letter in text:
+        if 48 > ord(letter) > 32:
+            counter += 1
     return counter
 
 
@@ -67,11 +66,10 @@ def count_non_ascii_chars(
     file_path: str, encoding="utf-8", errors="ignore"
 ) -> int:
     ans = 0
-    with open(file_path, encoding=encoding, errors=errors) as fi:
-        for line in fi:
-            for letter in line:
-                if not letter.isascii():
-                    ans += 1
+    text = open(file_path, encoding=encoding, errors=errors).read()
+    for letter in text:
+        if not letter.isascii():
+            ans += 1
     return ans
 
 
@@ -80,13 +78,15 @@ def get_most_common_non_ascii_char(
 ) -> str:
     """If there are no non-ascii characters in the file, SystemExit"""
     dict_letters = {}
-    with open(file_path, encoding=encoding, errors=errors) as fi:
-        for line in fi:
-            for letter in line:
-                if not letter.isascii():
-                    if dict_letters.get(letter, -1) == -1:
-                        dict_letters.update([(letter, 1)])
-                    else:
-                        dict_letters[letter] += 1
+    text = open(file_path, encoding=encoding, errors=errors).read()
+    for letter in text:
+        if not letter.isascii():
+            if dict_letters.get(letter, -1) == -1:
+                dict_letters.update([(letter, 1)])
+            else:
+                dict_letters[letter] += 1
 
     return sorted(dict_letters, key=lambda x: dict_letters[x])[-1]
+
+
+print(get_most_common_non_ascii_char("data.txt", "unicode-escape"))
