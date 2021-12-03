@@ -24,9 +24,9 @@ from typing import List
 
 def tic_tac_toe_checker(board: List[List]) -> str:
     for i in range(len(board)):
-        if all([elem == "x" for elem in board[i]]):
+        if board[i].count("x") == len(board[i]):
             return "x wins!"
-        if all([board[i][k] == "o" for k in range(len(board))]):
+        if all([elem == "o" for elem in board[i]]):
             return "o wins!"
         if all([board[k][i] == "x" for k in range(len(board))]):
             return "x wins!"
