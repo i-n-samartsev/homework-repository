@@ -17,7 +17,7 @@ jobs:
         run: |
           pip install flake8 isort black pytest
           ls -la
-          flake8 .
+          flake8 --ignore E203 /__w/homework-repository/homework-repository/homework7/task2.py
           isort --check .
           black  --line-length 80 --check .
           py.test tests
