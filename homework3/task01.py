@@ -1,8 +1,8 @@
 # In previous homework task 4, you wrote a cache function that remembers other
 # function output value. Modify it to be a parametrized decorator.
 
-from typing import Any, Callable
 from dataclasses import dataclass
+from typing import Any, Callable
 
 
 @dataclass
