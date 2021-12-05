@@ -21,21 +21,36 @@ You will learn:
  - do a simple network requests
 
 
->>> count_dots_on_i("https://example.com/")
-59
+# >>> count_dots_on_i("https://example.com/")
+# 59
 
 * https://docs.python.org/3/library/urllib.request.html#urllib.request.urlopen
 """
+from urllib.error import HTTPError, URLError
 from urllib.request import urlopen
 
 
-def get_html_from_url(url: str) -> str:
-    return str(urlopen(url).read())
+class NetworkClient:
+    """
+        Small service class for simple network requests
+    """
+    def __init__(self, url):
+        self.url = url
+
+    @property
+    def html(self) -> str:
+        bytes_html = urlopen(self.url).read()
+        html = bytes_html.decode('utf-8')
+        return html
+
+
+class DotsOnIError(ValueError):
+    """Base exception class for dots on i function"""
 
 
 def count_dots_on_i(url: str) -> int:
+    client = NetworkClient(url)
     try:
-        html = get_html_from_url(url)
-        return html.count('i')
-    except Exception:
-        raise ValueError(f'Unreachable {url}')
+        return client.html.count('i')
+    except (URLError, HTTPError) as err:
+        raise DotsOnIError(f'Unreachable {url}') from err

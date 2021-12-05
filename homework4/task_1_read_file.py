@@ -29,18 +29,43 @@ You will learn:
 *** https://docs.python.org/3/tutorial/errors.html#handling-exceptions
 **** https://docs.python.org/3/tutorial/errors.html#raising-exceptions
 """
-from os.path import exists
+
+
+class MagicNumberError(ValueError):
+    """Base exception class for magic number reader"""
+    def __init__(self, message='An error occurred while reading magic number'):
+        self.message = message
+
+    def __str__(self):
+        return f'{self.message}'
+
+
+class FileIsEmpty(MagicNumberError):
+    """Means that file is empty"""
+    def __init__(self, message='File is empty'):
+        self.message = message
+
+
+class FileDoesNotExist(MagicNumberError):
+    """Means that file does not exist"""
+
+    def __init__(self, message='File does not exist'):
+        self.message = message
 
 
 def read_magic_number(path: str) -> bool:
-
-    if not exists(path=path):
-        raise ValueError('Invalid path passed')
-
+    """
+        If first line is a number return true if number in an interval[1, 3)
+        and false otherwise.
+    """
     try:
-        with open(file=path, mode='r', encoding='utf8') as file:
-            first_line = float(file.readline())
-    except Exception as exp:
-        raise ValueError(exp.args)
-
-    return True if 1 <= first_line < 3 else False
+        with open(path) as file:
+            for line in file:
+                return 1 <= float(line) < 3
+            raise FileIsEmpty
+    except FileNotFoundError as err:
+        raise FileDoesNotExist from err
+    except MagicNumberError:
+        raise
+    except Exception as err:
+        raise MagicNumberError(f'error occurred - {err}') from err
