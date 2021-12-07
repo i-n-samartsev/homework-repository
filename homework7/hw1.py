@@ -29,7 +29,29 @@ example_tree = {
 
 
 def find_occurrences(tree: dict, element: Any) -> int:
-    ...
+    """
+        Takes an element and finds the number of occurrences of this
+        element in the tree.
+
+        Tree can only contains basic structures like:
+        str, list, tuple, dict, set, int, bool
+    """
+    occurrences = 0
+
+    def get_all_children(root):
+        nonlocal occurrences
+        if isinstance(root, dict):
+            for key, value in root.items():
+                occurrences += key == element
+                get_all_children(root=value)
+        elif isinstance(root, (list, tuple, set)):
+            for item in root:
+                get_all_children(root=item)
+        else:
+            occurrences += root == element
+
+    get_all_children(tree)
+    return occurrences
 
 
 if __name__ == '__main__':

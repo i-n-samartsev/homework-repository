@@ -20,5 +20,8 @@ Examples:
 """
 
 
-def backspace_compare(first: str, second: str):
-    ...
+def backspace_compare(first: str, second: str) -> bool:
+    """
+        Takes two strings. Return if they are equal when both are typed into
+        empty text editors. # means a backspace character.
+    """
