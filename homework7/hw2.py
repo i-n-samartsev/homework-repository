@@ -20,8 +20,22 @@ Examples:
 """
 
 
+def convert_word(word: str) -> str:
+    """
+        Converts a string, considering that # is a backspace character.
+    """
+    transformed_word = ''
+    for char in word:
+        if char == '#':
+            transformed_word = transformed_word[:-1]
+        else:
+            transformed_word += char
+    return transformed_word
+
+
 def backspace_compare(first: str, second: str) -> bool:
     """
         Takes two strings. Return if they are equal when both are typed into
         empty text editors. # means a backspace character.
     """
+    return convert_word(first) == convert_word(second)

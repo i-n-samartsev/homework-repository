@@ -19,8 +19,99 @@ Example:
      Return value should be "x wins!"
 
 """
+from collections import Counter
 from typing import List
 
 
-def tic_tac_toe_checker(board: List[List]) -> str:
-    ...
+class TicTacToeBoardError(ValueError):
+    """Base exception for tic tac toe"""
+    def __init__(self, message='Incorrect tic tac toe board'):
+        self.message = message
+
+    def __str__(self):
+        return f'{self.message}'
+
+
+class BothVictoryError(TicTacToeBoardError):
+    def __init__(self, message='Both players have winning line'):
+        self.message = message
+
+
+class IncorrectSymbolsError(TicTacToeBoardError):
+    def __init__(self, message="Only 'x', 'o', '-' should be on board"):
+        self.message = message
+
+
+class TicTacToeBoard:
+    def __init__(self, lines: List[List[str]]):
+        self.lines = lines
+        self.__check_symbols_on_board()
+
+    def check_winner(self) -> str:
+        board_result = 'draw'
+
+        for line in self.__get_all_possible_lines():
+            line_result = self.check_line(line)
+
+            if board_result == line_result:
+                continue
+
+            if line_result == 'x wins':
+                if board_result == 'o wins':
+                    raise BothVictoryError
+                board_result = 'x wins'
+
+            elif line_result == 'o wins':
+                if board_result == 'x wins':
+                    raise BothVictoryError
+                board_result = 'o wins'
+
+            elif line_result == 'unfinished':
+                if board_result == 'draw':
+                    board_result = 'unfinished'
+
+        return board_result
+
+    @staticmethod
+    def check_line(line: List[str]) -> str:
+        stat = Counter(line)
+        if stat['-'] > 0:
+            return 'unfinished'
+        if stat['x'] == 3:
+            return 'x wins'
+        if stat['o'] == 3:
+            return 'o wins'
+        return 'draw'
+
+    def get_horizontal_line(self, number) -> List[str]:
+        return self.lines[number]
+
+    def get_vertical_line(self, number) -> List[str]:
+        return [line[number] for line in self.lines]
+
+    def get_main_diagonal(self) -> List[str]:
+        return [self.lines[i][i] for i in range(3)]
+
+    def get_side_diagonal(self) -> List[str]:
+        return [self.lines[i][2 - i] for i in range(3)]
+
+    def __get_all_possible_lines(self):
+        for i in range(3):
+            yield self.get_horizontal_line(i)
+            yield self.get_vertical_line(i)
+        yield self.get_main_diagonal()
+        yield self.get_side_diagonal()
+
+    def __check_symbols_on_board(self):
+        for line in self.lines:
+            for symbol in line:
+                if symbol not in ('x', 'o', '-'):
+                    raise IncorrectSymbolsError
+
+    def __str__(self):
+        return '\n'.join(map(str, self.lines))
+
+
+def tic_tac_toe_checker(board: TicTacToeBoard) -> str:
+    """Checks if there are some winners on tic tak toe board"""
+    return board.check_winner()

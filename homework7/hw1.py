@@ -8,7 +8,6 @@ Tree can only contains basic structures like:
 """
 from typing import Any
 
-
 # Example tree:
 example_tree = {
     "first": ["RED", "BLUE"],
@@ -38,19 +37,15 @@ def find_occurrences(tree: dict, element: Any) -> int:
     """
     occurrences = 0
 
-    def get_all_children(root):
-        nonlocal occurrences
-        if isinstance(root, dict):
-            for key, value in root.items():
-                occurrences += key == element
-                get_all_children(root=value)
-        elif isinstance(root, (list, tuple, set)):
-            for item in root:
-                get_all_children(root=item)
-        else:
-            occurrences += root == element
-
-    get_all_children(tree)
+    if isinstance(tree, dict):
+        for key, value in tree.items():
+            occurrences += find_occurrences(tree=key, element=element)
+            occurrences += find_occurrences(tree=value, element=element)
+    elif isinstance(tree, (list, tuple, set)):
+        for item in tree:
+            occurrences += find_occurrences(tree=item, element=element)
+    else:
+        occurrences += tree == element
     return occurrences
 
 
