@@ -25,6 +25,7 @@ from typing import List
 
 class TicTacToeBoardError(ValueError):
     """Base exception for tic tac toe"""
+
     def __init__(self, message='Incorrect tic tac toe board'):
         self.message = message
 
@@ -56,19 +57,18 @@ class TicTacToeBoard:
             if board_result == line_result:
                 continue
 
-            if line_result == 'x wins':
-                if board_result == 'o wins':
+            if 'x' in line_result:
+                if 'o' in board_result:
                     raise BothVictoryError
                 board_result = 'x wins'
 
-            elif line_result == 'o wins':
-                if board_result == 'x wins':
+            elif 'o' in line_result:
+                if 'x' in board_result:
                     raise BothVictoryError
                 board_result = 'o wins'
 
-            elif line_result == 'unfinished':
-                if board_result == 'draw':
-                    board_result = 'unfinished'
+            elif 'unfin' in line_result and board_result == 'draw':
+                board_result = 'unfinished'
 
         return board_result
 
@@ -102,11 +102,15 @@ class TicTacToeBoard:
         yield self.get_main_diagonal()
         yield self.get_side_diagonal()
 
-    def __check_symbols_on_board(self):
+    def __get_every_element(self):
         for line in self.lines:
             for symbol in line:
-                if symbol not in ('x', 'o', '-'):
-                    raise IncorrectSymbolsError
+                yield symbol
+
+    def __check_symbols_on_board(self):
+        for symbol in self.__get_every_element():
+            if symbol not in ('x', 'o', '-'):
+                raise IncorrectSymbolsError
 
     def __str__(self):
         return '\n'.join(map(str, self.lines))
