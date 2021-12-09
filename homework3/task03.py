@@ -6,7 +6,7 @@ class Filter:
         Helper filter class. Accepts a list of single-argument
         functions that return True if object in list conforms to some criteria
     """
-    def __init__(self, functions):
+    def __init__(self, *functions):
         self.functions = functions
 
     def apply(self, data):
@@ -18,9 +18,9 @@ class Filter:
 # example of usage:
 
 
-# positive_even = Filter([lambda a: a % 2 == 0,
-#                         lambda a: a > 0,
-#                         lambda a: isinstance(int, a)])
+# positive_even = Filter(lambda a: a % 2 == 0,
+#                        lambda a: a > 0,
+#                        lambda a: isinstance(a, int))
 # positive_even.apply(range(100))  # should return only even numbers from 0to99
 
 
@@ -38,7 +38,7 @@ def make_filter(**keywords) -> Filter:
 
         filter_funcs.append(keyword_filter_func)
 
-    return Filter(filter_funcs)
+    return Filter(*filter_funcs)
 
 
 sample_data = [
