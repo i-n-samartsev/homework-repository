@@ -113,7 +113,7 @@ class TicTacToeBoard:
                 raise IncorrectSymbolsError
 
     def __str__(self):
-        return '\n'.join(map(str, self.lines))
+        return '\n'.join(map(' '.join, self.lines))
 
 
 def tic_tac_toe_checker(board: TicTacToeBoard) -> str:
