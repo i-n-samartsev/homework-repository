@@ -19,7 +19,6 @@ Example:
      Return value should be "x wins!"
 
 """
-from collections import Counter
 from typing import List
 
 
@@ -38,6 +37,11 @@ class BothVictoryError(TicTacToeBoardError):
         self.message = message
 
 
+class IncorrectBoardSizeError(TicTacToeBoardError):
+    def __init__(self, message='Board is not a square'):
+        self.message = message
+
+
 class IncorrectSymbolsError(TicTacToeBoardError):
     def __init__(self, message="Only 'x', 'o', '-' should be on board"):
         self.message = message
@@ -46,6 +50,7 @@ class IncorrectSymbolsError(TicTacToeBoardError):
 class TicTacToeBoard:
     def __init__(self, lines: List[List[str]]):
         self.lines = lines
+        self.n = len(lines)
         self.__check_symbols_on_board()
 
     def check_winner(self) -> str:
@@ -74,29 +79,27 @@ class TicTacToeBoard:
 
     @staticmethod
     def check_line(line: List[str]) -> str:
-        stat = Counter(line)
-        if stat['-'] > 0:
+        stat = set(line)
+        if '-' in stat:
             return 'unfinished'
-        if stat['x'] == 3:
-            return 'x wins'
-        if stat['o'] == 3:
-            return 'o wins'
+        if len(stat) == 1:
+            return f'{stat.pop()} wins'
         return 'draw'
 
     def get_horizontal_line(self, number) -> List[str]:
-        return self.lines[number]
+        return self.lines[number - 1]
 
     def get_vertical_line(self, number) -> List[str]:
-        return [line[number] for line in self.lines]
+        return [line[number - 1] for line in self.lines]
 
     def get_main_diagonal(self) -> List[str]:
-        return [self.lines[i][i] for i in range(3)]
+        return [self.lines[i][i] for i in range(self.n)]
 
     def get_side_diagonal(self) -> List[str]:
-        return [self.lines[i][2 - i] for i in range(3)]
+        return [self.lines[i][self.n - 1 - i] for i in range(self.n)]
 
     def __get_all_possible_lines(self):
-        for i in range(3):
+        for i in range(1, self.n + 1):
             yield self.get_horizontal_line(i)
             yield self.get_vertical_line(i)
         yield self.get_main_diagonal()
@@ -111,6 +114,10 @@ class TicTacToeBoard:
         for symbol in self.__get_every_element():
             if symbol not in ('x', 'o', '-'):
                 raise IncorrectSymbolsError
+
+        for line in self.lines:
+            if len(line) != self.n:
+                raise IncorrectBoardSizeError
 
     def __str__(self):
         return '\n'.join(map(' '.join, self.lines))
