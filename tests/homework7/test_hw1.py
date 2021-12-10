@@ -2,7 +2,7 @@ from homework7.hw1 import find_occurrences
 
 
 def test_find_occurrences_with_all_basic_structures():
-    example_tree = {
+    tree = {
         'first': ['RED', 100],
         True: {'simple_key': ['list', 'RED']},
         False: {'abc': 'cde',
@@ -14,9 +14,9 @@ def test_find_occurrences_with_all_basic_structures():
                 },
         ('tuple', 'key', 'RED'): 'RED',
     }
-    assert find_occurrences(example_tree, 'RED') == 7
+    assert find_occurrences(tree, 'RED') == 7
 
 
 def test_find_occurrences_with_empty_tree():
-    example_tree = {}
-    assert find_occurrences(example_tree, 'RED') == 0
+    empty_tree = {}
+    assert find_occurrences(empty_tree, 'RED') == 0

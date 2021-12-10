@@ -6,6 +6,7 @@ of this element in the tree.
 Tree can only contains basic structures like:
     str, list, tuple, dict, set, int, bool
 """
+from collections.abc import Iterable, Mapping
 from typing import Any
 
 # Example tree:
@@ -27,7 +28,7 @@ example_tree = {
 }
 
 
-def find_occurrences(tree: dict, element: Any) -> int:
+def find_occurrences(obj: Any, element: Any) -> int:
     """
         Takes an element and finds the number of occurrences of this
         element in the tree.
@@ -37,15 +38,15 @@ def find_occurrences(tree: dict, element: Any) -> int:
     """
     occurrences = 0
 
-    if isinstance(tree, dict):
-        for key, value in tree.items():
-            occurrences += find_occurrences(tree=key, element=element)
-            occurrences += find_occurrences(tree=value, element=element)
-    elif isinstance(tree, (list, tuple, set)):
-        for item in tree:
-            occurrences += find_occurrences(tree=item, element=element)
+    if isinstance(obj, Mapping):
+        for key, value in obj.items():
+            occurrences += find_occurrences(obj=key, element=element)
+            occurrences += find_occurrences(obj=value, element=element)
+    elif isinstance(obj, Iterable) and not isinstance(obj, str):
+        for item in obj:
+            occurrences += find_occurrences(obj=item, element=element)
     else:
-        occurrences += tree == element
+        occurrences += obj == element
     return occurrences
 
 
