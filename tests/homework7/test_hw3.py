@@ -1,7 +1,7 @@
 import pytest
 
-from homework7.hw3 import (BothVictoryError, IncorrectSymbolsError,
-                           TicTacToeBoard, IncorrectBoardSizeError)
+from homework7.hw3 import (BothVictoryError, IncorrectBoardSizeError,
+                           IncorrectSymbolsError, TicTacToeBoard)
 
 
 @pytest.fixture(scope='function')
