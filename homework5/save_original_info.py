@@ -22,31 +22,30 @@ import functools
 from typing import Callable
 
 
-class CustomWraps:
+def custom_wraps(func: Callable):
     """
-    Decorator that is applied to the wrapper function of a decorator.
-    It updates the wrapper function to look like wrapped function by copying
-    attributes __name__, __doc__ and wrapped function itself.
+        Decorator factory.
+        Returns decorator, that saves information from original
+        function (__name__ and __doc__) and original function itself
+        in __original_func
     """
-
-    def __init__(self, function: Callable, wrapper: Callable):
-        self._original_func = function
-        self.__doc__ = function.__doc__
-        self.__name__ = function.__name__
-        self.wrapper = wrapper
-
-    def __call__(self, *args, **kwargs):
-        return self.wrapper(*args, **kwargs)
+    def decorator(wrapper: Callable):
+        def inner(*args, **kwargs):
+            inner.__doc__ = func.__doc__
+            inner.__name__ = func.__name__
+            inner.__original_func = func
+            return wrapper(*args, **kwargs)
+        return inner
+    return decorator
 
 
 def print_result(func):
-    #
+    @custom_wraps(func)
     def wrapper(*args, **kwargs):
         """Function-wrapper which print result of an original function"""
         result = func(*args, **kwargs)
         print(result)
         return result
-    wrapper = CustomWraps(func, wrapper)
     return wrapper
 
 
@@ -62,8 +61,8 @@ if __name__ == "__main__":
     print(custom_sum.__doc__)  # 'This function can sum any objects which
     # have __add__'
     print(custom_sum.__name__)  # 'custom_sum'
-    print(custom_sum._original_func)  # <function custom_sum at <some_id>>
+    print(custom_sum.__original_func)  # <function custom_sum at <some_id>>
 
-    without_print = custom_sum._original_func
+    without_print = custom_sum.__original_func
     # the result returns without printing
     without_print(1, 2, 3, 4)

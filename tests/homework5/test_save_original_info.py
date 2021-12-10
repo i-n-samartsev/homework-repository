@@ -15,7 +15,7 @@ def test_custom_wraps_saving_attributes():
 
 
 def test_custom_wraps_without_printing(capsys):
-    without_print = custom_sum._original_func
+    without_print = custom_sum.__original_func
     without_print(1, 2, 3, 4)
     captured = capsys.readouterr()
     assert captured.out == ''
