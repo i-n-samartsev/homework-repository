@@ -13,5 +13,9 @@ def test_backspace_compare_strings_with_single_backspace_are_not_equal():
     assert backspace_compare('a#c', 'b') is False
 
 
+def test_backspace_compare_different_length_strings_are_not_equal():
+    assert backspace_compare('abc', 'bc') is False
+
+
 def test_backspace_compare_empty_strings_are_equal():
     assert backspace_compare('###', '') is True

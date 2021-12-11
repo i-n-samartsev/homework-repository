@@ -18,6 +18,7 @@ Examples:
     Explanation: s becomes "c" while t becomes "b".
 
 """
+from itertools import zip_longest
 from typing import Generator
 
 
@@ -43,5 +44,5 @@ def backspace_compare(first: str, second: str) -> bool:
         Takes two strings. Return if they are equal when both are typed into
         empty text editors. # means a backspace character.
     """
-    first, second = map(convert_word, (first, second))
-    return ''.join(first) == ''.join(second)
+    first_word, second_word = map(convert_word, (first, second))
+    return all(i == j for i, j in zip_longest(first_word, second_word))
