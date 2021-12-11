@@ -56,24 +56,10 @@ class TicTacToeBoard:
     def check_winner(self) -> str:
         board_result = 'draw'
 
-        for line in self.__get_all_possible_lines():
+        for line in self.__get_all_lines():
             line_result = self.check_line(line)
-
-            if board_result == line_result:
-                continue
-
-            if 'x' in line_result:
-                if 'o' in board_result:
-                    raise BothVictoryError
-                board_result = 'x wins'
-
-            elif 'o' in line_result:
-                if 'x' in board_result:
-                    raise BothVictoryError
-                board_result = 'o wins'
-
-            elif 'unfin' in line_result and board_result == 'draw':
-                board_result = 'unfinished'
+            board_result = self.__compare_line_and_board_results(line_result,
+                                                                 board_result)
 
         return board_result
 
@@ -98,7 +84,7 @@ class TicTacToeBoard:
     def get_side_diagonal(self) -> List[str]:
         return [self.lines[i][self.n - 1 - i] for i in range(self.n)]
 
-    def __get_all_possible_lines(self):
+    def __get_all_lines(self):
         for i in range(1, self.n + 1):
             yield self.get_horizontal_line(i)
             yield self.get_vertical_line(i)
@@ -118,6 +104,19 @@ class TicTacToeBoard:
         for line in self.lines:
             if len(line) != self.n:
                 raise IncorrectBoardSizeError
+
+    @staticmethod
+    def __compare_line_and_board_results(line_result, board_result):
+        if line_result in ('draw', board_result):
+            return board_result
+        if 'x' in line_result and 'o' in board_result:
+            raise BothVictoryError
+        if 'o' in line_result and 'x' in board_result:
+            raise BothVictoryError
+        if 'unfin' in line_result and board_result == 'draw':
+            return 'unfinished'
+        else:
+            return line_result
 
     def __str__(self):
         return '\n'.join(map(' '.join, self.lines))
