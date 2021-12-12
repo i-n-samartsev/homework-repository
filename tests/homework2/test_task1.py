@@ -7,16 +7,15 @@ def test_get_longest_diverse_words():
     assert homework2.task1.get_longest_diverse_words(
         os.getcwd() + "/homework2/" + "test_task1_data.txt", "unicode-escape"
     ) == [
-        "unmißverständliche",
-        "Kollektivschuldiger,",
-        "résistance-Bewegungen,",
-        "Schicksalsfiguren;",
-        "Machtbewußtsein,",
+        "Schicksalsfiguren",
         "politisch-strategischen",
-        "Bevölkerungsabschub,",
         "Zwingherrschaft.",
-        "Gewissenserforschung,",
         "Selbstverständlich",
+        "résistance-Bewegungen",
+        "Entscheidungsschlacht.",
+        "Schöpfungsmacht.",
+        "unmißverständliche",
+        "Bevölkerungsabschub",
     ]
 
 

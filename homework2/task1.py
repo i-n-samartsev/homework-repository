@@ -17,24 +17,21 @@ Example 2:
 Input: [2,2,1,1,1,2,2]
 Output: 2, 1
 """
+import re
 from typing import List
 
 
 def get_longest_diverse_words(
     file_path: str, encoding="utf-8", errors="ignore"
 ) -> List[str]:
-    ans_words = ["" for i in range(10)]
-    len_words = [0 for i in range(10)]
+    dict_words = {}
     with open(file_path, encoding=encoding, errors=errors) as fi:
         for line in fi:
-            words = line.split()
+            words = re.split(",|;|\n| ", line)
             for word in words:
-                set_letters = set(word)
-                i_min_len = len_words.index(min(len_words))
-                if len(set_letters) > len_words[i_min_len]:
-                    ans_words[i_min_len] = word
-                    len_words[i_min_len] = len(set_letters)
-    return ans_words
+                if word not in dict_words:
+                    dict_words[word] = len(set(word))
+    return sorted(dict_words, key=lambda x: dict_words[x])[-10:-1]
 
 
 def get_rarest_char(file_path: str, encoding="utf-8", errors="ignore") -> str:
