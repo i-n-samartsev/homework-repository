@@ -20,21 +20,11 @@ Output: 2, 1
 from typing import List, Tuple
 
 
-def sort_dict(dictionary):
-    sorted_dict = {}
-    sorted_keys = sorted(dictionary, key=dictionary.get)
-    for key in sorted_keys:
-        sorted_dict[key] = dictionary[key]
-    return sorted_dict
-
-
 def major_and_minor_elem(inp: List) -> Tuple[int, int]:
     dict_elems = {}
     for elem in inp:
-        if dict_elems.get(elem, -1) == -1:
-            dict_elems.update([(elem, 1)])
-        else:
-            dict_elems[elem] += 1
-
-    sort_dict_elem = sort_dict(dict_elems)
-    return list(sort_dict_elem.keys())[-1], list(sort_dict_elem.keys())[0]
+        dict_elems[elem] = dict_elems.get(elem, 0) + 1
+    return (
+        sorted(dict_elems, key=lambda x: dict_elems[x])[-1],
+        sorted(dict_elems, key=lambda x: dict_elems[x])[0],
+    )
