@@ -24,7 +24,5 @@ def major_and_minor_elem(inp: List) -> Tuple[int, int]:
     dict_elems = {}
     for elem in inp:
         dict_elems[elem] = dict_elems.get(elem, 0) + 1
-    return (
-        sorted(dict_elems, key=lambda x: dict_elems[x])[-1],
-        sorted(dict_elems, key=lambda x: dict_elems[x])[0],
-    )
+    ans_list = sorted(dict_elems, key=lambda x: dict_elems[x])
+    return ans_list[-1], ans_list[0]
