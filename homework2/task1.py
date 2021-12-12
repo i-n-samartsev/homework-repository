@@ -31,7 +31,7 @@ def get_longest_diverse_words(
             for word in words:
                 if word not in dict_words:
                     dict_words[word] = len(set(word))
-    return sorted(dict_words, key=lambda x: dict_words[x])[-10:-1]
+    return sorted(dict_words, key=lambda x: (dict_words[x], len(x)))[-1:-10:-1]
 
 
 def get_rarest_char(file_path: str, encoding="utf-8", errors="ignore") -> str:
