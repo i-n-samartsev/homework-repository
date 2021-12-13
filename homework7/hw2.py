@@ -28,8 +28,7 @@ def convert_word(word: str) -> Generator:
         Returns reversed resulting string.
     """
     backspaces = 0
-    word = iter(reversed(word))
-    for char in word:
+    for char in reversed(word):
         if char == '#':
             backspaces += 1
         else:

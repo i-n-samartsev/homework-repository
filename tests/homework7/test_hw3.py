@@ -6,28 +6,28 @@ from homework7.hw3 import (BothVictoryError, IncorrectBoardSizeError,
 
 @pytest.fixture(scope='function')
 def x_victory_board():
-    yield TicTacToeBoard([['x', '-', 'x'],
+    return TicTacToeBoard([['x', '-', 'x'],
                           ['-', 'x', 'o'],
                           ['x', 'o', 'o']])
 
 
 @pytest.fixture(scope='function')
 def o_victory_board():
-    yield TicTacToeBoard([['o', '-', 'o'],
+    return TicTacToeBoard([['o', '-', 'o'],
                           ['-', 'o', 'x'],
                           ['x', 'x', 'o']])
 
 
 @pytest.fixture(scope='function')
 def unfinished_board():
-    yield TicTacToeBoard([['-', 'o', '-'],
+    return TicTacToeBoard([['-', 'o', '-'],
                           ['x', 'x', 'o'],
                           ['-', 'o', '-']])
 
 
 @pytest.fixture(scope='function')
 def draw_board():
-    yield TicTacToeBoard([['o', 'o', 'x', 'x'],
+    return TicTacToeBoard([['o', 'o', 'x', 'x'],
                           ['o', 'x', 'o', 'x'],
                           ['x', 'o', 'x', 'o'],
                           ['x', 'x', 'o', 'o']])
@@ -35,7 +35,7 @@ def draw_board():
 
 @pytest.fixture(scope='function')
 def both_victory_board():
-    yield TicTacToeBoard([['x', 'x', 'x'],
+    return TicTacToeBoard([['x', 'x', 'x'],
                           ['o', 'o', 'o'],
                           ['x', 'o', 'o']])
 
