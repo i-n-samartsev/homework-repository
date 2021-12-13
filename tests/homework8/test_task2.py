@@ -27,6 +27,7 @@ def new_president():
         yield
     finally:
         cursor.execute("DELETE FROM presidents WHERE name=='Lincoln'")
+        con.commit()
         cursor.close()
         con.close()
 
