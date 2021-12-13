@@ -67,3 +67,72 @@ reading the first record, then go to the next one, until records are exhausted.
 When writing tests, it's not always necessary to mock database calls
 completely. Use supplied example.sqlite file as database fixture file.
 """
+
+import sqlite3
+
+
+class TableData:
+
+    def __init__(self, database_name, table_name):
+        self.database = database_name
+        self.table = table_name
+        self.con = sqlite3.connect(self.database)
+        self.cursor = self.con.cursor()
+
+    def bd_connect(self):
+        self.con = sqlite3.connect(self.database)
+        self.cursor = self.con.cursor()
+
+    def close_con_to_bd(self):
+        self.cursor.close()
+        self.con.close()
+
+    def __len__(self):
+        self.cursor.execute(f'SELECT count(*) FROM {self.table}')
+        return self.cursor.fetchone()[0]
+
+    def __contains__(self, item):
+        self.cursor.execute(f'SELECT * FROM {self.table} WHERE name=:name',
+                            {'name': item})
+        return bool(self.cursor.fetchone())
+
+    def __iter__(self):
+        self.cursor.execute(f'SELECT * FROM {self.table}')
+        return self
+
+    def __next__(self):
+        titles = (item[0] for item in self.cursor.description)
+        if row := self.cursor.fetchone():
+            return dict(zip(titles, row))
+        raise StopIteration
+
+    def __getitem__(self, item):
+        self.cursor.execute(f'SELECT * FROM {self.table} WHERE name=:name',
+                            {'name': item})
+        if row := self.cursor.fetchone():
+            return row
+        raise KeyError(item)
+
+
+if __name__ == '__main__':
+    presidents = TableData(database_name='example.sqlite',
+                           table_name='presidents')
+
+    print(len(presidents))  # will give current amount of rows in presidents
+    # table in database
+
+    print(presidents['Trump'])  # should return single data row for president
+    try:
+        presidents['Putin']
+    except KeyError as exp:
+        print(f'{exp.args[0]} нет')
+
+    print('Yeltsin' in presidents)  # should return if president with same
+    print('Putin' in presidents)  # name exists in table
+
+    # object implements iteration protocol. i.e. you could use it in for loops:
+
+    for president in presidents:
+        print(president['name'])
+
+    presidents.close_con_to_bd()
