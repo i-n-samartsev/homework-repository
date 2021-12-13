@@ -1,4 +1,5 @@
 import os
+import sqlite3
 
 from pytest import fixture, raises
 
@@ -14,6 +15,20 @@ def presidents():
         yield presidents
     finally:
         presidents.close_con_to_bd()
+
+
+@fixture
+def new_president():
+    con = sqlite3.connect(DATABASE)
+    cursor = con.cursor()
+    try:
+        cursor.execute("INSERT INTO presidents VALUES ('Lincoln', 52, 'USA')")
+        con.commit()
+        yield
+    finally:
+        cursor.execute("DELETE FROM presidents WHERE name=='Lincoln'")
+        cursor.close()
+        con.close()
 
 
 def test_table_data_length(presidents):
@@ -43,3 +58,7 @@ def test_table_data_iteration(presidents):
         ages.append(president['age'])
 
     assert ages == [999, 1337, 101]
+
+
+def test_table_data_reflect_most_recent_data(presidents, new_president):
+    assert presidents['Lincoln'] == ('Lincoln', 52, 'USA')
