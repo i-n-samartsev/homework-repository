@@ -21,12 +21,12 @@ def instances_counter(cls):
 
     cls.__init__ = new_init
 
-    def get_created_instances():
+    def get_created_instances(*kwargs):
         return cls.counter_class_instance
 
     cls.get_created_instances = get_created_instances
 
-    def reset_instances_counter():
+    def reset_instances_counter(*kwargs):
         num_of_class_instance = cls.counter_class_instance
         cls.counter_class_instance = 0
         return num_of_class_instance

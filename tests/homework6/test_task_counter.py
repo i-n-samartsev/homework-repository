@@ -7,9 +7,10 @@ class User:
 
 
 def test_instances_counter():
-    _, _, _ = User(), User(), User()
+    user, _, _ = User(), User(), User()
     assert (
         User.get_created_instances() == 3
+        and user.get_created_instances() == 3
         and User.reset_instances_counter() == 3
         and User.get_created_instances() == 0
     )
