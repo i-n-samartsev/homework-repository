@@ -1,4 +1,4 @@
-from homework3.task02 import time_work_fun_value, slow_calculate
+from homework3.task02 import slow_calculate, time_work_fun_value
 
 
 def test_timework_slow_calculate():
