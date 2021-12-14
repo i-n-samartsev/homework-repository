@@ -24,7 +24,7 @@ def new_president():
     try:
         cursor.execute("INSERT INTO presidents VALUES ('Lincoln', 52, 'USA')")
         con.commit()
-        yield
+        yield 'Lincoln', 52, 'USA'
     finally:
         cursor.execute("DELETE FROM presidents WHERE name=='Lincoln'")
         con.commit()
@@ -61,5 +61,5 @@ def test_table_data_iteration(presidents):
     assert ages == [999, 1337, 101]
 
 
-def test_table_data_reflect_most_recent_data(presidents, new_president):
-    assert presidents['Lincoln'] == ('Lincoln', 52, 'USA')
+def test_table_data_reflect_most_recent_data(new_president, presidents):
+    assert presidents['Lincoln'] == new_president

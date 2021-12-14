@@ -78,6 +78,11 @@ class TableData:
         self.table = table_name
         self.con = sqlite3.connect(self.database)
         self.cursor = self.con.cursor()
+        self.header = self.__get_header()
+
+    def __get_header(self):
+        self.cursor.execute(f'SELECT * FROM {self.table}')
+        return [item[0] for item in self.cursor.description]
 
     def bd_connect(self):
         self.con = sqlite3.connect(self.database)
@@ -100,10 +105,12 @@ class TableData:
         self.cursor.execute(f'SELECT * FROM {self.table}')
         return self
 
+    class __Row(dict):
+        """Dataclass that is returned while iterating over the database"""
+
     def __next__(self):
-        titles = (item[0] for item in self.cursor.description)
         if row := self.cursor.fetchone():
-            return dict(zip(titles, row))
+            return self.__Row(zip(self.header, row))
         raise StopIteration
 
     def __getitem__(self, item):
@@ -133,6 +140,9 @@ if __name__ == '__main__':
     # object implements iteration protocol. i.e. you could use it in for loops:
 
     for president in presidents:
+        print()
+        print(president)
+        print(type(president))
         print(president['name'])
 
     presidents.close_con_to_bd()
