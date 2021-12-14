@@ -23,23 +23,24 @@ from typing import List
 
 
 def tic_tac_toe_checker(board: List[List]) -> str:
-    for i in range(len(board)):
+    len_board = len(board)
+    for i in range(len_board):
         if board[i].count("x") == len(board[i]):
             return "x wins!"
         if board[i].count("o") == len(board[i]):
             return "o wins!"
-        if all([board[k][i] == "x" for k in range(len(board))]):
+        if all([board[k][i] == "x" for k in range(len_board)]):
             return "x wins!"
-        if all([board[k][i] == "o" for k in range(len(board))]):
+        if all([board[k][i] == "o" for k in range(len_board)]):
             return "o wins!"
 
-    if all([board[i][i] == "x" for i in range(len(board))]):
+    if all([board[i][i] == "x" for i in range(len_board)]):
         return "x wins!"
-    if all([board[i][i] == "o" for i in range(len(board))]):
+    if all([board[i][i] == "o" for i in range(len_board)]):
         return "o wins!"
-    if all([board[i][len(board) - i - 1] == "x" for i in range(len(board))]):
+    if all([board[i][len_board - i - 1] == "x" for i in range(len_board)]):
         return "x wins!"
-    if all([board[i][len(board) - i - 1] == "o" for i in range(len(board))]):
+    if all([board[i][len_board - i - 1] == "o" for i in range(len_board)]):
         return "o wins!"
 
     for line in board:
