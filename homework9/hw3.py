@@ -4,9 +4,9 @@ tokenizer. It will count lines in all files with that extension if there are
 no tokenizer. If a the tokenizer is not none, it will count tokens.
 
 For dir with two files from hw1.py:
->>> universal_file_counter(test_dir, "txt")
+>>> universal_file_counter(test_dir, 'txt')
 6
->>> universal_file_counter(test_dir, "txt", str.split)
+>>> universal_file_counter(test_dir, 'txt', str.split)
 6
 
 """
