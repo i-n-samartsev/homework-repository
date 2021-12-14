@@ -20,11 +20,6 @@ def find_occurrences(tree, element: Any):
     for value in values:
         if value == element:
             ans += 1
-        elif (
-            isinstance(value, list)
-            or isinstance(value, tuple)
-            or isinstance(value, set)
-            or isinstance(value, dict)
-        ):
+        elif isinstance(value, (list, tuple, set, dict)):
             ans += find_occurrences(value, element)
     return ans
