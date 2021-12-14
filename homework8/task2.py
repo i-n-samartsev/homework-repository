@@ -97,8 +97,7 @@ class TableData:
         return self.cursor.fetchone()[0]
 
     def __contains__(self, item):
-        self.cursor.execute(f'SELECT * FROM {self.table} WHERE name=:name',
-                            {'name': item})
+        self.cursor.execute(f"SELECT * FROM {self.table} WHERE name='{item}'")
         return bool(self.cursor.fetchone())
 
     def __iter__(self):
@@ -114,8 +113,7 @@ class TableData:
         raise StopIteration
 
     def __getitem__(self, item):
-        self.cursor.execute(f'SELECT * FROM {self.table} WHERE name=:name',
-                            {'name': item})
+        self.cursor.execute(f"SELECT * FROM {self.table} WHERE name='{item}'")
         if row := self.cursor.fetchone():
             return row
         raise KeyError(item)
