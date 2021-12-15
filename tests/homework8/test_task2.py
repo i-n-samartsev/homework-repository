@@ -1,5 +1,6 @@
 import os
 import sqlite3
+from contextlib import contextmanager
 
 from pytest import fixture, raises
 
@@ -17,19 +18,23 @@ def presidents():
         presidents.close_con_to_bd()
 
 
-@fixture
-def new_president():
-    con = sqlite3.connect(DATABASE)
-    cursor = con.cursor()
+@contextmanager
+def add_new_president():
+    con2 = sqlite3.connect(DATABASE)
+    cursor2 = con2.cursor()
+    cursor2.execute("INSERT INTO presidents VALUES ('Lincoln', 52, 'USA')")
+    con2.commit()
+    cursor2.close()
+    con2.close()
     try:
-        cursor.execute("INSERT INTO presidents VALUES ('Lincoln', 52, 'USA')")
-        con.commit()
         yield 'Lincoln', 52, 'USA'
     finally:
-        cursor.execute("DELETE FROM presidents WHERE name=='Lincoln'")
-        con.commit()
-        cursor.close()
-        con.close()
+        con2 = sqlite3.connect(DATABASE)
+        cursor2 = con2.cursor()
+        cursor2.execute("DELETE FROM presidents WHERE name=='Lincoln'")
+        con2.commit()
+        cursor2.close()
+        con2.close()
 
 
 def test_table_data_length(presidents):
@@ -61,5 +66,9 @@ def test_table_data_iteration(presidents):
     assert ages == [999, 1337, 101]
 
 
-def test_table_data_reflect_most_recent_data(new_president, presidents):
-    assert presidents['Lincoln'] == new_president
+def test_table_data_reflect_most_recent_data(presidents):
+    assert len(presidents) == 3
+    with add_new_president() as new_president:
+        assert len(presidents) == 4
+        assert presidents['Lincoln'] == new_president
+    assert len(presidents) == 3
