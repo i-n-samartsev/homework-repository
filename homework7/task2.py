@@ -20,7 +20,7 @@ Examples:
 """
 
 
-def backspace_read(str_with_backspace: str) -> str:
+def backspace_update(str_with_backspace: str) -> str:
     string_without_backspace = ""
     for num, letter in enumerate(str_with_backspace):
         if str_with_backspace[num + 1 : num + 2] != "#" and letter != "#":
@@ -29,4 +29,4 @@ def backspace_read(str_with_backspace: str) -> str:
 
 
 def backspace_compare(first: str, second: str):
-    return backspace_read(first) == backspace_read(second)
+    return backspace_update(first) == backspace_update(second)
