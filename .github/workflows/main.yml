@@ -17,7 +17,6 @@ jobs:
         run: |
           pip install flake8 isort black pytest
           ls -la
-          flake8
           isort --check .
           black  --line-length 80 --check .
           py.test tests
