@@ -2,6 +2,7 @@
 # function output value. Modify it to be a parametrized decorator.
 
 from dataclasses import dataclass
+from inspect import signature
 from typing import Any, Callable
 
 
@@ -23,9 +24,14 @@ def cache(times: int) -> Callable:
     baggage_room = {}
 
     def decorator(func: Callable) -> Callable:
+        defaults = {}
+        sig = signature(func)
+        for param in sig.parameters.values():
+            if param.default is not param.empty:
+                defaults[param.name] = param.default
 
         def wrapper(*args, **kwargs):
-            kwargs = {key: kwargs[key] for key in sorted(kwargs)}
+            kwargs = defaults | {key: kwargs[key] for key in sorted(kwargs)}
             key = str(args) + str(kwargs)
 
             if key not in baggage_room or baggage_room[key].number == 0:

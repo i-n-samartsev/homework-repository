@@ -63,3 +63,27 @@ def test_cache_return_another_output_for_same_input_after_times_with_kwargs():
     forth_function_call = some_func(a=['qwerty'])
 
     assert third_function_call is not forth_function_call
+
+
+def test_cache_return_same_output_with_and_without_changing_defaults():
+
+    @cache(times=2)
+    def some_func(a, b=50):
+        return a * b
+
+    first_function_call = some_func(a=['qwerty'])
+    second_function_call = some_func(a=['qwerty'], b=50)
+
+    assert first_function_call is second_function_call
+
+
+def test_cache_return_different_output_with_and_without_changing_defaults():
+
+    @cache(times=2)
+    def some_func(a, b=50):
+        return a * b
+
+    first_function_call = some_func(a=['qwerty'])
+    second_function_call = some_func(a=['qwerty'], b=40)
+
+    assert first_function_call is not second_function_call
