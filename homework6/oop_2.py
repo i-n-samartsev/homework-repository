@@ -64,6 +64,10 @@ class Homework:
         self.created = datetime.datetime.now()
 
     def is_active(self):
+        """
+            Checking a job for expiration.
+            :rtype: bool
+        """
         if self.created + self.deadline < datetime.datetime.now():
             return False
         else:
@@ -89,13 +93,34 @@ class Person:
 
 
 class Student(Person):
-    def do_homework(self, homework: Homework, solution):
+    def do_homework(self, homework, solution):
+        """
+            Creates and returns a new HomeworkResult instance
+            that will hold the Homework instance
+            and solution specified when created.
+
+            :param homework: Issued homework
+            :type homework: Homework
+            :param solution: Homework solution
+            :type solution: str
+            :rtype: HomeworkResult
+        """
         if homework.created + homework.deadline > datetime.datetime.now():
             return HomeworkResult(homework, solution, self)
         else:
             raise DeadlineError("You are late")
 
     def homework_request(self, homework_done, grade=5):
+        """
+            Return all instances of Homework that have
+            a grade of grade and are authored by this student.
+
+            :param homework_done: Dictionary of proven homework
+            :type homework_done: defaultdict
+            :param grade: Assessment with which we are looking for homework
+            :type grade: int
+            :rtype: List[Homework]
+        """
         return [
             hw_result
             for hw_result in homework_done.values()
@@ -108,10 +133,31 @@ class Teacher(Person):
 
     @staticmethod
     def create_homework(text, num_of_days):
+        """
+            Creates and return new Homework instance that will
+            expire according to number of days specified when creating.
+
+            :param text: Task text
+            :type text: str
+            :param num_of_days: Number of days to complete
+            :type num_of_days: int
+            :rtype: Homework
+        """
         return Homework(text, num_of_days)
 
     @staticmethod
     def check_homework(homework_done, homework_result, grade=5):
+        """
+            Checking homework and returning the check result.
+
+            :param homework_done: Dictionary of proven homework
+            :type homework_done: defaultdict
+            :param homework_result: Completed homework
+            :type homework_result: HomeworkResult
+            :param grade: The grade we give for homework
+            :type grade: int
+            :rtype: bool
+        """
         if len(homework_result.solution) > 5:
             homework_result.grade = grade
             homework_done[homework_result.homework] = homework_result
@@ -121,6 +167,14 @@ class Teacher(Person):
 
     @staticmethod
     def reset_results(homework_done, homework=None):
+        """
+            Removing a checked homework.
+
+            :param homework_done: Dictionary of proven homework
+            :type homework_done: defaultdict
+            :param homework: Issued homework
+            :type homework: Homework
+        """
         if homework:
             homework_done.pop(homework)
         else:
