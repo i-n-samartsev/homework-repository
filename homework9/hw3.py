@@ -4,10 +4,10 @@ tokenizer. It will count lines in all files with that extension if there are
 no tokenizer. If tokenizer is not none, it will count tokens.
 
 For dir with two files from hw1.py:
-# >>> universal_file_counter(test_dir, 'txt')
-# 6
-# >>> universal_file_counter(test_dir, 'txt', str.split)
-# 6
+>>> universal_file_counter(os.path.dirname(__file__), '.txt')
+6
+>>> universal_file_counter(os.path.dirname(__file__), '.txt', str.split)
+6
 
 """
 import os
@@ -23,13 +23,10 @@ def get_tokens_from_file(file: Union[Path, str],
         will count tokens.
     """
     with open(file, mode='r') as file:
-        counter = 0
         if tokenizer:
-            for line in file:
-                counter += len(tokenizer(line))
+            counter = sum(len(tokenizer(line)) for line in file)
         else:
-            for _ in file:
-                counter += 1
+            counter = sum(1 for line in file)
         return counter
 
 
@@ -52,11 +49,3 @@ def universal_file_counter(dir_path: Union[Path, str],
                 continue
             counter += get_tokens_from_file(full_file_path, tokenizer)
     return counter
-
-
-if __name__ == '__main__':
-    TEST_DIR = os.path.dirname(os.path.abspath(__file__))
-
-    print(universal_file_counter(TEST_DIR, '.txt'))  # 6
-
-    print(universal_file_counter(TEST_DIR, '.txt', str.split))   # 6
