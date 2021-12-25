@@ -129,6 +129,10 @@ class Student(Person):
 
 
 class Teacher(Person):
+    """
+        All inheritors should have class attribute:
+        homework_done = defaultdict(set)
+    """
     homework_done = defaultdict(set)
 
     @staticmethod
@@ -150,34 +154,3 @@ class Teacher(Person):
             cls.homework_done.pop(homework, None)
         else:
             cls.homework_done.clear()
-
-
-if __name__ == '__main__':
-    opp_teacher = Teacher('Daniil', 'Shadrin')
-    advanced_python_teacher = Teacher('Aleksandr', 'Smetanin')
-
-    lazy_student = Student('Roman', 'Petrov')
-    good_student = Student('Lev', 'Sokolov')
-
-    oop_hw = opp_teacher.create_homework('Learn OOP', 1)
-    docs_hw = opp_teacher.create_homework('Read docs', 5)
-
-    result_1 = good_student.do_homework(oop_hw, 'I have done this hw')
-    result_2 = good_student.do_homework(docs_hw, 'I have done this hw too')
-    result_3 = lazy_student.do_homework(docs_hw, 'done')
-    try:
-        result_4 = HomeworkResult(good_student, "fff", "Solution")
-    except Exception:
-        print('There was an exception here')
-    opp_teacher.check_homework(result_1)
-    temp_1 = opp_teacher.homework_done
-
-    advanced_python_teacher.check_homework(result_1)
-    temp_2 = Teacher.homework_done
-    assert temp_1 == temp_2
-
-    opp_teacher.check_homework(result_2)
-    opp_teacher.check_homework(result_3)
-
-    print(Teacher.homework_done[oop_hw])
-    Teacher.reset_results()
