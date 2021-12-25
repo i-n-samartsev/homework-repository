@@ -14,7 +14,7 @@ file2.txt:
 >>> list(merge_sorted_files(['file1.txt', 'file2.txt']))
 [1, 2, 3, 4, 5, 6]
 """
-from itertools import zip_longest
+from heapq import merge
 from pathlib import Path
 from typing import Iterator, List, Union
 
@@ -35,9 +35,5 @@ def get_integers_from_file(filename: str) -> Iterator:
 
 def merge_sorted_files(file_list: List[Union[Path, str]]) -> Iterator:
 
-    file_generators = map(get_integers_from_file, file_list)
-    sentinel = object()
-    for integers_pack in zip_longest(*file_generators, fillvalue=sentinel):
-        integers_pack = filter(lambda x: x is not sentinel, integers_pack)
-        for integer in integers_pack:
-            yield integer
+    file_iterators = map(get_integers_from_file, file_list)
+    yield from merge(*file_iterators)
