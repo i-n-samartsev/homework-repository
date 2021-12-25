@@ -40,19 +40,19 @@ def get_integers_from_file(filename: str) -> Iterator:
 def merge_sorted_files(file_list: List[Union[Path, str]]) -> Iterator:
 
     file_iterators = map(get_integers_from_file, file_list)
-    iter_row = {}
+    file_iterator_row = {}
     for iterator in file_iterators:
-        value = next(iterator, None)
-        if value is not None:
-            iter_row[iterator] = value
-    while iter_row:
-        next_iterator = min(iter_row, key=iter_row.get)
-        yield iter_row[next_iterator]
-        value = next(next_iterator, None)
-        if value is not None:
-            iter_row[next_iterator] = value
+        next_int = next(iterator, None)
+        if next_int is not None:
+            file_iterator_row[iterator] = next_int
+    while file_iterator_row:
+        next_iterator = min(file_iterator_row, key=file_iterator_row.get)
+        yield file_iterator_row[next_iterator]
+        next_int = next(next_iterator, None)
+        if next_int is not None:
+            file_iterator_row[next_iterator] = next_int
         else:
-            iter_row.pop(next_iterator)
+            file_iterator_row.pop(next_iterator)
 
 # Another solution with heapq.merge
 
