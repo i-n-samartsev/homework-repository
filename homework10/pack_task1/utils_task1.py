@@ -24,7 +24,18 @@ async def fetch_all(urls, loop):
         return results
 
 
+def percentage_normalizer(value_in_str):
+    if "," in value_in_str:
+        lst_repr = value_in_str.strip("%").split(",")
+        return float("".join(lst_repr))
+
+    return float(value_in_str.strip("%"))
+
+
 if __name__ == "__main__":
+
+    val = percentage_normalizer("1,200.1%")
+
     page = requests.get("https://markets.businessinsider.com/index/components/s&p_500?p=1")
 
     soup = BeautifulSoup(page.text, "lxml")

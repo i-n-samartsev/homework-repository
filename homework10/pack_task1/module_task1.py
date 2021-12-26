@@ -58,6 +58,15 @@ class CorpoUrlsGetter:
     def __len__(self):
         return len(self.corp_table)
 
+    @staticmethod
+    def percentage_normalizer(value_in_str):
+        """Converts given str from web-page to float"""
+        if "," in value_in_str:
+            lst_repr = value_in_str.strip("%").split(",")
+            return float("".join(lst_repr))
+
+        return float(value_in_str.strip("%"))
+
     def append_page_data(self, url):
         """Parse table on the page for urls and percentages"""
         soup = BeautifulSoup(requests.get(url).text, "lxml")
@@ -75,8 +84,8 @@ class CorpoUrlsGetter:
 
         for row in rows:
             percentage_cell = row.find_all("td")[7]
-            cell_value = percentage_cell.find_all("span")[0]
-            percentage_value = cell_value.contents[0]
+            cell_value = percentage_cell.find_all("span")[1]
+            percentage_value = self.percentage_normalizer(cell_value.contents[0])
             percentages.append(percentage_value)
 
         for link, percentage in zip(links, percentages):
@@ -94,7 +103,8 @@ if __name__ == "__main__":
 
     new_table = CorpoUrlsGetter()
 
-    for company in new_table[:20]:
-        print(company["link"])
+    for company in new_table:
+        if company["link"] == "https://markets.businessinsider.com/stocks/mmm-stock":
+            print(company["link"], company["percentage"])
 
     print()
