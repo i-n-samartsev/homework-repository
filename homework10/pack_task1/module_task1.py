@@ -22,6 +22,7 @@ class CorpoUrlsGetter:
         self.pages_count = pages_count
         self.pages_list = [url + str(page_number) for page_number in range(1, self.pages_count + 1)]
         self.corp_table = []
+        self.table_links = []
         self.table_cursor = 0
         self.table_builder_threading()
 
@@ -45,8 +46,17 @@ class CorpoUrlsGetter:
         else:
             raise StopIteration
 
+    def __contains__(self, link):
+        if link in self.table_links:
+            return True
+        else:
+            return False
+
     def __iter__(self):
         return self
+
+    def __len__(self):
+        return len(self.corp_table)
 
     def append_page_data(self, url):
         """Parse table on the page for urls and percentages"""
@@ -61,6 +71,7 @@ class CorpoUrlsGetter:
 
         for cell in link_cells:
             links.append(self.domain + cell.find("a").get("href"))
+            self.table_links.append(self.domain + cell.find("a").get("href"))
 
         for row in rows:
             percentage_cell = row.find_all("td")[7]
