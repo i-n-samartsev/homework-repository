@@ -25,6 +25,12 @@ class CorpoUrlsGetter:
         self.table_cursor = 0
         self.table_builder_threading()
 
+    def __getitem__(self, index):
+        if index < len(self.corp_table):
+            return self.corp_table[index]
+        else:
+            raise IndexError
+
     def __next__(self):
         if len(self.corp_table) > self.table_cursor:
             value = self.corp_table[self.table_cursor]
