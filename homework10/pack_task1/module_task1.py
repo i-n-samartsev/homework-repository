@@ -26,10 +26,16 @@ class CorpoUrlsGetter:
         self.table_builder_threading()
 
     def __getitem__(self, index):
-        if index < len(self.corp_table):
-            return self.corp_table[index]
+        if isinstance(index, slice):
+            # Get the start, stop, and step from the slice
+            return [self.corp_table[ii] for ii in range(*index.indices(len(self.corp_table)))]
+        elif isinstance(index, int):
+            if index < len(self.corp_table):
+                return self.corp_table[index]
+            else:
+                raise IndexError("Index is out of range.")
         else:
-            raise IndexError
+            raise TypeError("Invalid argument type.")
 
     def __next__(self):
         if len(self.corp_table) > self.table_cursor:
@@ -76,4 +82,8 @@ class CorpoUrlsGetter:
 if __name__ == "__main__":
 
     new_table = CorpoUrlsGetter()
+
+    for company in new_table[:20]:
+        print(company["link"])
+
     print()
