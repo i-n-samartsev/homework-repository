@@ -7,7 +7,7 @@
 """
 
 
-from collections import namedtuple
+# from collections import namedtuple
 from multiprocessing.pool import ThreadPool
 
 import requests
@@ -22,13 +22,25 @@ class CorpoUrlsGetter:
         self.pages_count = pages_count
         self.pages_list = [url + str(page_number) for page_number in range(1, self.pages_count + 1)]
         self.corp_table = []
+        self.table_cursor = 0
         self.table_builder_threading()
+
+    def __next__(self):
+        if len(self.corp_table) > self.table_cursor:
+            value = self.corp_table[self.table_cursor]
+            self.table_cursor += 1
+            return value
+        else:
+            raise StopIteration
+
+    def __iter__(self):
+        return self
 
     def append_page_data(self, url):
         """Parse table on the page for urls and percentages"""
         soup = BeautifulSoup(requests.get(url).text, "lxml")
         page_data = []
-        Corp = namedtuple("Corp", "url percent")  # Corp._make([])
+        # Corp = namedtuple("Corp", "url percent")  # Corp._make([])
         link_cells = soup.find("table", class_="table__layout--fixed").find_all("td", "table__td--big")
         rows = soup.find("table", class_="table__layout--fixed").find_all("tr")[1:]  # skip table header
 
@@ -45,7 +57,8 @@ class CorpoUrlsGetter:
             percentages.append(percentage_value)
 
         for link, percentage in zip(links, percentages):
-            page_data.append(Corp._make([link, percentage]))
+            # page_data.append(Corp._make([link, percentage]))
+            page_data.append({"link": link, "percentage": percentage})
 
         self.corp_table += page_data
 
