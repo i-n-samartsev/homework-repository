@@ -14,15 +14,16 @@ from multiprocessing.pool import ThreadPool
 
 import aiohttp
 import requests
+import xmltodict
 from bs4 import BeautifulSoup
 
 
-class NetworkException:
-    """Resource is not available"""
-
-
 class CorpoUrlsGetter:
-    """Container to get and store corps pre-names, urls and year percent"""
+    """
+    Container to get and store corps pre-names, urls and year percent
+    Implements list behavior (slices, len, getitem, iteration)
+    Generates list of dicts with url and company growth percentage
+    """
 
     def __init__(self, url="https://markets.businessinsider.com/index/components/s&p_500?p=", pages_count=11):
         self.domain = "https://markets.businessinsider.com"
@@ -78,7 +79,6 @@ class CorpoUrlsGetter:
         """Parse table on the page for urls and percentages"""
         soup = BeautifulSoup(requests.get(url).text, "lxml")
         page_data = []
-        # Corp = namedtuple("Corp", "url percent")  # Corp._make([])
         link_cells = soup.find("table", class_="table__layout--fixed").find_all("td", "table__td--big")
         rows = soup.find("table", class_="table__layout--fixed").find_all("tr")[1:]  # skip table header
 
@@ -110,25 +110,50 @@ class CompanyDataTableAsync:
     """
     Collection to store S&P-500 corps parameters
     Gets Urls/percentage table-object from CorpoUrlsGetter
+
+    Every Corp in output table has parameters:
+    code | name | growth | price | PE | max_profit
     """
 
     def __init__(self, table_src):
-        self.table_data = table_src
-        self.corp_table = []
-        asyncio.run(self.table_builder())
+        self.src_data = table_src
+        self.data_table = []
+        self.rate = self._get_rate()
+        asyncio.run(self._table_builder())
 
     @staticmethod
-    def float_normalizer(value_in_str):
+    def _float_normalizer(value_in_str):
         """Converts given str from web-page to float"""
         if "," in value_in_str:
             lst_repr = value_in_str.strip("%").split(",")
             return float("".join(lst_repr))
         return float(value_in_str.strip())
 
-    async def get_corp_data(self, session, url, percentage):
+    def _get_rate(self):
+        """Return valute rate for current date"""
+        data = asyncio.run(self._get_req())
+        rate_data = xmltodict.parse(data)
+        usd = float(rate_data["ValCurs"]["Valute"][10]["Value"].replace(",", "."))
+        return usd
+
+    async def _get_req(self):
+        """aiohttp getter for valute rate xml-data from bank api"""
+        async with aiohttp.ClientSession() as session:
+            async with session.get("http://www.cbr.ru/scripts/XML_daily.asp") as resp:
+                response = await resp.text()
+                return response
+
+    def generate_top_ten(self, parameter, rev=True):
+        """Generates top ten corps from data_table by given parameter"""
+        return sorted(self.data_table, key=lambda row: row[parameter], reverse=rev)[:10]
+
+    async def _get_corp_data(self, session, url, percentage, rate):
+        """Generates corp data-dict by parsing corp web-page"""
         async with session.get(url) as response:
             if response.status != 200:
-                self.corp_table.append({"code": None, "name": None, "growth": -1, "PE": -1, "max_profit": -1})
+                self.data_table.append(
+                    {"code": None, "name": None, "growth": -1, "price": -1, "PE": -1, "max_profit": -1}
+                )
             else:
                 await asyncio.sleep(0.2)
                 response_text = await response.text()
@@ -141,7 +166,15 @@ class CompanyDataTableAsync:
                 print(name)  # For debug purpose
 
                 try:
-                    p_e = self.float_normalizer(
+                    price = self._float_normalizer(
+                        soup.find("div", text=re.compile("Open")).parent.text.strip().strip("Open").strip()
+                    )
+                    price = round(rate * price, 2)
+                except AttributeError:
+                    price = -1
+
+                try:
+                    p_e = self._float_normalizer(
                         soup.find("div", text=re.compile("P/E Ratio")).parent.text.strip().strip("P/E Ratio").strip()
                     )
                 except AttributeError:
@@ -151,54 +184,38 @@ class CompanyDataTableAsync:
                 tag_class_name_high = "snapshot__data-item snapshot__data-item--small snapshot__data-item--right"
 
                 try:
-                    week_52_low = self.float_normalizer(soup.find("div", class_=tag_class_name_low).contents[0].strip())
-                    week_52_high = self.float_normalizer(
-                        soup.find("div", class_=tag_class_name_high).contents[0].strip()
+                    week_52_low = self._float_normalizer(
+                        soup.find_all("div", class_=tag_class_name_low)[1].contents[0].strip()
+                    )
+                    week_52_high = self._float_normalizer(
+                        soup.find_all("div", class_=tag_class_name_high)[1].contents[0].strip()
                     )
                     week_profit = round(((week_52_high - week_52_low) / week_52_low) * 100, 2)
-                except Exception:
+                except IndexError:
                     week_profit = 0
 
-                self.corp_table.append(
-                    {"code": code, "name": name, "growth": percentage, "PE": p_e, "max_profit": week_profit}
+                self.data_table.append(
+                    {
+                        "code": code,
+                        "name": name,
+                        "growth": percentage,
+                        "price": price,
+                        "PE": p_e,
+                        "max_profit": week_profit,
+                    }
                 )
 
-    async def table_builder(self):
-        connector = aiohttp.TCPConnector(limit=50)
+    async def _table_builder(self):
+        """Async task scheduler"""
+        connector = aiohttp.TCPConnector(limit=500, limit_per_host=200, force_close=False, enable_cleanup_closed=True)
         async with aiohttp.ClientSession(connector=connector) as session:
             tasks = []
-            for corp in self.table_data:
+            for corp in self.src_data:
                 link = corp["link"]
                 percentage = corp["percentage"]
-                task = asyncio.create_task(self.get_corp_data(session, link, percentage))
+                task = asyncio.create_task(self._get_corp_data(session, link, percentage, self.rate))
                 tasks.append(task)
             await asyncio.gather(*tasks)
-
-
-class CompanyDataTableThreads:
-    """
-    Collection to store S&P-500 corps parameters
-    Gets Urls/percentage table-object from CorpoUrlsGetter
-    """
-
-    def __init__(self, table_src):
-        self.table_data = table_src
-        self.soup_table = []
-        self.url_list = [corp["link"] for corp in self.table_data]
-        self.table_builder()
-
-    def fetch_page(self, corp):
-        url = corp["link"]
-        percentage = corp["percentage"]
-        soup = BeautifulSoup(requests.get(url).text, "lxml")
-        code = soup.find("span", class_="price-section__category").find("span").contents[0]
-        name = soup.find("span", class_="price-section__label").contents[0]
-        self.soup_table.append({"code": code, "name": name, "grouth": percentage})
-        print(name)
-
-    def table_builder(self):
-        with ThreadPool(10) as t_pool:
-            t_pool.map(self.fetch_page, self.table_data)
 
 
 if __name__ == "__main__":
@@ -206,12 +223,9 @@ if __name__ == "__main__":
     new_table = CorpoUrlsGetter()
 
     start = time.time()
-    corp_data = CompanyDataTableAsync(new_table[:497])
+    corp_data = CompanyDataTableAsync(new_table)
     end = time.time() - start
-
     print(end)
-    # for company in new_table:
-    #     if company["link"] == "https://markets.businessinsider.com/stocks/mmm-stock":
-    #         print(company["link"], company["percentage"])
 
+    top = corp_data.generate_top_ten("price")
     print()
