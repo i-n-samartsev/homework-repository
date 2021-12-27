@@ -8,6 +8,7 @@
 
 
 import asyncio
+import json
 import re
 import time
 from multiprocessing.pool import ThreadPool
@@ -143,10 +144,6 @@ class CompanyDataTableAsync:
                 response = await resp.text()
                 return response
 
-    def generate_top_ten(self, parameter, rev=True):
-        """Generates top ten corps from data_table by given parameter"""
-        return sorted(self.data_table, key=lambda row: row[parameter], reverse=rev)[:10]
-
     async def _get_corp_data(self, session, url, percentage, rate):
         """Generates corp data-dict by parsing corp web-page"""
         async with session.get(url) as response:
@@ -217,6 +214,18 @@ class CompanyDataTableAsync:
                 tasks.append(task)
             await asyncio.gather(*tasks)
 
+    def generate_top(self, parameter, rev=True, length=10):
+        """Generates top ten corps from data_table by given parameter"""
+        return sorted(self.data_table, key=lambda row: row[parameter], reverse=rev)[:length]
+
+    def json_writer(self, dict_list, report_name):
+        """Generates json-file, based on given report"""
+
+        file_name = report_name + ".json"
+        with open(file_name, "w") as report:
+            for dict in dict_list:
+                json.dump(dict, report, indent=2)
+
 
 if __name__ == "__main__":
 
@@ -227,5 +236,14 @@ if __name__ == "__main__":
     end = time.time() - start
     print(end)
 
-    top = corp_data.generate_top_ten("price")
+    top_price = corp_data.generate_top("price", length=10)
+    top_low_pe = corp_data.generate_top("PE", rev=False, length=10)
+    top_growth = corp_data.generate_top("growth", length=10)
+    top_max_profit = corp_data.generate_top("max_profit", length=10)
+
+    corp_data.json_writer(top_price, "rep1_price")
+    corp_data.json_writer(top_low_pe, "rep2_pe")
+    corp_data.json_writer(top_growth, "rep3_growth")
+    corp_data.json_writer(top_max_profit, "rep4_profit")
+
     print()
