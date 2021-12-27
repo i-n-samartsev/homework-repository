@@ -7,11 +7,18 @@
 """
 
 
-# from collections import namedtuple
+import asyncio
+import re
+import time
 from multiprocessing.pool import ThreadPool
 
+import aiohttp
 import requests
 from bs4 import BeautifulSoup
+
+
+class NetworkException:
+    """Resource is not available"""
 
 
 class CorpoUrlsGetter:
@@ -99,12 +106,112 @@ class CorpoUrlsGetter:
             t_pool.map(self.append_page_data, self.pages_list)
 
 
+class CompanyDataTableAsync:
+    """
+    Collection to store S&P-500 corps parameters
+    Gets Urls/percentage table-object from CorpoUrlsGetter
+    """
+
+    def __init__(self, table_src):
+        self.table_data = table_src
+        self.corp_table = []
+        asyncio.run(self.table_builder())
+
+    @staticmethod
+    def float_normalizer(value_in_str):
+        """Converts given str from web-page to float"""
+        if "," in value_in_str:
+            lst_repr = value_in_str.strip("%").split(",")
+            return float("".join(lst_repr))
+        return float(value_in_str.strip())
+
+    async def get_corp_data(self, session, url, percentage):
+        async with session.get(url) as response:
+            if response.status != 200:
+                self.corp_table.append({"code": None, "name": None, "growth": -1, "PE": -1, "max_profit": -1})
+            else:
+                await asyncio.sleep(0.2)
+                response_text = await response.text()
+                soup = BeautifulSoup(response_text, "lxml")
+
+                code = (
+                    soup.find("span", class_="price-section__category").find("span").contents[0].strip(",").strip(" ")
+                )
+                name = soup.find("span", class_="price-section__label").contents[0]
+                print(name)  # For debug purpose
+
+                try:
+                    p_e = self.float_normalizer(
+                        soup.find("div", text=re.compile("P/E Ratio")).parent.text.strip().strip("P/E Ratio").strip()
+                    )
+                except AttributeError:
+                    p_e = -1
+
+                tag_class_name_low = "snapshot__data-item snapshot__data-item--small"
+                tag_class_name_high = "snapshot__data-item snapshot__data-item--small snapshot__data-item--right"
+
+                try:
+                    week_52_low = self.float_normalizer(soup.find("div", class_=tag_class_name_low).contents[0].strip())
+                    week_52_high = self.float_normalizer(
+                        soup.find("div", class_=tag_class_name_high).contents[0].strip()
+                    )
+                    week_profit = round(((week_52_high - week_52_low) / week_52_low) * 100, 2)
+                except Exception:
+                    week_profit = 0
+
+                self.corp_table.append(
+                    {"code": code, "name": name, "growth": percentage, "PE": p_e, "max_profit": week_profit}
+                )
+
+    async def table_builder(self):
+        connector = aiohttp.TCPConnector(limit=50)
+        async with aiohttp.ClientSession(connector=connector) as session:
+            tasks = []
+            for corp in self.table_data:
+                link = corp["link"]
+                percentage = corp["percentage"]
+                task = asyncio.create_task(self.get_corp_data(session, link, percentage))
+                tasks.append(task)
+            await asyncio.gather(*tasks)
+
+
+class CompanyDataTableThreads:
+    """
+    Collection to store S&P-500 corps parameters
+    Gets Urls/percentage table-object from CorpoUrlsGetter
+    """
+
+    def __init__(self, table_src):
+        self.table_data = table_src
+        self.soup_table = []
+        self.url_list = [corp["link"] for corp in self.table_data]
+        self.table_builder()
+
+    def fetch_page(self, corp):
+        url = corp["link"]
+        percentage = corp["percentage"]
+        soup = BeautifulSoup(requests.get(url).text, "lxml")
+        code = soup.find("span", class_="price-section__category").find("span").contents[0]
+        name = soup.find("span", class_="price-section__label").contents[0]
+        self.soup_table.append({"code": code, "name": name, "grouth": percentage})
+        print(name)
+
+    def table_builder(self):
+        with ThreadPool(10) as t_pool:
+            t_pool.map(self.fetch_page, self.table_data)
+
+
 if __name__ == "__main__":
 
     new_table = CorpoUrlsGetter()
 
-    for company in new_table:
-        if company["link"] == "https://markets.businessinsider.com/stocks/mmm-stock":
-            print(company["link"], company["percentage"])
+    start = time.time()
+    corp_data = CompanyDataTableAsync(new_table[:497])
+    end = time.time() - start
+
+    print(end)
+    # for company in new_table:
+    #     if company["link"] == "https://markets.businessinsider.com/stocks/mmm-stock":
+    #         print(company["link"], company["percentage"])
 
     print()
