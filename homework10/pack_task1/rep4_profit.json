@@ -1,0 +1,71 @@
+{
+  "code": "ALB",
+  "name": "Albemarle Corp. ",
+  "price": 0.0,
+  "growth": 52.13,
+  "PE": 35.35,
+  "max_profit": 117.75
+}{
+  "code": "ATVI",
+  "name": "Activision Blizzard Inc. ",
+  "price": 0.0,
+  "growth": -28.36,
+  "PE": 26.4,
+  "max_profit": 85.34
+}{
+  "code": "ACN",
+  "name": "Accenture plc ",
+  "price": 0.0,
+  "growth": 56.76,
+  "PE": 32.42,
+  "max_profit": 72.57
+}{
+  "code": "AAP",
+  "name": "Advance Auto Parts Inc. ",
+  "price": 0.0,
+  "growth": 44.52,
+  "PE": 18.27,
+  "max_profit": 69.75
+}{
+  "code": "ADBE",
+  "name": "Adobe Inc. ",
+  "price": 0.0,
+  "growth": 13.96,
+  "PE": 47.1,
+  "max_profit": 66.25
+}{
+  "code": "AOS",
+  "name": "A.O. Smith Corp. ",
+  "price": 0.0,
+  "growth": 49.11,
+  "PE": 25.06,
+  "max_profit": 64.52
+}{
+  "code": "ALK",
+  "name": "Alaska Air Group Inc. ",
+  "price": 0.0,
+  "growth": 1.47,
+  "PE": -5.1,
+  "max_profit": 60.44
+}{
+  "code": "A",
+  "name": "Agilent Technologies Inc. ",
+  "price": 0.0,
+  "growth": 34.54,
+  "PE": 30.82,
+  "max_profit": 59.66
+}{
+  "code": "ALGN",
+  "name": "Align Technology Inc. ",
+  "price": 0.0,
+  "growth": 23.85,
+  "PE": 98.94,
+  "max_profit": 49.15
+}{
+  "code": "ABMD",
+  "name": "ABIOMED Inc. ",
+  "price": 0.0,
+  "growth": 16.08,
+  "PE": 63.24,
+  "max_profit": 48.28
+}

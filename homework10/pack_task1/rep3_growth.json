@@ -1,0 +1,71 @@
+{
+  "code": "ACN",
+  "name": "Accenture plc ",
+  "price": 0.0,
+  "growth": 56.76,
+  "PE": 32.42,
+  "max_profit": 72.57
+}{
+  "code": "ALB",
+  "name": "Albemarle Corp. ",
+  "price": 0.0,
+  "growth": 52.13,
+  "PE": 35.35,
+  "max_profit": 117.75
+}{
+  "code": "AOS",
+  "name": "A.O. Smith Corp. ",
+  "price": 0.0,
+  "growth": 49.11,
+  "PE": 25.06,
+  "max_profit": 64.52
+}{
+  "code": "AAP",
+  "name": "Advance Auto Parts Inc. ",
+  "price": 0.0,
+  "growth": 44.52,
+  "PE": 18.27,
+  "max_profit": 69.75
+}{
+  "code": "A",
+  "name": "Agilent Technologies Inc. ",
+  "price": 0.0,
+  "growth": 34.54,
+  "PE": 30.82,
+  "max_profit": 59.66
+}{
+  "code": "AFL",
+  "name": "Aflac Inc ",
+  "price": 0.0,
+  "growth": 31.56,
+  "PE": 8.88,
+  "max_profit": 36.71
+}{
+  "code": "ABBV",
+  "name": "AbbVie Inc ",
+  "price": 0.0,
+  "growth": 28.86,
+  "PE": 9.91,
+  "max_profit": 32.85
+}{
+  "code": "ABT",
+  "name": "Abbott Laboratories ",
+  "price": 0.0,
+  "growth": 28.39,
+  "PE": 29.76,
+  "max_profit": 35.26
+}{
+  "code": "ARE",
+  "name": "Alexandria Real Estate Equities Inc. ",
+  "price": 0.0,
+  "growth": 24.69,
+  "PE": 28.92,
+  "max_profit": 44.35
+}{
+  "code": "ALGN",
+  "name": "Align Technology Inc. ",
+  "price": 0.0,
+  "growth": 23.85,
+  "PE": 98.94,
+  "max_profit": 49.15
+}

@@ -14,19 +14,19 @@ def float_normalizer(value_in_str):
     return float(value_in_str.strip("%"))
 
 
-def get_base_response(url="https://markets.businessinsider.com/index/components/s&p_500"):
-    """Returns response of base web-page needed for s&p500 list page counting"""
+def get_base_response_text(url="https://markets.businessinsider.com/index/components/s&p_500"):
+    """Returns response text data of base web-page needed for s&p500 list page counting"""
     response = requests.get(url)
     if response.status_code == 200:
-        return response
+        return response.text
 
 
-def get_page_count(response, fixed_page_count=None):
+def get_page_count(response_text, fixed_page_count=None):
     """Returns s&p500 list pages count"""
     if fixed_page_count:
         return fixed_page_count
 
-    soup = BeautifulSoup(response.text, "lxml")
+    soup = BeautifulSoup(response_text, "lxml")
     div_class = "finando_paging margin-top--small"
     page_count = soup.find("div", class_=div_class).contents[19].contents[0]
 
@@ -74,6 +74,7 @@ def corp_code_parse(text_data):
     limiter = SoupStrainer("span")
     soup = BeautifulSoup(text_data, "lxml", parse_only=limiter)
     print("parsed some code")
+
     return soup.find("span", class_="price-section__category").find("span").contents[0].strip(",").strip(" ")
 
 
@@ -82,7 +83,9 @@ def corp_price_parse(text_data, rub_rate):
     soup = BeautifulSoup(text_data, "lxml", parse_only=limiter)
 
     try:
-        price = float_normalizer(soup.find("div", text=re.compile("Open")).parent.text.strip().strip("Open").strip())
+        price = float_normalizer(
+            soup.find("div", text=re.compile("Prev. Close")).parent.text.strip().strip("Prev. Close").strip()
+        )
         price = round(rub_rate * price, 2)
     except AttributeError:
         price = None
@@ -117,7 +120,12 @@ def corp_max_profit_parse(text_data):
         week_52_high = float_normalizer(soup.find_all("div", class_=tag_class_name_high)[1].contents[0].strip())
         week_profit = round(((week_52_high - week_52_low) / week_52_low) * 100, 2)
     except IndexError:
-        week_profit = None
+        try:
+            week_52_low = float_normalizer(soup.find_all("div", class_=tag_class_name_low)[0].contents[0].strip())
+            week_52_high = float_normalizer(soup.find_all("div", class_=tag_class_name_high)[0].contents[0].strip())
+            week_profit = round(((week_52_high - week_52_low) / week_52_low) * 100, 2)
+        except IndexError:
+            week_profit = None
 
     print("parsed some profits")
     return week_profit

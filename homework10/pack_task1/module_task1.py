@@ -23,11 +23,10 @@ class MarketsInsiderRawData:
     def __init__(self, fixed_page_count=None):
         self.fixed_page_count = fixed_page_count
 
-        self.rub_rate = self._get_rate()
-        self.base_resp = cu.get_base_response()
-        self.page_count = cu.get_page_count(self.base_resp, self.fixed_page_count)
+        self.base_resp_text = cu.get_base_response_text()
+        self.page_count = cu.get_page_count(self.base_resp_text, self.fixed_page_count)
         self.page_links = cu.get_page_links(self.page_count)
-        self.pages_text_data = self.build_response_list(self.page_links)
+        self.pages_text_data = self._build_response_list(self.page_links)
 
         self.links_growth_data = []
         for text_data in self.pages_text_data:
@@ -35,7 +34,42 @@ class MarketsInsiderRawData:
 
         self.details_links = [corp["url"] for corp in self.links_growth_data]
         self.growth_values = [corp["year_growth"] for corp in self.links_growth_data]
-        self.details_text_data = self.build_response_list(self.details_links)
+        self.details_text_data = self._build_response_list(self.details_links)
+
+    @staticmethod
+    async def _get_request_text(session, url):
+        async with session.get(url) as resp:
+            if resp.status == 200:
+                return await resp.text()
+
+    async def _get_multiple_requests_text(self, url_list):
+        async with aiohttp.ClientSession() as session:
+            task_list = []
+            for url in url_list:
+                task = asyncio.create_task(self._get_request_text(session, url))
+                task_list.append(task)
+            return await asyncio.gather(*task_list)
+
+    def _build_response_list(self, url_list):
+        return asyncio.run(self._get_multiple_requests_text(url_list))
+
+
+class CorpDataParser:
+    """Class to process and present data from MarketInsider"""
+
+    def __init__(self, details_text_data, growth_table, cpu_count=6):
+        self.cpu_count = cpu_count
+        self.details_text_data = details_text_data
+        self.growth_table = growth_table
+        self.rub_rate = self._get_rate()
+
+        self.corp_names = []
+        self.corp_codes = []
+        self.corp_prices = []
+        self.pe_vals = []
+        self.corp_max_profit_vals = []
+
+        self.data_table = []
 
     def _get_rate(self):
         """Return valute rate for current date"""
@@ -52,47 +86,15 @@ class MarketsInsiderRawData:
                 response = await resp.text()
                 return response
 
-    @staticmethod
-    async def get_request_text(session, url):
-        async with session.get(url) as resp:
-            if resp.status == 200:
-                return await resp.text()
-
-    async def get_multiple_requests_text(self, url_list):
-        async with aiohttp.ClientSession() as session:
-            task_list = []
-            for url in url_list:
-                task = asyncio.create_task(self.get_request_text(session, url))
-                task_list.append(task)
-            return await asyncio.gather(*task_list)
-
-    def build_response_list(self, url_list):
-        return asyncio.run(self.get_multiple_requests_text(url_list))
-
-
-class CorpDataParser:
-    """Class to process and present data from MarketInsider"""
-
-    def __init__(self, details_text_data, growth_table, cpu_count=6):
-        self.cpu_count = cpu_count
-        self.details_text_data = details_text_data
-        self.growth_table = growth_table
-
-        self.corp_names = []
-        self.corp_codes = []
-        self.corp_prices = []
-        self.pe_vals = []
-        self.corp_max_profit_vals = []
-
-        self.data_table = []
-
     def compute_data(self):
+        # with Pool(self.cpu_count) as p:
+        #     self.corp_names = p.map(cu.corp_name_parse, self.details_text_data)
+        # with Pool(self.cpu_count) as p:
+        #     self.corp_codes = p.map(cu.corp_code_parse, self.details_text_data)
         with Pool(self.cpu_count) as p:
-            self.corp_names = p.map(cu.corp_name_parse, self.details_text_data)
-        with Pool(self.cpu_count) as p:
-            self.corp_codes = p.map(cu.corp_code_parse, self.details_text_data)
-        with Pool(self.cpu_count) as p:
-            self.corp_prices = p.starmap(cu.corp_price_parse, zip(self.details_text_data, self.growth_table))
+            self.corp_prices = p.starmap(
+                cu.corp_price_parse, zip(self.details_text_data, [self.rub_rate] * len(self.details_text_data))
+            )
         with Pool(self.cpu_count) as p:
             self.pe_vals = p.map(cu.corp_pe_parse, self.details_text_data)
         with Pool(self.cpu_count) as p:
@@ -151,7 +153,7 @@ if __name__ == "__main__":
     print(end)
 
     start = time.time()
-    table_data = CorpDataParser(raw_data.details_text_data, raw_data.growth_values)
+    table_data = CorpDataParser(raw_data.details_text_data[:20], raw_data.growth_values[:20])
     table_data.compute_data()
     table_data.build_data_table()
     end = time.time() - start

@@ -14,3 +14,4 @@ def float_normalizer(value_in_str):
 
 if __name__ == "__main__":
     soup = BeautifulSoup(requests.get("https://markets.businessinsider.com/stocks/mmm-stock").text, "lxml")
+    print()

@@ -1,0 +1,71 @@
+{
+  "code": "MMM",
+  "name": "3M Co. ",
+  "price": 0.0,
+  "growth": 0.17,
+  "PE": 19.91,
+  "max_profit": 27.85
+}{
+  "code": "AOS",
+  "name": "A.O. Smith Corp. ",
+  "price": 0.0,
+  "growth": 49.11,
+  "PE": 25.06,
+  "max_profit": 64.52
+}{
+  "code": "ABT",
+  "name": "Abbott Laboratories ",
+  "price": 0.0,
+  "growth": 28.39,
+  "PE": 29.76,
+  "max_profit": 35.26
+}{
+  "code": "ABBV",
+  "name": "AbbVie Inc ",
+  "price": 0.0,
+  "growth": 28.86,
+  "PE": 9.91,
+  "max_profit": 32.85
+}{
+  "code": "ABMD",
+  "name": "ABIOMED Inc. ",
+  "price": 0.0,
+  "growth": 16.08,
+  "PE": 63.24,
+  "max_profit": 48.28
+}{
+  "code": "ACN",
+  "name": "Accenture plc ",
+  "price": 0.0,
+  "growth": 56.76,
+  "PE": 32.42,
+  "max_profit": 72.57
+}{
+  "code": "ATVI",
+  "name": "Activision Blizzard Inc. ",
+  "price": 0.0,
+  "growth": -28.36,
+  "PE": 26.4,
+  "max_profit": 85.34
+}{
+  "code": "ADBE",
+  "name": "Adobe Inc. ",
+  "price": 0.0,
+  "growth": 13.96,
+  "PE": 47.1,
+  "max_profit": 66.25
+}{
+  "code": "AAP",
+  "name": "Advance Auto Parts Inc. ",
+  "price": 0.0,
+  "growth": 44.52,
+  "PE": 18.27,
+  "max_profit": 69.75
+}{
+  "code": "AES",
+  "name": "AES Corp. ",
+  "price": 0.0,
+  "growth": 1.2,
+  "PE": 15.98,
+  "max_profit": 28.57
+}
