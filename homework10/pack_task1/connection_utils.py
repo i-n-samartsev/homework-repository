@@ -39,7 +39,8 @@ def get_page_links(page_count=1, base_link="https://markets.businessinsider.com/
 
 def urls_growth_parse(text_data):
     base_url = "https://markets.businessinsider.com"
-    soup = BeautifulSoup(text_data, "lxml")
+    limiter = SoupStrainer("table")
+    soup = BeautifulSoup(text_data, "lxml", parse_only=limiter)
     url_cells = soup.find("table", class_="table__layout--fixed").find_all("td", "table__td--big")
     table_rows = soup.find("table", class_="table__layout--fixed").find_all("tr")[1:]  # skip table header
 
