@@ -18,5 +18,5 @@ jobs:
           pip install flake8 isort pytest lxml beautifulsoup4 aiohttp xmltodict
           ls -la
           flake8 .
-          isort --check.
+          isort --check .
           py.test -v
