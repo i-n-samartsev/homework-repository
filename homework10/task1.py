@@ -77,9 +77,7 @@ def parse_companies_list(data: str) -> list[dict]:
     soup = BeautifulSoup(data, "html.parser")
     table = soup.find("tbody")
     companies_data = dict()
-    companies_data["name"] = [
-        link.get("title") for link in table.find_all("a")
-    ]
+    companies_data["name"] = [link.get("title") for link in table.find_all("a")]
     companies_data["growth"] = [
         str(
             soup.select(
@@ -89,7 +87,7 @@ def parse_companies_list(data: str) -> list[dict]:
         )[-14:-9].strip(">")
         for n, _ in enumerate(soup.find_all("tr"), 1)
     ]
-    companies_data['url'] = [
+    companies_data["url"] = [
         f"https://markets.businessinsider.com{link.get('href')}"
         for link in table.find_all("a")
     ]
@@ -98,15 +96,17 @@ def parse_companies_list(data: str) -> list[dict]:
         for name, growth, url in zip(*companies_data.values())
     ]
 
+
 def get_price(soup: bs4.BeautifulSoup) -> float:
     try:
         return round(
             float(
-                soup.find(
-                    "span", class_="price-section__current-value"
-                ).get_text().replace(",", "")
-            ) * get_usd_to_rub(),
-            2
+                soup.find("span", class_="price-section__current-value")
+                .get_text()
+                .replace(",", "")
+            )
+            * get_usd_to_rub(),
+            2,
         )
     except AttributeError:
         return 0
@@ -115,9 +115,9 @@ def get_price(soup: bs4.BeautifulSoup) -> float:
 def get_high_52(soup: bs4.BeautifulSoup) -> float:
     try:
         return float(
-            soup.find(
-                "div", text="52 Week High"
-            ).previous_element.strip().replace(",", "")
+            soup.find("div", text="52 Week High")
+            .previous_element.strip()
+            .replace(",", "")
         )
     except AttributeError:
         return 0
@@ -126,9 +126,9 @@ def get_high_52(soup: bs4.BeautifulSoup) -> float:
 def get_low_52(soup: bs4.BeautifulSoup) -> float:
     try:
         return float(
-            soup.find(
-                "div", text="52 Week Low"
-            ).previous_element.strip().replace(",", "")
+            soup.find("div", text="52 Week Low")
+            .previous_element.strip()
+            .replace(",", "")
         )
     except AttributeError:
         return 0
@@ -137,9 +137,9 @@ def get_low_52(soup: bs4.BeautifulSoup) -> float:
 def get_p_e(soup: bs4.BeautifulSoup) -> float:
     try:
         return float(
-            soup.find(
-                "div", text="P/E Ratio"
-            ).previous_element.strip().replace(",", "")
+            soup.find("div", text="P/E Ratio")
+            .previous_element.strip()
+            .replace(",", "")
         )
     except AttributeError:
         return 0
