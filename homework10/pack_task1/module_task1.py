@@ -13,24 +13,37 @@ import time
 from multiprocessing import Pool
 
 import aiohttp
-import connection_utils as cu
 import xmltodict
+
+from homework10.pack_task1.connection_utils import (
+    get_base_response_text,
+    get_page_count,
+    get_page_links,
+)
+from homework10.pack_task1.parse_utils import (
+    corp_code_parse,
+    corp_max_profit_parse,
+    corp_name_parse,
+    corp_pe_parse,
+    corp_price_parse,
+    urls_growth_parse,
+)
 
 
 class MarketsInsiderRawData:
-    """Class for getting all the data as responses"""
+    """Class for getting all the data as responses.text"""
 
     def __init__(self, fixed_page_count=None):
         self.fixed_page_count = fixed_page_count
 
-        self.base_resp_text = cu.get_base_response_text()
-        self.page_count = cu.get_page_count(self.base_resp_text, self.fixed_page_count)
-        self.page_links = cu.get_page_links(self.page_count)
+        self.base_resp_text = get_base_response_text()
+        self.page_count = get_page_count(self.base_resp_text, self.fixed_page_count)
+        self.page_links = get_page_links(self.page_count)
         self.pages_text_data = self._build_response_list(self.page_links)
 
         self.links_growth_data = []
         for text_data in self.pages_text_data:
-            self.links_growth_data += cu.urls_growth_parse(text_data)
+            self.links_growth_data += urls_growth_parse(text_data)
 
         self.details_links = [corp["url"] for corp in self.links_growth_data]
         self.growth_values = [corp["year_growth"] for corp in self.links_growth_data]
@@ -87,18 +100,25 @@ class CorpDataParser:
                 return response
 
     def compute_data(self):
-        # with Pool(self.cpu_count) as p:
-        #     self.corp_names = p.map(cu.corp_name_parse, self.details_text_data)
-        # with Pool(self.cpu_count) as p:
-        #     self.corp_codes = p.map(cu.corp_code_parse, self.details_text_data)
         with Pool(self.cpu_count) as p:
+            self.corp_names = p.map(corp_name_parse, self.details_text_data)
+            self.corp_codes = p.map(corp_code_parse, self.details_text_data)
             self.corp_prices = p.starmap(
-                cu.corp_price_parse, zip(self.details_text_data, [self.rub_rate] * len(self.details_text_data))
+                corp_price_parse, zip(self.details_text_data, [self.rub_rate] * len(self.details_text_data))
             )
-        with Pool(self.cpu_count) as p:
-            self.pe_vals = p.map(cu.corp_pe_parse, self.details_text_data)
-        with Pool(self.cpu_count) as p:
-            self.corp_max_profit_vals = p.map(cu.corp_max_profit_parse, self.details_text_data)
+            self.pe_vals = p.map(corp_pe_parse, self.details_text_data)
+            self.corp_max_profit_vals = p.map(corp_max_profit_parse, self.details_text_data)
+
+        # with Pool(self.cpu_count) as p:
+        #     self.corp_codes = p.map(pu.corp_code_parse, self.details_text_data)
+        # with Pool(self.cpu_count) as p:
+        #     self.corp_prices = p.starmap(
+        #         pu.corp_price_parse, zip(self.details_text_data, [self.rub_rate] * len(self.details_text_data))
+        #     )
+        # with Pool(self.cpu_count) as p:
+        #     self.pe_vals = p.map(pu.corp_pe_parse, self.details_text_data)
+        # with Pool(self.cpu_count) as p:
+        #     self.corp_max_profit_vals = p.map(pu.corp_max_profit_parse, self.details_text_data)
 
     def build_data_table(self):
         for name, code, price, pe, max_profit, growth in zip(
@@ -142,8 +162,7 @@ class CorpDataParser:
 
         file_name = report_name + ".json"
         with open(file_name, "w") as report:
-            for dct in dict_list:
-                json.dump(dct, report, indent=2)
+            json.dump(dict_list, report, indent=2)
 
 
 if __name__ == "__main__":
@@ -153,7 +172,7 @@ if __name__ == "__main__":
     print(end)
 
     start = time.time()
-    table_data = CorpDataParser(raw_data.details_text_data[:20], raw_data.growth_values[:20])
+    table_data = CorpDataParser(raw_data.details_text_data, raw_data.growth_values)
     table_data.compute_data()
     table_data.build_data_table()
     end = time.time() - start

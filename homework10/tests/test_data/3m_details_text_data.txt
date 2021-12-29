@@ -1,0 +1,4505 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<!-- Meta Tags -->
+
+<title>MMM Stock | News | 3M Stock Price Today | Analyst Opinions | Markets Insider</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="title" content="MMM Stock | News | 3M Stock Price Today | Analyst Opinions | Markets Insider" />
+<meta property="og:title" content="MMM Stock | News | 3M Stock Price Today | Analyst Opinions | Markets Insider" />
+<meta property="twitter:title" content="MMM Stock | News | 3M Stock Price Today | Analyst Opinions | Markets Insider" />
+		<meta name="description" content="MMM: Get the latest 3M stock price and detailed information including MMM news, historical charts and realtime prices.
+" />
+		<meta property="og:description" content="MMM: Get the latest 3M stock price and detailed information including MMM news, historical charts and realtime prices.
+" />
+		<meta name="twitter:description" content="MMM: Get the latest 3M stock price and detailed information including MMM news, historical charts and realtime prices.
+" />
+
+	<meta property="og:image" content="http://markets.businessinsider.com/Images/FacebookIcon.jpg" />
+	<meta name="Googlebot-News" content="NOINDEX,FOLLOW">
+<meta name="author" content="finanzen.net GmbH">
+<meta name="Publisher" content="finanzen.net GmbH" />
+<meta name="Copyright" content="finanzen.net GmbH" />
+<meta name="Robots" content="INDEX,FOLLOW" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="page-topic" content="Finanzen" />
+<meta name="page-type" content="Kommerzielle Homepage" />
+<meta name="audience" content="Alle" />
+<meta name="verify-v1" content="O7IlH7Qai/tL0iF1rHcx2JJ8p+LJIZjfS+ylSLqaxm4=" />
+<meta name="google-site-verification" content="mZUp2IbDqdTBhra_E0ZqOG4NW0GuABzSMO9mcAXDJ9E" />
+<meta name="pocket-site-verification" content="6efc6eae0393e106a6d1d377acc83e" />
+<meta property="og:site_name" content="markets.businessinsider.com" />
+<meta property="fb:page_id" content="1669622843355246" />
+<meta property="fb:pages" content="20446254070" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://markets.businessinsider.com/stocks/mmm-stock"/>
+<link title="markets.businessinsider.com" rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#014889">
+
+
+	<!-- PreLoads -->
+
+<link rel="preload" href="/Content/dist/fonts/LabGrotesqueBlack-Subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/Content/dist/fonts/LabGrotesqueBold-Subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/Content/dist/fonts/LabGrotesqueRegular-Subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/Content/dist/fonts/PTSans-Regular-Subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/Content/dist/fonts/TiemposText-Regular-Subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/Content/dist/fonts/TiemposText-Bold-Subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/Content/dist/fonts/TiemposText-BoldItalic-Subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/Content/dist/fonts/TiemposText-Italic-Subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/Content/dist/fonts/icon.woff2?v=370768254" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/Content/dist/images/business-insider-logo.svg" as="image">
+<link rel="preload" href="/Content/dist/images/insider-intelligence-logo.svg" as="image">
+<link rel="preload" href="/Content/dist/images/insider-logo.svg" as="image">
+<link rel="preload" href="/Content/dist/images/markets-insider-logo.svg" as="image">
+
+
+<link rel="dns-prefetch" href="//pproxy.markets.businessinsider.com">
+<link rel="dns-prefetch" href="//images.finanzen.net">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//www.googletagservices.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//cdn.krxd.net">
+<link rel="dns-prefetch" href="//beacon.krxd.net">
+<link rel="dns-prefetch" href="//usermatch.krxd.net">
+<link rel="dns-prefetch" href="//js-agent.newrelic.com">
+<link rel="dns-prefetch" href="//data.dianomi.com">
+<link rel="dns-prefetch" href="//ping.chartbeat.net">
+<link rel="dns-prefetch" href="//static.chartbeat.com">
+
+<link rel="preconnect" href="//cdn.privacy-mgmt.com">
+<link rel="preconnect" href="//cdn.tinypass.com">
+<link rel="preconnect" href="//htlbid.com">
+<link rel="preconnect" href="//cdn.permutive.com">
+<link rel="preconnect" href="//live.sekindo.com">
+<link rel="preconnect" href="//dianomi.com">
+	<!-- Stylesheet -->
+
+<link href="/Content/dist/styles-shares-details.css?v=b9adf487" rel="stylesheet" title="" type="text/css" />
+<link rel="stylesheet" type="text/css" href="https://htlbid.com/v3/marketsinsider.com/htlbid.css" />
+<link href="/cache/css/chartiq/stx-chart.css?v=b9adf487" rel="stylesheet" title="" type="text/css" />
+
+
+<noscript>
+	<style>
+		#piano-inline-content-wrapper {
+			display: none !important;
+		}
+
+		.piano-freemium {
+			display: block !important;
+		}
+
+		#piano-inline-slideshow-wrapper {
+			display: none !important;
+		}
+	</style>
+</noscript>
+
+	<!-- JavaScript -->
+
+
+	<script defer="defer" src="/Content/Scripts/jquery-1.11.3.min.js?v=b9adf487"></script><script defer="defer" src="/Content/Scripts/jquery.lazy-master/jquery.lazy.min.js?v=b9adf487"></script><script defer="defer" src="/Content/Scripts/jquery-ui.min.js?v=b9adf487"></script><script defer="defer" src="/Content/Scripts/mmsuggest.js?v=b9adf487"></script>
+<script defer="defer" src="/Content/Scripts/MDSnG/libs/socket.io.js?v=b9adf487"></script>
+<script defer="defer" src="/Content/Scripts/MDSnG/Config.min.js?v=b9adf487"></script>
+<script defer="defer" src="/Content/Scripts/MDSnG/min/clientApiCore.min.js?v=b9adf487"></script>
+<script defer="defer" src="/Content/Scripts/MDSnG/min/clientApiLibs.min.js?v=b9adf487"></script>
+
+
+
+
+
+<script async="async" defer="defer" src="/Content/dist/scripts-shares-details.js?v=b9adf487"></script>
+
+<script>
+		var FinandoJsEnvironment = {  VersionNumber : "7", CurrencySeparator : ",", RegexForDateValidation : /^\d{1,2}\/\d{1,2}\/\d{4}$/, RegexForEmailValidation : /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/ }
+		var isDevelopmentMode = 'False' === 'True';
+		var idleNotify = {
+			time: '10',
+			href: '/notify',
+			isEnabled: 'False'
+		};
+</script>
+
+<script>
+	var permutiveConfigurations = {
+		permutivePageType: 'quote',
+		pageType: 'markets',
+		topSection: 'shares',
+		disableHtlbid: false,
+		isHome: false
+	};
+</script>
+<script>
+	// tinypass library informations
+	window.loadTinpass = false;
+
+// general time informations
+timestamp = '202112291458067069';
+utcTimeOffsetToApplication = '-5';
+isApplicationTimeByUser = 'False';
+
+// MostViewedInstruments
+window.mostViewedInstrumentsData = '{ "Encoding" : { "_t" : "Latin1Encoding", "EncoderFallback" : { "_t" : "InternalEncoderBestFitFallback" }, "DecoderFallback" : { "_t" : "InternalDecoderBestFitFallback" } }, "ShortName" : "3M", "URL" : "/stocks/mmm-stock", "LastPrice" : null, "ChangeAbsolute" : null, "ChangePercentage" : null, "Date" : null, "Identifier" : "VVM4ODU3OVkxMDEw", "Symbol" : "MMM", "InstrumentTypeID" : 3 }';
+
+// variables for mmssuggest, see suggest-search.js
+window.mmURLBase = "/ajax/SearchController_Suggest";
+window.mmURLIcons = "https://images.finanzen.net/images/b_mmsuggest/";
+window.InstrumentPageRoutes = {
+	Fund: "/funds/",
+    ETF: "/etfs/",
+    Share: "/stocks/",
+    Bond: "/bonds/",
+    Index: "/index/",
+    Commodity: "/commodities/",
+    InterestRate: "/rates/",
+    Derivative: "//",
+    ExchangeRate: "/currencies/",
+    PrivateCompany: "/private-company/"
+
+	};
+  window.InstrumentTypeNames = {
+    Fund: "Funds",
+    ETF: "ETFs",
+    Share: "Stocks",
+    Bond: "Bonds",
+    Index: "Indices",
+    Commodity: "Commodities",
+    InterestRate: "Interest Rates",
+    Derivative: "Derivatives",
+    ExchangeRate: "Currencies",
+    PrivateCompany: "Private Companies"
+  };
+</script>
+
+<noscript>
+	<style>
+		[data-simplebar] {
+			overflow: auto;
+		}
+	</style>
+</noscript>
+
+
+
+	<!-- Sections for news, tracking and canonicals -->
+		<link rel="canonical" href="https://markets.businessinsider.com/stocks/mmm-stock" />
+
+
+
+
+</head>
+<body>
+	<!-- DevisedLabs Very Large Image LCP Hack -->
+	<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI5OTk5OXB4IiBoZWlnaHQ9Ijk5OTk5cHgiIHZpZXdCb3g9IjAgMCA5OTk5OSA5OTk5OSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIGZpbGwtb3BhY2l0eT0iMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijk5OTk5IiBoZWlnaHQ9Ijk5OTk5Ij48L3JlY3Q+IDwvZz4gPC9zdmc+" alt="" width="99999" height="99999" style="pointer-events: none; position: absolute; top: 0; left: 0; width: 99vw; height: 99vh; max-width: 99vw; max-height: 99vh;" />
+
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBTPXX" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+</noscript>
+<script>
+!function (e, t, a, n, g) { e[n] = e[n] || [], e[n].push({ "gtm.start": (new Date).getTime(), event: "gtm.js" }); var m = t.getElementsByTagName(a)[0], r = t.createElement(a); r.async = !0, r.src = "//www.googletagmanager.com/gtm.js?id=GTM-MBTPXX", m.parentNode.insertBefore(r, m) }(window, document, "script", "dataLayer");
+</script>
+
+		<div class="htlad-mobile_header"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Homepage"
+				 data-prebid="0x0:IAS|768x0:"></div>
+
+
+		<div class="htlad-mobile_sticky_lower"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Homepage"
+				 data-prebid="0x0:Stocks/Homepage/mobile_leaderboard|768x0:"></div>
+
+	<!-- Markets Insider Page Header -->
+	<div class="graviton">
+		<header class="site-header site-header--overlay">
+	<!-- Logo Row -->
+	<div class="site-header__first-row">
+		<!-- Menu Button -->
+		<div class="site-header__menu-button">
+			<button class="button button--icon-only button--border-hidden button--size-large button--hover-blue" data-side-panel-open="navigation-region" data-side-panel-close="login">
+				<span class="icon icon-menu"></span>
+			</button>
+		</div>
+
+		<div class="site-header__i-logo">
+			<a href="https://www.insider.com/" class="logo logo-insider" title="Insider">Insider</a>
+		</div>
+
+		<!-- Markets Insider Logo -->
+		<div class="site-header__mi-logo">
+			<a href="https://markets.businessinsider.com/" class="logo logo-markets-insider logo--size-auto" title="Markets Insider">Markets Insider</a>
+		</div>
+
+		<!-- Search Formular -->
+		<div class="site-header__search">
+			<form name="mmssearch" class="width-l-100-percent width-m-100-percent width-s-100-percent" action="/searchresults" method="GET" role="search">
+				<div class="input-group input-group--stretch">
+					<input name="_search" type="text" class="input-group__text-input" placeholder="Search markets" autocomplete="off">
+					<div class="input-group__append">
+						<span class="icon icon-search"></span>
+					</div>
+				</div>
+				<div class="desktop-results"></div>
+			</form>
+		</div>
+
+		<!-- Log In & Subscribe Button -->
+		<div class="site-header__actions">
+			<a href="#" class="site-header__log-in button button--icon-only button--border-hidden" data-side-panel-open="login" data-side-panel-close="navigation-region">
+				<span class="icon icon-user"></span>
+			</a>
+			<a href="https://www.businessinsider.com/subscription/prime?utm_source=markets" class="site-header__subscribe button button--pill button--size-small" target="_blank" title="Subscribe">Subscribe</a>
+		</div>
+	</div>
+
+	<!-- Menu Row -->
+	<div class="site-header__second-row">
+		<!-- Top Menu -->
+		<nav class="site-header__top-menu">
+
+<ul class="top-menu">
+					<li class="top-menu__item " data-id="1">
+						<a href="/" title="Markets"  class="top-menu__link">
+							Markets
+						</a>
+					</li>
+					<li class="top-menu__item top-menu__item--active" data-id="2">
+						<a href="/stocks" title="Stocks"  class="top-menu__link">
+							Stocks
+						</a>
+					</li>
+					<li class="top-menu__item " data-id="3">
+						<a href="/indices" title="Indices"  class="top-menu__link">
+							Indices
+						</a>
+					</li>
+					<li class="top-menu__item " data-id="4">
+						<a href="/commodities" title="Commodities"  class="top-menu__link">
+							Commodities
+						</a>
+					</li>
+					<li class="top-menu__item " data-id="5">
+						<a href="/cryptocurrencies" title="Cryptocurrencies"  class="top-menu__link">
+							Cryptocurrencies
+						</a>
+					</li>
+					<li class="top-menu__item " data-id="6">
+						<a href="/currencies" title="Currencies"  class="top-menu__link">
+							Currencies
+						</a>
+					</li>
+					<li class="top-menu__item " data-id="7">
+						<a href="/etfs" title="ETFs"  class="top-menu__link">
+							ETFs
+						</a>
+					</li>
+					<li class="top-menu__item " data-id="9">
+						<a href="/news" title="News"  class="top-menu__link">
+							News
+						</a>
+					</li>
+</ul>
+		</nav>
+
+		<!-- Calendar -->
+		<div class="site-header__calendar">
+			<div class="dropdown">
+				<button class="dropdown__trigger button button--icon-only button--border-hidden button--hover-blue">
+					<span class="icon icon-calendar"></span>
+				</button>
+				<div class="dropdown__content listing">
+					<ul class="listing__list">
+						<li class="listing__item"><span class="listing__text"><a href="/economic-calendar" class="listing__link" title="Economic">Economic</a></span></li>
+						<li class="listing__item"><span class="listing__text"><a href="/earnings-calendar" class="listing__link" title="Earnings">Earnings</a></span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Markets Now Row -->
+	<div class="site-header__third-row">
+		<div class="site-header__markets-now-section">
+			<script>
+  window.marketsNowSections = window.marketsNowSections || { configs: [] };
+  window.marketsNowSections.configs.push({
+  	regionSelector: '#markets-now-section',
+    repalceNode: true,
+  	marketsNowSection: {"isOutOfMarketTime":true,"showFutures":true,"caption":{"doesMarketOpenToday":true,"marketOpenTime":"2021-12-29T17:27:56.3606187Z","marketOpenTimeMillies":1923639.3813,"captionText":"U.S. markets open in 32 minutes 3 seconds","captionLink":"/premarket","isShown":true},"clientApiVariable":"clientApiHandler","values":[{"label":"DOW 30","mobileHiddenLabel":null,"url":"/index/dow_jones","premarketObject":{"label":"Dow","mobileHiddenLabel":"Futures","url":"/futures/dow-futures","premarketObject":null,"valuePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y0101313000998313","pushDataField":"Last","pushRoomIdentifier":null,"template":null,"table":7,"time":null},"relativeValue":-0.02756,"absoluteValue":-10.00000,"currentValue":36270.00000,"previousClose":36282.00000,"roundedCurrent":0,"roundedAbsolute":0,"chartData":null,"RelativeValueText":"-0.03%","AbsoluteValueText":"-10.00","CurrentValueText":"36,270.00"},"valuePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y0101136000998313","pushDataField":"Last","pushRoomIdentifier":null,"template":null,"table":7,"time":null},"relativeValue":0.26398,"absoluteValue":95.83000,"currentValue":36398.21000,"previousClose":36398.21000,"roundedCurrent":2,"roundedAbsolute":2,"chartData":null,"RelativeValueText":"-0.03%","AbsoluteValueText":"-10.00","CurrentValueText":"36,270.00"},{"label":"S&P 500","mobileHiddenLabel":null,"url":"/index/s&p_500","premarketObject":{"label":"S&P","mobileHiddenLabel":"Futures","url":"/futures/s&p-500-futures","premarketObject":null,"valuePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y01010EA000712045","pushDataField":"Last","pushRoomIdentifier":null,"template":null,"table":7,"time":null},"relativeValue":-0.08889,"absoluteValue":-4.25000,"currentValue":4776.75000,"previousClose":4778.50000,"roundedCurrent":0,"roundedAbsolute":0,"chartData":null,"RelativeValueText":"-0.09%","AbsoluteValueText":"-4.25","CurrentValueText":"4,776.75"},"valuePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y0101423000998434","pushDataField":"Last","pushRoomIdentifier":null,"template":null,"table":7,"time":null},"relativeValue":-0.10102,"absoluteValue":-4.84000,"currentValue":4786.35000,"previousClose":4786.35000,"roundedCurrent":2,"roundedAbsolute":2,"chartData":null,"RelativeValueText":"-0.09%","AbsoluteValueText":"-4.25","CurrentValueText":"4,776.75"},{"label":"NASDAQ","mobileHiddenLabel":"100","url":"/index/nasdaq_100","premarketObject":{"label":"NASDAQ","mobileHiddenLabel":"Futures","url":"/futures/nasdaq-100-futures","premarketObject":null,"valuePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y01010EA000821881","pushDataField":"Last","pushRoomIdentifier":null,"template":null,"table":7,"time":null},"relativeValue":-0.19985,"absoluteValue":-33.00000,"currentValue":16479.50000,"previousClose":16488.00000,"roundedCurrent":0,"roundedAbsolute":0,"chartData":null,"RelativeValueText":"-0.20%","AbsoluteValueText":"-33.00","CurrentValueText":"16,479.50"},"valuePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y010146F000985336","pushDataField":"Last","pushRoomIdentifier":null,"template":null,"table":7,"time":null},"relativeValue":-0.47586,"absoluteValue":-78.83886,"currentValue":16488.66131,"previousClose":16488.66131,"roundedCurrent":2,"roundedAbsolute":2,"chartData":null,"RelativeValueText":"-0.20%","AbsoluteValueText":"-33.00","CurrentValueText":"16,479.50"},{"label":"Gold","mobileHiddenLabel":null,"url":"/commodities/gold-price","premarketObject":null,"valuePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y0306000000XAU-USD","pushDataField":"Mid","pushRoomIdentifier":null,"template":null,"table":7,"time":null},"relativeValue":-0.83063,"absoluteValue":-15.00000,"currentValue":1790.85000,"previousClose":1805.85000,"roundedCurrent":2,"roundedAbsolute":2,"chartData":null,"RelativeValueText":"-0.83%","AbsoluteValueText":"-15.00","CurrentValueText":"1,790.85"},{"label":"Oil (WTI)","mobileHiddenLabel":null,"url":"/commodities/oil-price?type=wti","premarketObject":null,"valuePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y01010080001594836-USD","pushDataField":"Last","pushRoomIdentifier":null,"template":null,"table":7,"time":null},"relativeValue":-0.56549,"absoluteValue":-0.43000,"currentValue":75.61000,"previousClose":75.98000,"roundedCurrent":2,"roundedAbsolute":2,"chartData":null,"RelativeValueText":"-0.57%","AbsoluteValueText":"-0.43","CurrentValueText":"75.61"},{"label":"BTC/USD","mobileHiddenLabel":null,"url":"/currencies/btc-usd","premarketObject":null,"valuePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y0401000000F123456","pushDataField":"Mid","pushRoomIdentifier":null,"template":null,"table":7,"time":null},"relativeValue":-0.467863410711288,"absoluteValue":-222.75,"currentValue":47387.30078125,"previousClose":47610.05078125,"roundedCurrent":2,"roundedAbsolute":2,"chartData":null,"RelativeValueText":"-0.47%","AbsoluteValueText":"-222.75","CurrentValueText":"47,387.30"}]}
+  });
+</script>
+<fieldset id="markets-now-section" class="markets-now-section">
+  <legend class="markets-now-section__legend"><a href="/premarket">U.S. markets open in 32 minutes 3 seconds</a></legend>
+  <div class="markets-now-section__row">
+      <div class="markets-now-section__market">
+        <div class="markets-now  markets-now--negative">
+          <div class="markets-now__header">
+            <div class="markets-now__up-or-down">
+              <div class="arrow"></div>
+            </div>
+            <a href="#" class="markets-now__caption">Dow <span class="markets-now__sub-caption">Futures</span></a>
+          </div>
+          <div class="markets-now__values">
+            <div class="markets-now__relative-value">-0.03%</div>
+            <div class="markets-now__absolute-value">-10.00</div>
+            <div class="markets-now__current-value">36,270.00</div>
+          </div>
+        </div>
+      </div>
+      <div class="markets-now-section__market">
+        <div class="markets-now  markets-now--negative">
+          <div class="markets-now__header">
+            <div class="markets-now__up-or-down">
+              <div class="arrow"></div>
+            </div>
+            <a href="#" class="markets-now__caption">S&amp;P <span class="markets-now__sub-caption">Futures</span></a>
+          </div>
+          <div class="markets-now__values">
+            <div class="markets-now__relative-value">-0.09%</div>
+            <div class="markets-now__absolute-value">-4.25</div>
+            <div class="markets-now__current-value">4,776.75</div>
+          </div>
+        </div>
+      </div>
+      <div class="markets-now-section__market">
+        <div class="markets-now  markets-now--negative">
+          <div class="markets-now__header">
+            <div class="markets-now__up-or-down">
+              <div class="arrow"></div>
+            </div>
+            <a href="#" class="markets-now__caption">NASDAQ <span class="markets-now__sub-caption">Futures</span></a>
+          </div>
+          <div class="markets-now__values">
+            <div class="markets-now__relative-value">-0.20%</div>
+            <div class="markets-now__absolute-value">-33.00</div>
+            <div class="markets-now__current-value">16,479.50</div>
+          </div>
+        </div>
+      </div>
+      <div class="markets-now-section__market">
+        <div class="markets-now  markets-now--negative">
+          <div class="markets-now__header">
+            <div class="markets-now__up-or-down">
+              <div class="arrow"></div>
+            </div>
+            <a href="#" class="markets-now__caption">Gold <span class="markets-now__sub-caption"></span></a>
+          </div>
+          <div class="markets-now__values">
+            <div class="markets-now__relative-value">-0.83%</div>
+            <div class="markets-now__absolute-value">-15.00</div>
+            <div class="markets-now__current-value">1,790.85</div>
+          </div>
+        </div>
+      </div>
+      <div class="markets-now-section__market">
+        <div class="markets-now  markets-now--negative">
+          <div class="markets-now__header">
+            <div class="markets-now__up-or-down">
+              <div class="arrow"></div>
+            </div>
+            <a href="#" class="markets-now__caption">Oil (WTI) <span class="markets-now__sub-caption"></span></a>
+          </div>
+          <div class="markets-now__values">
+            <div class="markets-now__relative-value">-0.57%</div>
+            <div class="markets-now__absolute-value">-0.43</div>
+            <div class="markets-now__current-value">75.61</div>
+          </div>
+        </div>
+      </div>
+      <div class="markets-now-section__market">
+        <div class="markets-now  markets-now--negative">
+          <div class="markets-now__header">
+            <div class="markets-now__up-or-down">
+              <div class="arrow"></div>
+            </div>
+            <a href="#" class="markets-now__caption">BTC/USD <span class="markets-now__sub-caption"></span></a>
+          </div>
+          <div class="markets-now__values">
+            <div class="markets-now__relative-value">-0.47%</div>
+            <div class="markets-now__absolute-value">-222.75</div>
+            <div class="markets-now__current-value">47,387.30</div>
+          </div>
+        </div>
+      </div>
+  </div>
+</fieldset>
+		</div>
+	</div>
+</header>
+<div class="site-header__breakpoint"></div>
+<aside class="navigation-region side-panel-left" data-side-panel="navigation-region">
+	<!-- Navigation Region Header -->
+	<header class="navigation-region__header">
+		<div class="navigation-region__search">
+			<a href="/stocks/find-stocks" title="Stocks Advanced Search" class="button button--icon-only button--border-hidden button--hover-blue button--size-large">
+				<span class="icon icon-search"></span>
+			</a>
+		</div>
+		<div class="navigation-region__caption">
+			<a href="https://www.insider.com/" class="logo logo-insider logo-insider--left-side-panel" title="Insider">Insider</a>
+		</div>
+		<div class="navigation-region__close-button">
+			<button class="button button--icon-only button--border-hidden button--hover-blue button--size-large" data-side-panel-close="navigation-region">
+				<span class="icon icon-close"></span>
+			</button>
+		</div>
+	</header>
+
+	<!-- Main Menu -->
+	<div class="navigation-region__content">
+		<div class="navigation-region__menu">
+				<ul class="left-menu">
+				<li class="left-menu__item ">
+					<div class="left-menu__toggle-button button button--opener"></div>
+					<div class="left-menu__text">
+						<a href="/" class="left-menu__link" title="Markets">Markets</a>
+					</div>
+						<ul class="left-menu__submenu">
+									<li class="left-menu__submenu__item"><a href="/bonds" class="left-menu__submenu__text">Bonds</a></li>
+									<li class="left-menu__submenu__item"><a href="/funds" class="left-menu__submenu__text">Funds</a></li>
+									<li class="left-menu__submenu__item"><a href="/premarket" class="left-menu__submenu__text">Pre-Market</a></li>
+									<li class="left-menu__submenu__item"><a href="/index/market-movers" class="left-menu__submenu__text">Market Movers</a></li>
+									<li class="left-menu__submenu__item"><a href="/index/dow_jones" class="left-menu__submenu__text">Dow Jones Live</a></li>
+									<li class="left-menu__submenu__item"><a href="/mymarkets" class="left-menu__submenu__text">Your Portfolio</a></li>
+						</ul>
+				</li>
+				<li class="left-menu__item ">
+					<div class="left-menu__toggle-button button button--opener"></div>
+					<div class="left-menu__text">
+						<a href="/stocks" class="left-menu__link" title="Stocks">Stocks</a>
+					</div>
+						<ul class="left-menu__submenu">
+									<li class="left-menu__submenu__item"><a href="/stocks/find-stocks" class="left-menu__submenu__text">Stocks Finder</a></li>
+									<li class="left-menu__submenu__item"><a href="/index/market-movers" class="left-menu__submenu__text">Market Movers</a></li>
+									<li class="left-menu__submenu__item"><a href="/index/components" class="left-menu__submenu__text">Index Constituents</a></li>
+									<li class="left-menu__submenu__item"><a href="/earnings-calendar" class="left-menu__submenu__text">Earnings Calendar</a></li>
+									<li class="left-menu__submenu__item"><a href="/stocks/dividends" class="left-menu__submenu__text">Dividends</a></li>
+						</ul>
+				</li>
+				<li class="left-menu__item ">
+					<div class="left-menu__toggle-button button button--opener"></div>
+					<div class="left-menu__text">
+						<a href="/indices" class="left-menu__link" title="Indices">Indices</a>
+					</div>
+						<ul class="left-menu__submenu">
+									<li class="left-menu__submenu__item"><a href="/index/market-movers" class="left-menu__submenu__text">Market Movers</a></li>
+									<li class="left-menu__submenu__item"><a href="/index/components" class="left-menu__submenu__text">Index Constituents</a></li>
+									<li class="left-menu__submenu__item"><a href="/index/dow_jones" class="left-menu__submenu__text">Dow Jones Live</a></li>
+									<li class="left-menu__submenu__item"><a href="/index/s&p_500" class="left-menu__submenu__text">S&P 500 Live</a></li>
+									<li class="left-menu__submenu__item"><a href="/index/nasdaq_100" class="left-menu__submenu__text">NASDAQ Live</a></li>
+									<li class="left-menu__submenu__item"><a href="/indices" class="left-menu__submenu__text">World Map</a></li>
+						</ul>
+				</li>
+				<li class="left-menu__item ">
+					<div class="left-menu__toggle-button button button--opener"></div>
+					<div class="left-menu__text">
+						<a href="/commodities" class="left-menu__link" title="Commodities">Commodities</a>
+					</div>
+						<ul class="left-menu__submenu">
+									<li class="left-menu__submenu__item"><a href="/news/ressort/commodities" class="left-menu__submenu__text">News</a></li>
+									<li class="left-menu__submenu__item"><a href="/commodities/realtime-list" class="left-menu__submenu__text">Commodities Live</a></li>
+									<li class="left-menu__submenu__item"><a href="/commodities/gold-price" class="left-menu__submenu__text">Gold</a></li>
+									<li class="left-menu__submenu__item"><a href="/commodities/oil-price?type=wti" class="left-menu__submenu__text">Oil</a></li>
+									<li class="left-menu__submenu__item"><a href="/commodities/copper-price" class="left-menu__submenu__text">Copper</a></li>
+						</ul>
+				</li>
+				<li class="left-menu__item ">
+					<div class="left-menu__toggle-button button button--opener"></div>
+					<div class="left-menu__text">
+						<a href="/cryptocurrencies" class="left-menu__link" title="Cryptocurrencies">Cryptocurrencies</a>
+					</div>
+						<ul class="left-menu__submenu">
+									<li class="left-menu__submenu__item"><a href="/currencies/btc-usd" class="left-menu__submenu__text">Bitcoin</a></li>
+									<li class="left-menu__submenu__item"><a href="/currencies/eth-usd" class="left-menu__submenu__text">Ethereum</a></li>
+									<li class="left-menu__submenu__item"><a href="/cryptocurrencies" class="left-menu__submenu__text">Cryptocurrencies Live</a></li>
+						</ul>
+				</li>
+				<li class="left-menu__item ">
+					<div class="left-menu__toggle-button button button--opener"></div>
+					<div class="left-menu__text">
+						<a href="/currencies" class="left-menu__link" title="Currencies">Currencies</a>
+					</div>
+						<ul class="left-menu__submenu">
+									<li class="left-menu__submenu__item"><a href="/news/ressort/currencies" class="left-menu__submenu__text">News</a></li>
+									<li class="left-menu__submenu__item"><a href="/currencies/realtime-list" class="left-menu__submenu__text">Currencies Live</a></li>
+									<li class="left-menu__submenu__item"><a href="/currency-converter" class="left-menu__submenu__text">Currency Converter</a></li>
+									<li class="left-menu__submenu__item"><a href="/currencies/eur-usd" class="left-menu__submenu__text">EUR/USD</a></li>
+									<li class="left-menu__submenu__item"><a href="/currencies/gbp-usd" class="left-menu__submenu__text">GBP/USD</a></li>
+									<li class="left-menu__submenu__item"><a href="/index/us-dollar-index" class="left-menu__submenu__text">US Dollar Index</a></li>
+						</ul>
+				</li>
+				<li class="left-menu__item ">
+					<div class="left-menu__toggle-button button button--opener"></div>
+					<div class="left-menu__text">
+						<a href="/etfs" class="left-menu__link" title="ETFs">ETFs</a>
+					</div>
+						<ul class="left-menu__submenu">
+									<li class="left-menu__submenu__item"><a href="/news/ressort/etf" class="left-menu__submenu__text">News</a></li>
+									<li class="left-menu__submenu__item"><a href="/etf/finder" class="left-menu__submenu__text">ETF Finder</a></li>
+									<li class="left-menu__submenu__item"><a href="/etf/investmentcompanies" class="left-menu__submenu__text">ETF Issuers</a></li>
+						</ul>
+				</li>
+				<li class="left-menu__item left-menu__item--no-submenu">
+					<div class="left-menu__toggle-button button button--opener"></div>
+					<div class="left-menu__text">
+						<a href="/news" class="left-menu__link" title="News">News</a>
+					</div>
+				</li>
+	</ul>
+
+
+		</div>
+		<div class="navigation-region__actions">
+			<a href="#" class="button button--icon-only button--border-hidden margin-right--medium" data-side-panel-open="login" data-side-panel-close="navigation-region">
+				<span class="icon icon-user"></span>
+			</a>
+			<a href="https://www.businessinsider.com/subscription/prime?utm_source=markets" class="button button--pill button--size-small" target="_blank" title="Subscribe">Subscribe</a>
+		</div>
+		<div class="navigation-region__social-links">
+			<a href="http://www.twitter.com/mktsinsider" target="_blank" class="button button--icon-only button--border-blue"><span class="icon icon-social-media-twitter"></span></a>
+			<a href="https://www.facebook.com/BusinessInsider.Finance" target="_blank" class="button button--icon-only button--border-blue margin-left--medium"><span class="icon icon-social-media-facebook"></span></a>
+			<a href="https://www.linkedin.com/company/insiderdigital" target="_blank" class="button button--icon-only button--border-blue margin-left--medium"><span class="icon icon-social-media-linkedin"></span></a>
+			<a href="https://www.youtube.com/thisisinsider" target="_blank" class="button button--icon-only button--border-blue margin-left--medium"><span class="icon icon-social-media-youtube"></span></a>
+			<a href="https://www.instagram.com/insider" target="_blank" class="button button--icon-only button--border-blue margin-left--medium"><span class="icon icon-social-media-instagram"></span></a>
+		</div>
+	</div>
+
+    <!-- Rights Infos & Disclaimer -->
+    <footer class="navigation-region__footer">
+        <p class="navigation-region__footer__text">
+            &copy; 2021 Insider Inc. and <a href="https://www.finanzen.net/impressum" class="navigation-region__footer__link">finanzen.net</a> GmbH (Imprint). All rights reserved.
+        </p>
+        <p class="navigation-region__footer__text">
+            Registration on or use of this site constitutes acceptance of our <a href="http://www.businessinsider.com/terms" class="navigation-region__footer__link">Terms of Service</a> and <a href="https://www.insider-inc.com/privacy-policy#ccpa" class="navigation-region__footer__link">Privacy Policy</a>.
+        </p>
+        <p class="navigation-region__footer__text">
+	        <a href="http://www.businessinsider.com/terms" class="navigation-region__footer__link" rel="sponsored">Disclaimer</a> |
+	        <a href="https://www.insider-inc.com/accessibility" class="navigation-region__footer__link" rel="sponsored">Accessibility Statement</a> |
+            <a href="http://www.businessinsider.com/commerce-on-business-insider" class="navigation-region__footer__link" rel="sponsored">Commerce Policy</a> |
+            <a href="http://nytm.org/made" class="navigation-region__footer__link" rel="sponsored">Made In NYC</a> |
+            Stock quotes by <a href="https://www.finanzen.net/" class="navigation-region__footer__link">finanzen.net</a>
+        </p>
+    </footer>
+</aside>
+
+
+<aside class="user-region side-panel-right" data-side-panel="login">
+	<!-- Left Side Panel Header -->
+	<header class="user-region__header">
+		<div class="user-region__close-button">
+			<button class="button button--icon-only button--border-hidden button--hover-blue button--size-large" data-side-panel-close="login">
+				<span class="icon icon-close"></span>
+			</button>
+		</div>
+		<div class="user-region__caption">
+			<a href="#" class="logo logo-markets-insider logo--size-auto" title="Insider">Insider</a>
+		</div>
+	</header>
+
+	<!-- Main Menu -->
+	<div class="user-region__content">
+		<div class="user-region__greeting">
+			<h3 class="spacer-zero">Login to your account</h3>
+		</div>
+		<div class="user-region__actions">
+				<a class="button button--rounded button--stretch button--size-large margin-bottom--medium" href="/mymarkets?originurl=%2fstocks%2fmmm-stock">Signup</a>
+				<a class="button button--rounded button--stretch button--size-large margin-bottom--medium" href="/mymarkets?originurl=%2fstocks%2fmmm-stock">Login</a>
+				<a class="button button--pill button--rounded button--stretch button--size-large margin-bottom--medium" href="https://www.businessinsider.com/subscription/prime?utm_source=markets">Subscribe to BI Prime</a>
+		</div>
+	</div>
+</aside>
+
+	</div>
+
+	<!-- Markets Insider Page Content -->
+	<main class="site-content">
+
+
+
+
+
+<div >
+				<div class="site-content__row ">
+<div  class="grid__col--12 grid__col--m-12 grid__col--s-12  site-content__col--spacer">
+		<div class="htlad-subnav"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Quote"
+				 data-prebid="0x0:|768x0:Stocks/Quote/billboard_flex|1024x0:Stocks/Quote/billboard_flex"></div>
+</div>
+				</div>
+					<div class="spacer-10"></div>
+				<div class="site-content__row graviton">
+<div class="site-content__col site-content__col--left">
+<script>
+	window.priceSections = window.priceSections || {};
+	window.priceSections.configs = window.priceSections.configs || [];
+	window.priceSections.configs.push({
+		watchListId: '#watch-list-daacbf2e4c2e48d99dbb5f5b493b4da1',
+		regionSelector: '#price-section-daacbf2e4c2e48d99dbb5f5b493b4da1',
+		priceSection: {"label":"3M Co.","symbol":"MMM","instrumentId":402,"exchangeLabel":null,"currency":"","category":"Stock","tradingButton":null,"relativeValue":0.0056296796712215873,"absoluteValue":0.0099999999999909051,"currentValue":177.64,"previousClose":177.63,"roundedCurrent":2,"roundedAbsolute":2,"roundedRelative":2,"valuePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y010149B0001405105","pushDataField":"Last","pushRoomIdentifier":"RY010149B0001405105","template":"Last","table":7,"time":null},"timePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y010149B0001405105","pushDataField":"LastTimestamp","pushRoomIdentifier":"RY010149B0001405105","template":"LastTimestamp","table":1,"time":"08:03:16 AM"},"plus500TradingLink":"https://www.plus500.com/Trading/Stocks?id=127452&tags=marketsinsider_stocksdetail_buysell&pl=2","preTimePushText":"Pre-market ","postTimePushText":"NYSE","timePushText":null,"time":"08:03:16 AM","isFuture":false}
+	});
+
+	// TODO (at)if (Model.Future != null) not working, why?
+	window.priceSections.configs.push({
+		regionSelector: '#price-section-with-future-daacbf2e4c2e48d99dbb5f5b493b4da1',
+		priceSection: {"label":"","symbol":"","instrumentId":402,"exchangeLabel":null,"currency":"","category":"","tradingButton":null,"relativeValue":0.53197509903791618,"absoluteValue":0.93999999999999773,"currentValue":177.64,"previousClose":176.7,"roundedCurrent":2,"roundedAbsolute":2,"roundedRelative":2,"valuePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y01010410001405105","pushDataField":"Mid","pushRoomIdentifier":"RY01010410001405105","template":"Mid","table":7,"time":null},"timePushApi":{"pushApiLibrary":"clientApiHandler","pushIdentifier":"Y01010410001405105","pushDataField":"MidTimestamp","pushRoomIdentifier":"RY01010410001405105","template":"MidTimestamp","table":1,"time":"Official Close 12/28/2021"},"plus500TradingLink":null,"preTimePushText":null,"postTimePushText":"NYSE","timePushText":null,"time":"Official Close 12/28/2021","isFuture":true}
+	});
+
+	window.addInstrumentConfigs = window.addInstrumentConfigs || [];
+	window.addInstrumentConfigs.push({
+		config: {
+			sidePanelName: 'addInstrument',
+			loginUrl: '/mymarkets?r=%2fstocks%2fmmm-stock',
+			watchlistUrl: '/mymarkets/watchlist'
+		},
+    regionId: 'daacbf2e4c2e48d99dbb5f5b493b4da1'
+});
+</script>
+
+<div class="graviton">
+	<div class="price-section-with-button">
+		<div class="price-section-with-button__row">
+			<div class="price-section-with-button__price-section-col ">
+				<section id="price-section-daacbf2e4c2e48d99dbb5f5b493b4da1" class="price-section">
+					<div class="price-section__row">
+						<h1 class="price-section__identifiers">
+							<span class="price-section__label">3M Co. </span>
+							<span class="price-section__category">
+								Stock <span>, MMM</span>							</span>
+
+						</h1>
+						<div class="price-section__values">
+							<span class="price-section__current-value">177.64</span>
+							<span class="price-section__breakpoint"></span>
+							<span class="price-section__absolute-value">
+								+0.01
+							</span>
+							<span class="price-section__relative-value">
+								+0.01%
+							</span>
+						</div>
+						<div class="price-section__additionals">
+							<span>Pre-market </span>
+							<span>08:03:16 AM</span>
+							<span class="padding-left--smaller">NYSE</span>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="price-section-with-button__price-section-button-col">
+				<div class="price-section-with-button__button-grid grid">
+					<div class="price-section-with-button__container">
+            <button class="price-section-with-button__plus500 hidden price-section-with-button__fixed-width button--color-blue" title="Plus500. 72% of retail CFD accounts lose money" data-plus-500>Start Trading</button>
+            <div class="price-section-with-button__button-row price-section-with-button__buttons">
+              <button class="button price-section-with-button__fixed-width" data-add-instrument="daacbf2e4c2e48d99dbb5f5b493b4da1" data-add-instrument-label="3M Co." data-add-instrument-type="2" data-add-instrument-id="402" data-add-instrument-isin="US88579Y1010">Add to watchlist</button>
+              <div class="margin-top--xsmall price-section-with-button__fixed-width">
+
+		<div class="htlad-button"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Quote"></div>
+
+              </div>
+            </div>
+					</div>
+					<div class="price-section-with-button__button-row price-section-with-button__description note plus-500-description">
+						<span class="hidden grid--d-none grid--d-s-block" data-plus-500>Plus500. 72% of retail CFD accounts lose money</span>
+					</div>
+				</div>
+			</div>
+				<div class="price-section-with-button__price-section-future-col ">
+					<section id="price-section-with-future-daacbf2e4c2e48d99dbb5f5b493b4da1" class="price-section price-section--future">
+						<div class="price-section__row">
+							<div class="price-section__values">
+								<span class="price-section__current-value">177.64</span>
+								<span class="price-section__breakpoint"></span>
+								<span class="price-section__absolute-value">
+									+0.94
+								</span>
+								<span class="price-section__relative-value">
+									+0.53%
+								</span>
+							</div>
+							<div class="price-section__additionals">
+								<span></span>
+								<span>Official Close 12/28/2021</span>
+								<span>NYSE</span>
+							</div>
+						</div>
+					</section>
+				</div>
+		</div>
+	</div>
+</div>
+
+</div>
+				</div>
+				<div class="site-content__row graviton">
+<div class="site-content__col site-content__col--left"><style>
+    .left-rail-blackLine {
+        height: 24px;
+        border-bottom: 1px solid #111111;
+    }
+</style>
+<div class="graviton">
+    <div class="horizontal-line"></div>
+</div>
+<div id='lgPositionDetailChart'></div><div class='responsivePosition' id='DetailChart'>
+
+
+<style>
+    .stx_mountain_chart {
+        background: #01498a !important;
+        color: #01498a !important;
+        border: #01498a !important;
+        border-width: 1px;
+    }
+</style>
+
+
+
+<script>
+	var detailChartViewmodel = { "ChartSource" : "65", "ChartValor" : "1405105", "ChartExchange" : "65", "ChartCurrency" : "333", "TKData" : "65,1405105,65,333", "ChartData" : null, "intradayTkData" : "65,1405105,899,333", "InstrumentID" : 402, "InstrumentTypeID" : 3, "InstrumentType" : "Share", "StockMarkets" : { "NDN" : "NDN", "NYSE MKT" : "AMEX", "BAE" : "Baader Bank", "BER" : "Berlin", "BMN" : "BMN", "BRX" : "BX Swiss", "BTT" : "BATS Trading", "BUL" : "Bulgarian SE", "DUS" : "Düsseldorf", "FSE" : "Frankfurt", "GVIE" : "GVIE", "HAM" : "Hamburg", "HAN" : "Hannover", "MIC" : "MICEX", "MUN" : "München", "MXK" : "Mexiko", "XETRA" : "XUS", "NYSE" : "New York", "STU" : "Stuttgart", "SWX" : "Swiss Exchange", "TGT" : "Tradegate", "XQTX" : "XQTX" }, "Tabs" : [{ "Name" : "IntradayAvailability", "ShortName" : "Intraday" }, { "Name" : "OneWeek", "ShortName" : "1W" }, { "Name" : "OneMonth", "ShortName" : "1M" }, { "Name" : "ThreeMonths", "ShortName" : "3M" }, { "Name" : "SixMonths", "ShortName" : "6M" }, { "Name" : "YTD", "ShortName" : "YTD" }, { "Name" : "OneYear", "ShortName" : "1Y" }, { "Name" : "ThreeYears", "ShortName" : "3Y" }, { "Name" : "FiveYears", "ShortName" : "5Y" }, { "Name" : "TenYears", "ShortName" : "10Y" }, { "Name" : "Maximum", "ShortName" : "MAX" }], "PushIdentifier" : "Y01010410001405105", "PushDataField" : null, "StockUrl" : "/stocks/mmm/price", "Currency" : "USD", "StockMarketsExchanges" : [{ "TKData" : "65,1405105,1179,333", "ExchangeName" : "NYSE Bsc", "ExchangeNameShort" : "NDN" }, { "TKData" : "65,1405105,3319,333", "ExchangeName" : "Baader Bank", "ExchangeNameShort" : "BAE" }, { "TKData" : "65,1405105,18,333", "ExchangeName" : "Berlin-Bremen", "ExchangeNameShort" : "BER" }, { "TKData" : "65,1405105,1174,333", "ExchangeName" : "BX Swiss", "ExchangeNameShort" : "BRX" }, { "TKData" : "65,1405105,899,333", "ExchangeName" : "BATS Trading", "ExchangeNameShort" : "BTT" }, { "TKData" : "65,1405105,308,333", "ExchangeName" : "BUL", "ExchangeNameShort" : "BUL" }, { "TKData" : "65,1405105,14,333", "ExchangeName" : "Düsseldorf", "ExchangeNameShort" : "DUS" }, { "TKData" : "65,1405105,13,333", "ExchangeName" : "Frankfurt", "ExchangeNameShort" : "FSE" }, { "TKData" : "65,1405105,1523,333", "ExchangeName" : "Vienna EX 3", "ExchangeNameShort" : "GVIE" }, { "TKData" : "65,1405105,17,333", "ExchangeName" : "Hamburg", "ExchangeNameShort" : "HAM" }, { "TKData" : "65,1405105,19,333", "ExchangeName" : "Hannover", "ExchangeNameShort" : "HAN" }, { "TKData" : "65,1405105,549,333", "ExchangeName" : "MICEX", "ExchangeNameShort" : "MIC" }, { "TKData" : "65,1405105,15,333", "ExchangeName" : "München", "ExchangeNameShort" : "MUN" }, { "TKData" : "65,1405105,80,333", "ExchangeName" : "MXK", "ExchangeNameShort" : "MXK" }, { "TKData" : "65,1405105,44,333", "ExchangeName" : "XETRA", "ExchangeNameShort" : "XETRA" }, { "TKData" : "65,1405105,65,333", "ExchangeName" : "New York", "ExchangeNameShort" : "NYSE" }, { "TKData" : "65,1405105,16,333", "ExchangeName" : "Stuttgart", "ExchangeNameShort" : "STU" }, { "TKData" : "65,1405105,4,333", "ExchangeName" : "SIX SX", "ExchangeNameShort" : "SWX" }, { "TKData" : "65,1405105,6829,333", "ExchangeName" : "QUOTRIXDDORF", "ExchangeNameShort" : "XQTX" }], "InstrumentName" : "mmm-stock", "isOutOfMarketTime" : true, "isAmericanStock" : true, "isAsiaStock" : false, "intradayUrl" : "instruments=65,1405105,899,333&style=instrument_intraday_novolume&period=IntradayAvailability&timezone=Eastern Standard Time", "PreviousClose" : "176.70000", "AllwaysManipulatePreviuosClose" : false, "TabIdentifier" : null, "ChartNumber" : 0, "ActiveTab" : "OneYear", "HasIntradyData" : false, "Usedecimal" : false };
+	var utcOffset = -5;
+</script>
+
+
+<style>
+	.stx_mountain_chart {
+		background-color: rgb(1,73,138, 0.8);
+		color: rgb(1,73,138, 0.8);
+		border: rgb(1, 73, 138, 0.8);
+		border-width: 1px;
+	}
+
+	.stx_current_hr_up {
+		background-color: #18bb5c;
+	}
+
+	.stx_current_hr_down {
+		background-color: #ff433d;
+	}
+
+	.chartSize { /* Chart size container */
+		display: none;
+	}
+
+	.stx_crosshair {
+		background-color: #b5b5bc;
+	}
+
+	.stx-panel-title {
+		display: none;
+	}
+
+	.stx_volume_underlay_up {
+		color: rgb(24, 187, 92);
+		opacity: .5;
+		border-left-color: transparent;
+	}
+
+	.stx_volume_underlay_down {
+		color: rgb(255, 67, 61);
+		opacity: .5;
+		border-left-color: transparent;
+	}
+
+	.stx_colored_mountain_chart {
+		background-color: rgb(1,73,138, 0.8);
+		color: rgb(1,73,138, 0.8);
+		border: rgb(1, 73, 138, 0.8);
+		padding: 2px;
+		border-width: 2px;
+	}
+
+	.stx_line_up {
+		color: rgb(24, 187, 92);
+	}
+
+	.stx_line_down {
+		color: rgb(255, 67, 61);
+	}
+
+	.stx-btn-panel > span.stx-ico-focus {
+		display: none
+	}
+</style>
+	<link rel="stylesheet" href="/Content/Chart/finando-chartengine/styles.css">
+	<app-root data-detail-chart></app-root>
+									<div class="spacer-50 mobile-spacer-25"></div>
+</div>
+		<div class="htlad-mobile_in_post_ad_1"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Quote"
+				 data-prebid="0x0:Stocks/Quote/medrec_flex|768x0:"></div>
+<div id="xsPositionsnapshot"></div>
+		<div class="htlad-desktop_in_post_ad_1"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Quote"
+				 data-prebid="0x0:|768x0:Stocks/Quote/medrec|1261x0:Stocks/Quote/billboard_flex"></div>
+	<div class="graviton">
+			<h2 id="commodity-news" class="header-underline">
+				News
+					<a href="/news/mmm-stock" class="header-underline__right-text">More News<span class="icon icon-arrow-right"></span></a>
+			</h2>
+
+		<section class="instrument-stories">
+				<div class="instrument-stories__story instrument-stories__story--no-image">
+					<div class="instrument-stories__meta">
+						<span class="instrument-stories__source">Zacks</span>
+						<time class="instrument-stories__date" datetime="2021-12-28 23:50">15h</time>
+					</div>
+					<h3 class="instrument-stories__title">
+						<a class="instrument-stories__link" href="/news/stocks/3m-mmm-gains-as-market-dips--what-you-should-know-10880448" >3M (MMM) Gains As Market Dips: What You Should Know</a>
+					</h3>
+					<p class="instrument-stories__teaser">
+						<a class="instrument-stories__link" href="/news/stocks/3m-mmm-gains-as-market-dips--what-you-should-know-10880448" ></a>
+					</p>
+					<div class="instrument-stories__clear"></div>
+				</div>
+				<div class="instrument-stories__story instrument-stories__story--no-image">
+					<div class="instrument-stories__meta">
+						<span class="instrument-stories__source">Seeking Alpha</span>
+						<time class="instrument-stories__date" datetime="2021-12-28 11:57">1d</time>
+					</div>
+					<h3 class="instrument-stories__title">
+						<a class="instrument-stories__link" href="https://seekingalpha.com/news/3783465-market-positioning-is-too-bearish-jp-morgan-says?utm_source=markets.businessinsider.com&amp;utm_medium=referral" target=_blank rel=sponsored>Market positioning is too bearish, J.P. Morgan says: At the Open</a>
+					</h3>
+					<p class="instrument-stories__teaser">
+						<a class="instrument-stories__link" href="https://seekingalpha.com/news/3783465-market-positioning-is-too-bearish-jp-morgan-says?utm_source=markets.businessinsider.com&amp;utm_medium=referral" target=_blank rel=sponsored></a>
+					</p>
+					<div class="instrument-stories__clear"></div>
+				</div>
+				<div class="instrument-stories__story instrument-stories__story--no-image">
+					<div class="instrument-stories__meta">
+						<span class="instrument-stories__source">Business Times</span>
+						<time class="instrument-stories__date" datetime="2021-12-27 09:04">2d</time>
+					</div>
+					<h3 class="instrument-stories__title">
+						<a class="instrument-stories__link" href="/news/stocks/camsing-healthcare-to-receive-s$11-3m-investment-to-boost-natures-farm-business-10877021" >Camsing Healthcare to receive S$11.3m investment to boost Nature's Farm business</a>
+					</h3>
+					<p class="instrument-stories__teaser">
+						<a class="instrument-stories__link" href="/news/stocks/camsing-healthcare-to-receive-s$11-3m-investment-to-boost-natures-farm-business-10877021" ></a>
+					</p>
+					<div class="instrument-stories__clear"></div>
+				</div>
+				<div class="instrument-stories__story instrument-stories__story--no-image">
+					<div class="instrument-stories__meta">
+						<span class="instrument-stories__source">NewsBTC</span>
+						<time class="instrument-stories__date" datetime="2021-12-23 13:00">6d</time>
+					</div>
+					<h3 class="instrument-stories__title">
+						<a class="instrument-stories__link" href="/news/stocks/port-finance-raises-a-$5-3m-strategic-round-to-offer-fixed-rate-lending-on-solana-10872329" >Port Finance Raises a $5.3m Strategic Round To Offer Fixed Rate Lending on Solana</a>
+					</h3>
+					<p class="instrument-stories__teaser">
+						<a class="instrument-stories__link" href="/news/stocks/port-finance-raises-a-$5-3m-strategic-round-to-offer-fixed-rate-lending-on-solana-10872329" ></a>
+					</p>
+					<div class="instrument-stories__clear"></div>
+				</div>
+				<div class="instrument-stories__story instrument-stories__story--no-image">
+					<div class="instrument-stories__meta">
+						<span class="instrument-stories__source">Cointelegraph</span>
+						<time class="instrument-stories__date" datetime="2021-12-22 22:06">7d</time>
+					</div>
+					<h3 class="instrument-stories__title">
+						<a class="instrument-stories__link" href="/news/stocks/hong-kong-nft-project-monkey-kingdom-loses-$1-3m-in-phishing-hack--launches-compensation-fund-10870694" >Hong Kong NFT project Monkey Kingdom loses $1.3M in phishing hack, launches compensation fund</a>
+					</h3>
+					<p class="instrument-stories__teaser">
+						<a class="instrument-stories__link" href="/news/stocks/hong-kong-nft-project-monkey-kingdom-loses-$1-3m-in-phishing-hack--launches-compensation-fund-10870694" ></a>
+					</p>
+					<div class="instrument-stories__clear"></div>
+				</div>
+			<div class="instrument-stories__border"></div>
+		</section>
+	</div>
+									<div class="spacer-50 mobile-spacer-25"></div>
+
+		<div class="htlad-mobile_in_post_ad_1"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Quote"
+				 data-prebid="0x0:Stocks/Quote/medrec_flex|768x0:"></div>
+
+		<div class="htlad-desktop_in_post_ad_1"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Quote"
+				 data-prebid="0x0:|768x0:Stocks/Quote/medrec|1261x0:Stocks/Quote/billboard_flex"></div>
+<script>
+    window.historicalPrices = window.historicalPrices || {};
+    window.historicalPrices.configs = window.historicalPrices.configs || [];
+    window.historicalPrices.configs.push({
+        regionSelector: '#historicPrices',
+        historicalPrices: {"instrumentName":"3M Co.","startDate":"Nov. 29 2021","endDate":"Dec. 29 2021","currentStockMarket":"NDN","instrumentIdentifier":"1405105","instrumentTypeName":"Valor","headerCells":["Date","Open","Close","Daily High","Daily Low","Volume"],"columns":["Date","Open","Close","High","Low","Volume"],"model":[{"Open":177.05500,"Close":177.63000,"High":178.48990,"Low":176.75000,"Volume":"","Date":"12/28/21"},{"Open":175.15000,"Close":176.77000,"High":176.77000,"Low":174.91000,"Volume":"","Date":"12/27/21"},{"Open":173.01000,"Close":174.93000,"High":175.62000,"Low":172.80000,"Volume":"","Date":"12/23/21"},{"Open":172.96000,"Close":172.57000,"High":173.23000,"Low":171.56000,"Volume":"","Date":"12/22/21"},{"Open":173.45000,"Close":172.94000,"High":173.99000,"Low":172.22000,"Volume":"","Date":"12/21/21"},{"Open":173.69000,"Close":172.52000,"High":173.87680,"Low":170.96500,"Volume":"","Date":"12/20/21"},{"Open":178.30000,"Close":174.80000,"High":178.30000,"Low":174.35000,"Volume":"","Date":"12/17/21"},{"Open":175.63000,"Close":178.30000,"High":178.94000,"Low":174.81500,"Volume":"","Date":"12/16/21"},{"Open":175.34000,"Close":175.72000,"High":176.22000,"Low":173.88000,"Volume":"","Date":"12/15/21"},{"Open":175.29000,"Close":174.79000,"High":176.60000,"Low":174.25000,"Volume":"","Date":"12/14/21"},{"Open":177.09000,"Close":174.65000,"High":177.36810,"Low":174.41000,"Volume":"","Date":"12/13/21"},{"Open":178.64000,"Close":177.10000,"High":178.64000,"Low":176.12310,"Volume":"","Date":"12/10/21"},{"Open":176.11000,"Close":175.90000,"High":177.39090,"Low":175.64200,"Volume":"","Date":"12/09/21"},{"Open":176.25000,"Close":176.00000,"High":176.82000,"Low":174.43000,"Volume":"","Date":"12/08/21"},{"Open":177.30000,"Close":176.57000,"High":178.34000,"Low":176.18000,"Volume":"","Date":"12/07/21"},{"Open":174.21000,"Close":177.22000,"High":178.28000,"Low":174.00000,"Volume":"","Date":"12/06/21"},{"Open":170.15000,"Close":172.65000,"High":172.91000,"Low":169.27500,"Volume":"","Date":"12/03/21"},{"Open":171.19500,"Close":170.23000,"High":172.78000,"Low":169.91000,"Volume":"","Date":"12/02/21"},{"Open":172.39000,"Close":170.74000,"High":174.65000,"Low":170.70000,"Volume":"","Date":"12/01/21"},{"Open":174.97000,"Close":170.08500,"High":175.71000,"Low":169.95000,"Volume":"","Date":"11/30/21"},{"Open":176.79000,"Close":176.18500,"High":176.82990,"Low":174.98000,"Volume":"","Date":"11/29/21"}],"instrumentId":402}
+    });
+</script>
+
+<div class="graviton">
+		<h2 class="header-underline">Historical Prices</h2>
+
+	<div id="historicPrices">
+		<div class="grid__row">
+			<div class="grid__col--6 grid__col--m-12 grid__col--s-12 grid--d-flex grid--justify-content-start grid--order-1 grid--order-s-3">
+				<button class="button button--with-icon margin-right--s" title="Feb. 04 2021">
+					<span class="icon icon-calendar"></span>
+					<span class="button__label">Feb. 04 2021</span>
+					<span class="icon icon-left_right"></span>
+				</button>
+				<button class="button button--with-icon" title="Mar. 05 2021">
+					<span class="icon icon-calendar"></span>
+					<span class="button__label">Mar. 05 2021</span>
+					<span class="icon icon-left_right"></span>
+				</button>
+			</div>
+			<div class="grid__col--6 grid__col--m-12 grid__col--s-12 grid--d-flex grid--justify-content-end grid--justify-content-m-start grid--justify-content-s-start grid--order-2 grid--order-s-1">
+				<button class="button margin-right--s" title="Download">
+					<span class="button__label">Download</span>
+				</button>
+				<button title="Reset" class="button ">
+					<span class="button__label">Reset</span>
+				</button>
+			</div>
+			<div class="grid__col--12 grid--order-3 grid--order-s-2">
+				<table class="table table--fixed table--sortable">
+					<caption>Loading..</caption>
+					<thead class="table__thead">
+						<tr class="table__tr">
+							<th class="table__th">Date</th>
+							<th class="table__th">Open</th>
+							<th class="table__th">Close</th>
+							<th class="table__th">Daily High</th>
+							<th class="table__th">Daily Low</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="historical-prices__price-change grid__col--12 grid--order-4 grid--order-s-4">
+				<span>Price change over selected period:</span>
+				<span class="historical-prices__price-change-values">
+					<span class="font-color-gray">0%</span>
+					<span class="margin-left--s">0</span>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>									<div class="spacer-50 mobile-spacer-25"></div>
+
+<div class="graviton">
+  <h2 class="header-underline">Analyst Data</h2>
+  <div class="analysis-chart" id="analysis-chart-xcsdf4234">
+    <!-- Analysts -->
+    <div class="analysis-chart__analysts">
+      <span class="analysis-chart__label">
+        Total Analysts: <span class="analysis-chart__value">43</span>
+      </span>
+    </div>
+    <!-- Ratings -->
+    <div class="analysis-chart__ratings">
+      <span class="analysis-chart__label">
+        Buy Ratings: <span class="analysis-chart__value">8</span>
+      </span>
+      <span class="analysis-chart__label">
+        Neutral Ratings: <span class="analysis-chart__value">27</span>
+      </span>
+      <span class="analysis-chart__label">
+        Sell Ratings: <span class="analysis-chart__value">8</span>
+      </span>
+    </div>
+    <!-- Chart -->
+    <div class="analysis-chart__chart"></div>
+    <!-- Dot & Tooltip Template -->
+    <div id="analysis-chart-xcsdf4234-tooltip" class="analysis-chart__dot" data-analysis-chart="marker">
+      <span class="analysis-chart__tooltip" id="analysis-chart-xcsdf4234-tooltip-labels">
+        <span class="analysis-chart__tooltip-label"><span class="font-weight-bold">Analyst:</span> {{ANALYST_DATA}}</span><br />
+        <span class="analysis-chart__tooltip-label"><span class="font-weight-bold">Price-Target:</span> {{PRICE_DATA}}</span><br />
+        <span class="analysis-chart__tooltip-label"><span class="font-weight-bold">Rating:</span> {{RATING_DATA}}</span>
+      </span>
+    </div>
+    <!-- Legend -->
+    <div class="analysis-chart__legend">
+      <span class="analysis-chart__legend-item">Price</span>
+      <span class="analysis-chart__legend-item analysis-chart__legend-item--blue">*Price Target</span>
+    </div>
+    <!-- Bottom Values -->
+    <div class="analysis-chart__bottom-values">
+      <span class="analysis-chart__label">
+        Lowest: <span class="analysis-chart__value">146.00</span>
+      </span>
+      <span class="analysis-chart__label">
+        Median: <span class="analysis-chart__value">183.70</span>
+      </span>
+      <span class="analysis-chart__label">
+        Highest: <span class="analysis-chart__value">215.00</span>
+      </span>
+    </div>
+    <!-- Comment -->
+    <div class="analysis-chart__comment">
+      *The average price target includes all analyst analysis, not just the most recent analysis presented in the chart.
+    </div>
+  </div>
+</div>
+<script>
+window.analyseChartConfigs = window.analyseChartConfigs || [];
+window.analyseChartConfigs.push({
+    config: {"InstrumentName":null,"NumberOfAnalysis":43,"NumberOfBuy":8,"NumberOfNeutral":27,"NumberOfSell":8,"LowestPriceTarget":146.0,"HighestPriceTarget":215.0,"MedianPriceTarget":183.69767441860466,"AllPriceTargetAmount":7899.0,"Model":[{"Close":196.95,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":212.0,"Date":"20210706"},{"Close":199.83,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":215.0,"Date":"20210712"},{"Close":202.98,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":196.0,"Date":"20210714"},{"Close":198.31,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":207.0,"Date":"20210728"},{"Close":181.38,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":172.0,"Date":"20210917"},{"Close":176.2,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":196.0,"Date":"20211004"},{"Close":177.81,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":193.0,"Date":"20211007"},{"Close":176.81,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":179.0,"Date":"20211008"},{"Close":178.21,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":197.5,"Date":"20211027"},{"Close":172.65,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":199.0,"Date":"20211203"},{"Close":177.1,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":182.0,"Date":"20211210"},{"Close":175.72,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":198.0,"Date":"20211215"},{"Close":174.8,"Open":0.0,"High":0.0,"Low":0.0,"Volume":0.0,"Estimate":180.0,"Date":"20211217"}],"Markers":[{"PriceTarget":156.0,"InternalRating":"neutral","Date":1584465840000.0,"DateLabel":"03/17/2020","Company":"Morgan Stanley","RealDate":"2020-03-17T17:24:00+01:00"},{"PriceTarget":159.0,"InternalRating":"neutral","Date":1585347802000.0,"DateLabel":"03/27/2020","Company":"Goldman Sachs","RealDate":"2020-03-27T22:23:22+01:00"},{"PriceTarget":146.0,"InternalRating":"neutral","Date":1585779802000.0,"DateLabel":"04/01/2020","Company":"Citigroup Corp.","RealDate":"2020-04-01T22:23:22+02:00"},{"PriceTarget":158.0,"InternalRating":"neutral","Date":1586463817000.0,"DateLabel":"04/09/2020","Company":"Deutsche Bank","RealDate":"2020-04-09T20:23:37+02:00"},{"PriceTarget":180.0,"InternalRating":"gut","Date":1588173802000.0,"DateLabel":"04/29/2020","Company":"Credit Suisse","RealDate":"2020-04-29T15:23:22+02:00"},{"PriceTarget":163.0,"InternalRating":"neutral","Date":1588173808000.0,"DateLabel":"04/29/2020","Company":"Deutsche Bank","RealDate":"2020-04-29T15:23:28+02:00"},{"PriceTarget":170.0,"InternalRating":"neutral","Date":1588191810000.0,"DateLabel":"04/29/2020","Company":"Bank of America Merrill Lynch","RealDate":"2020-04-29T20:23:30+02:00"},{"PriceTarget":154.0,"InternalRating":"schlecht","Date":1588191811000.0,"DateLabel":"04/29/2020","Company":"Barclays Capital","RealDate":"2020-04-29T20:23:31+02:00"},{"PriceTarget":170.0,"InternalRating":"neutral","Date":1588191816000.0,"DateLabel":"04/29/2020","Company":"Citigroup Corp.","RealDate":"2020-04-29T20:23:36+02:00"},{"PriceTarget":160.0,"InternalRating":"neutral","Date":1588353827000.0,"DateLabel":"05/01/2020","Company":"Morgan Stanley","RealDate":"2020-05-01T17:23:47+02:00"},{"PriceTarget":156.0,"InternalRating":"schlecht","Date":1594142603000.0,"DateLabel":"07/07/2020","Company":"Barclays Capital","RealDate":"2020-07-07T17:23:23+02:00"},{"PriceTarget":166.0,"InternalRating":"neutral","Date":1596032608000.0,"DateLabel":"07/29/2020","Company":"Morgan Stanley","RealDate":"2020-07-29T14:23:28+02:00"},{"PriceTarget":157.0,"InternalRating":"schlecht","Date":1596032610000.0,"DateLabel":"07/29/2020","Company":"Barclays Capital","RealDate":"2020-07-29T14:23:30+02:00"},{"PriceTarget":179.0,"InternalRating":"gut","Date":1596050617000.0,"DateLabel":"07/29/2020","Company":"Credit Suisse","RealDate":"2020-07-29T19:23:37+02:00"},{"PriceTarget":197.0,"InternalRating":"gut","Date":1600280608000.0,"DateLabel":"09/16/2020","Company":"Credit Suisse","RealDate":"2020-09-16T18:23:28+02:00"},{"PriceTarget":173.0,"InternalRating":"neutral","Date":1602602608000.0,"DateLabel":"10/13/2020","Company":"Morgan Stanley","RealDate":"2020-10-13T15:23:28+02:00"},{"PriceTarget":176.0,"InternalRating":"neutral","Date":1603898619000.0,"DateLabel":"10/28/2020","Company":"Morgan Stanley","RealDate":"2020-10-28T15:23:39+01:00"},{"PriceTarget":170.0,"InternalRating":"schlecht","Date":1610036610000.0,"DateLabel":"01/07/2021","Company":"Bank of America Merrill Lynch","RealDate":"2021-01-07T16:23:30+01:00"},{"PriceTarget":188.0,"InternalRating":"neutral","Date":1610468612000.0,"DateLabel":"01/12/2021","Company":"Morgan Stanley","RealDate":"2021-01-12T16:23:32+01:00"},{"PriceTarget":197.0,"InternalRating":"gut","Date":1611764596000.0,"DateLabel":"01/27/2021","Company":"Credit Suisse","RealDate":"2021-01-27T16:23:16+01:00"},{"PriceTarget":205.0,"InternalRating":"gut","Date":1611764605000.0,"DateLabel":"01/27/2021","Company":"J.P. Morgan","RealDate":"2021-01-27T16:23:25+01:00"},{"PriceTarget":200.0,"InternalRating":"gut","Date":1612376610000.0,"DateLabel":"02/03/2021","Company":"Argus Research Company ","RealDate":"2021-02-03T18:23:30+01:00"},{"PriceTarget":202.0,"InternalRating":"gut","Date":1616516611000.0,"DateLabel":"03/23/2021","Company":"Credit Suisse","RealDate":"2021-03-23T16:23:31+01:00"},{"PriceTarget":180.0,"InternalRating":"schlecht","Date":1617722607000.0,"DateLabel":"04/06/2021","Company":"Barclays Capital","RealDate":"2021-04-06T15:23:27+02:00"},{"PriceTarget":200.0,"InternalRating":"neutral","Date":1618262609000.0,"DateLabel":"04/12/2021","Company":"Morgan Stanley","RealDate":"2021-04-12T21:23:29+02:00"},{"PriceTarget":210.0,"InternalRating":"gut","Date":1619630604000.0,"DateLabel":"04/28/2021","Company":"Credit Suisse","RealDate":"2021-04-28T17:23:24+02:00"},{"PriceTarget":200.0,"InternalRating":"neutral","Date":1619630609000.0,"DateLabel":"04/28/2021","Company":"RBC Capital Markets","RealDate":"2021-04-28T17:23:29+02:00"},{"PriceTarget":212.0,"InternalRating":"neutral","Date":1625570594000.0,"DateLabel":"07/06/2021","Company":"Credit Suisse","RealDate":"2021-07-06T11:23:14+02:00"},{"PriceTarget":215.0,"InternalRating":"schlecht","Date":1626110608000.0,"DateLabel":"07/12/2021","Company":"Wolfe Research","RealDate":"2021-07-12T17:23:28+02:00"},{"PriceTarget":196.0,"InternalRating":"neutral","Date":1626290610000.0,"DateLabel":"07/14/2021","Company":"Deutsche Bank","RealDate":"2021-07-14T19:23:30+02:00"},{"PriceTarget":201.0,"InternalRating":"neutral","Date":1627496595000.0,"DateLabel":"07/28/2021","Company":"Deutsche Bank","RealDate":"2021-07-28T18:23:15+02:00"},{"PriceTarget":213.0,"InternalRating":"neutral","Date":1627496598000.0,"DateLabel":"07/28/2021","Company":"Morgan Stanley","RealDate":"2021-07-28T18:23:18+02:00"},{"PriceTarget":172.0,"InternalRating":"schlecht","Date":1631888598000.0,"DateLabel":"09/17/2021","Company":"UBS","RealDate":"2021-09-17T14:23:18+02:00"},{"PriceTarget":210.0,"InternalRating":"neutral","Date":1633346594000.0,"DateLabel":"10/04/2021","Company":"J.P. Morgan","RealDate":"2021-10-04T11:23:14+02:00"},{"PriceTarget":182.0,"InternalRating":"schlecht","Date":1633364596000.0,"DateLabel":"10/04/2021","Company":"Barclays Capital","RealDate":"2021-10-04T16:23:16+02:00"},{"PriceTarget":193.0,"InternalRating":"neutral","Date":1633634599000.0,"DateLabel":"10/07/2021","Company":"Morgan Stanley","RealDate":"2021-10-07T19:23:19+02:00"},{"PriceTarget":179.0,"InternalRating":"neutral","Date":1633706620000.0,"DateLabel":"10/08/2021","Company":"Wells Fargo & Co","RealDate":"2021-10-08T15:23:40+02:00"},{"PriceTarget":201.0,"InternalRating":"neutral","Date":1635362601000.0,"DateLabel":"10/27/2021","Company":"Credit Suisse","RealDate":"2021-10-27T19:23:21+02:00"},{"PriceTarget":194.0,"InternalRating":"neutral","Date":1635362602000.0,"DateLabel":"10/27/2021","Company":"Morgan Stanley","RealDate":"2021-10-27T19:23:22+02:00"},{"PriceTarget":199.0,"InternalRating":"neutral","Date":1638548616000.0,"DateLabel":"12/03/2021","Company":"RBC Capital Markets","RealDate":"2021-12-03T16:23:36+01:00"},{"PriceTarget":182.0,"InternalRating":"neutral","Date":1639160608000.0,"DateLabel":"12/10/2021","Company":"Deutsche Bank","RealDate":"2021-12-10T18:23:28+01:00"},{"PriceTarget":198.0,"InternalRating":"neutral","Date":1639574594000.0,"DateLabel":"12/15/2021","Company":"Credit Suisse","RealDate":"2021-12-15T13:23:14+01:00"},{"PriceTarget":180.0,"InternalRating":"neutral","Date":1639754633000.0,"DateLabel":"12/17/2021","Company":"Mizuho","RealDate":"2021-12-17T15:23:53+01:00"}]},
+    regionId: 'analysis-chart-xcsdf4234'
+});
+</script>									<div class="spacer-50 mobile-spacer-25"></div>
+
+<div class="graviton">
+			<h2 class="header-underline">Analyst Opinions for 3M Co.</h2>
+
+		<div class="grid--d-flex grid--justify-content-end">
+			<div class="dropdown dropdown--m-stretch" data-table-filter="5639df7517874b6fba64f3f1850fdcff" data-table-filter-type="dropdown">
+				<button class="dropdown__trigger button button--with-icon button--m-stretch button--s-stretch margin-bottom--smaller">
+					<span class="button__label">All</span>
+					<span class="icon icon-arrow-down icon--size-small"></span>
+				</button>
+
+				<div class="dropdown__content listing listing--selectable-items">
+					<ul class="listing__list">
+						<li class="listing__item" data-filter-index="-1" data-filter-value="all"><span class="listing__text">All</span></li>
+							<li class="listing__item" data-filter-index="6" data-filter-value="gut"><span class="listing__text">Buy</span></li>
+							<li class="listing__item" data-filter-index="6" data-filter-value="neutral"><span class="listing__text">Hold</span></li>
+							<li class="listing__item" data-filter-index="6" data-filter-value="schlecht"><span class="listing__text">Sell</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	<div class="grid--vertical-scrolling">
+	<table class="table table--fixed table--suppresses-line-breaks" data-table-filter-table="5639df7517874b6fba64f3f1850fdcff">
+		<tbody class="table__tbody">
+					<tr class="table__tr">
+									<td class="table__td"  >
+										12/17/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Mizuho
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$180
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										12/15/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Credit Suisse
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$198
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										12/10/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Deutsche Bank
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$182
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										12/03/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										RBC Capital Markets
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$199
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										10/27/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Credit Suisse
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$201
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										10/27/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Morgan Stanley
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$194
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										10/08/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Wells Fargo & Co
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$179
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										10/07/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Morgan Stanley
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$193
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										10/04/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Barclays Capital
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_red"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Sell
+									</td>
+									<td class="table__td"  >
+										$182
+									</td>
+									<td class="table__td hidden"  >
+										schlecht
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										10/04/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										J.P. Morgan
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Downgraded to Hold
+									</td>
+									<td class="table__td"  >
+										$210
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										09/17/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										UBS
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_red"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Sell
+									</td>
+									<td class="table__td"  >
+										$172
+									</td>
+									<td class="table__td hidden"  >
+										schlecht
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										07/28/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Deutsche Bank
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$201
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										07/28/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Morgan Stanley
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$213
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										07/14/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Deutsche Bank
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$196
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										07/12/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Wolfe Research
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_red"></div>
+									</td>
+									<td class="table__td"  >
+										Downgraded to Sell
+									</td>
+									<td class="table__td"  >
+										$215
+									</td>
+									<td class="table__td hidden"  >
+										schlecht
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										07/06/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Credit Suisse
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Downgraded to Hold
+									</td>
+									<td class="table__td"  >
+										$212
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										04/28/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Credit Suisse
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_green"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Buy
+									</td>
+									<td class="table__td"  >
+										$210
+									</td>
+									<td class="table__td hidden"  >
+										gut
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										04/28/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										RBC Capital Markets
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$200
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										04/12/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Morgan Stanley
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$200
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										04/06/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Barclays Capital
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_red"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Sell
+									</td>
+									<td class="table__td"  >
+										$180
+									</td>
+									<td class="table__td hidden"  >
+										schlecht
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										03/23/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Credit Suisse
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_green"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Buy
+									</td>
+									<td class="table__td"  >
+										$202
+									</td>
+									<td class="table__td hidden"  >
+										gut
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										02/03/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Argus Research Company
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_green"></div>
+									</td>
+									<td class="table__td"  >
+										Upgraded to Buy
+									</td>
+									<td class="table__td"  >
+										$200
+									</td>
+									<td class="table__td hidden"  >
+										gut
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										01/27/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Credit Suisse
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_green"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Buy
+									</td>
+									<td class="table__td"  >
+										$197
+									</td>
+									<td class="table__td hidden"  >
+										gut
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										01/27/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										J.P. Morgan
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_green"></div>
+									</td>
+									<td class="table__td"  >
+										Upgraded to Buy
+									</td>
+									<td class="table__td"  >
+										$205
+									</td>
+									<td class="table__td hidden"  >
+										gut
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										01/12/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Morgan Stanley
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$188
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										01/07/21
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Bank of America Merrill Lynch
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_red"></div>
+									</td>
+									<td class="table__td"  >
+										Downgraded to Sell
+									</td>
+									<td class="table__td"  >
+										$170
+									</td>
+									<td class="table__td hidden"  >
+										schlecht
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										10/28/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Morgan Stanley
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$176
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										10/13/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Morgan Stanley
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$173
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										10/07/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Gordon Haskett
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										09/16/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Credit Suisse
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_green"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Buy
+									</td>
+									<td class="table__td"  >
+										$197
+									</td>
+									<td class="table__td hidden"  >
+										gut
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										07/29/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Credit Suisse
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_green"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Buy
+									</td>
+									<td class="table__td"  >
+										$179
+									</td>
+									<td class="table__td hidden"  >
+										gut
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										07/29/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Morgan Stanley
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$166
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										07/29/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Barclays Capital
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_red"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Sell
+									</td>
+									<td class="table__td"  >
+										$157
+									</td>
+									<td class="table__td hidden"  >
+										schlecht
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										07/07/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Barclays Capital
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_red"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Sell
+									</td>
+									<td class="table__td"  >
+										$156
+									</td>
+									<td class="table__td hidden"  >
+										schlecht
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										05/01/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Morgan Stanley
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$160
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										04/29/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Bank of America Merrill Lynch
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$170
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										04/29/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Barclays Capital
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_red"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Sell
+									</td>
+									<td class="table__td"  >
+										$154
+									</td>
+									<td class="table__td hidden"  >
+										schlecht
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										04/29/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Citigroup Corp.
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$170
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										04/29/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Credit Suisse
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_green"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Buy
+									</td>
+									<td class="table__td"  >
+										$180
+									</td>
+									<td class="table__td hidden"  >
+										gut
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										04/29/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Deutsche Bank
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$163
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										04/09/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Deutsche Bank
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$158
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										04/01/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Citigroup Corp.
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$146
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										03/30/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Gordon Haskett
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_red"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Sell
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td hidden"  >
+										schlecht
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										03/27/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Goldman Sachs
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$159
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										03/17/20
+									</td>
+									<td class="table__td"  >
+
+									</td>
+									<td class="table__td"  >
+										Morgan Stanley
+									</td>
+									<td class="table__td"  >
+										<div class="image_icon_price_triangle_grey"></div>
+									</td>
+									<td class="table__td"  >
+										Maintained Hold
+									</td>
+									<td class="table__td"  >
+										$156
+									</td>
+									<td class="table__td hidden"  >
+										neutral
+									</td>
+					</tr>
+		</tbody>
+	</table>
+	</div>
+
+
+
+
+</div>
+
+
+									<div class="spacer-50 mobile-spacer-25"></div>
+
+		<div class="htlad-mobile_in_post_ad_1"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Quote"
+				 data-prebid="0x0:Stocks/Quote/medrec_flex|768x0:"></div>
+
+		<div class="htlad-desktop_in_post_ad_1"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Quote"
+				 data-prebid="0x0:|768x0:Stocks/Quote/medrec|1261x0:Stocks/Quote/billboard_flex"></div>
+
+
+<div class="graviton">
+					<h2 class="header-underline">Estimates* for 3M Co. in USD</h2>
+
+		<div class="tab-region" data-tab-region="funds-performances">
+			<nav class="tab-region__navigation">
+				<div class="tab" data-tab="funds-performances">
+					<ul class="tab__list">
+						<li class="tab__item" data-tab-item="yearly">Yearly</li>
+						<li class="tab__item" data-tab-item="quarterly">Quarterly</li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="tab-region__container">
+					<div class="grid--vertical-scrolling tab-region__content" data-tab-region-content="yearly">
+		<table class="table table--fixed table--suppresses-line-breaks table--col-2-text-align-right table--col-3-text-align-right table--col-4-text-align-right table--col-5-text-align-right table--col-6-text-align-right">
+			<thead class="table__thead">
+				<tr class="table__tr">
+					<th class="table__th">&nbsp;</th>
+							<th class="table__th text-right">2021</th>
+							<th class="table__th text-right">2022</th>
+							<th class="table__th text-right">2023</th>
+							<th class="table__th text-right">2024</th>
+
+				</tr>
+			</thead>
+			<tbody class="table__tbody">
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Revenue</td>
+
+								<td width="18%" class="table__td text-right" >
+									35,336
+								</td>
+								<td width="18%" class="table__td text-right" >
+									36,621
+								</td>
+								<td width="18%" class="table__td text-right" >
+									37,930
+								</td>
+								<td width="18%" class="table__td text-right" >
+									39,876
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Dividend</td>
+
+								<td width="18%" class="table__td text-right" >
+									5.88
+								</td>
+								<td width="18%" class="table__td text-right" >
+									6.09
+								</td>
+								<td width="18%" class="table__td text-right" >
+									6.28
+								</td>
+								<td width="18%" class="table__td text-right" >
+									6.24
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Dividend Yield (in %)</td>
+
+								<td width="18%" class="table__td text-right" >
+									3.29 %
+								</td>
+								<td width="18%" class="table__td text-right" >
+									3.40 %
+								</td>
+								<td width="18%" class="table__td text-right" >
+									3.50 %
+								</td>
+								<td width="18%" class="table__td text-right" >
+									3.47 %
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">EPS</td>
+
+								<td width="18%" class="table__td text-right" >
+									9.84
+								</td>
+								<td width="18%" class="table__td text-right" >
+									10.41
+								</td>
+								<td width="18%" class="table__td text-right" >
+									11.14
+								</td>
+								<td width="18%" class="table__td text-right" >
+									11.91
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">P/E Ratio</td>
+
+								<td width="18%" class="table__td text-right" >
+									18.03
+								</td>
+								<td width="18%" class="table__td text-right" >
+									16.84
+								</td>
+								<td width="18%" class="table__td text-right" >
+									15.76
+								</td>
+								<td width="18%" class="table__td text-right" >
+									14.59
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">EBIT</td>
+
+								<td width="18%" class="table__td text-right" >
+									7,356
+								</td>
+								<td width="18%" class="table__td text-right" >
+									7,888
+								</td>
+								<td width="18%" class="table__td text-right" >
+									8,362
+								</td>
+								<td width="18%" class="table__td text-right" >
+									8,705
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">EBITDA</td>
+
+								<td width="18%" class="table__td text-right" >
+									9,256
+								</td>
+								<td width="18%" class="table__td text-right" >
+									9,748
+								</td>
+								<td width="18%" class="table__td text-right" >
+									10,217
+								</td>
+								<td width="18%" class="table__td text-right" >
+									11,094
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Net Profit</td>
+
+								<td width="18%" class="table__td text-right" >
+									5,741
+								</td>
+								<td width="18%" class="table__td text-right" >
+									6,034
+								</td>
+								<td width="18%" class="table__td text-right" >
+									6,371
+								</td>
+								<td width="18%" class="table__td text-right" >
+									6,372
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Net Profit Adjusted</td>
+
+								<td width="18%" class="table__td text-right" >
+									5,731
+								</td>
+								<td width="18%" class="table__td text-right" >
+									6,021
+								</td>
+								<td width="18%" class="table__td text-right" >
+									6,360
+								</td>
+								<td width="18%" class="table__td text-right" >
+									6,372
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Pre-Tax Profit</td>
+
+								<td width="18%" class="table__td text-right" >
+									7,109
+								</td>
+								<td width="18%" class="table__td text-right" >
+									7,628
+								</td>
+								<td width="18%" class="table__td text-right" >
+									8,062
+								</td>
+								<td width="18%" class="table__td text-right" >
+									7,967
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Net Profit (Adjusted)</td>
+
+								<td width="18%" class="table__td text-right" >
+									7,124
+								</td>
+								<td width="18%" class="table__td text-right" >
+									7,527
+								</td>
+								<td width="18%" class="table__td text-right" >
+									7,981
+								</td>
+								<td width="18%" class="table__td text-right" >
+									7,967
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">EPS (Non-GAAP) ex. SOE</td>
+
+								<td width="18%" class="table__td text-right" >
+									9.84
+								</td>
+								<td width="18%" class="table__td text-right" >
+									10.41
+								</td>
+								<td width="18%" class="table__td text-right" >
+									11.14
+								</td>
+								<td width="18%" class="table__td text-right" >
+									11.91
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">EPS (GAAP)</td>
+
+								<td width="18%" class="table__td text-right" >
+									9.79
+								</td>
+								<td width="18%" class="table__td text-right" >
+									10.38
+								</td>
+								<td width="18%" class="table__td text-right" >
+									10.95
+								</td>
+								<td width="18%" class="table__td text-right" >
+									10.99
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Gross Income</td>
+
+								<td width="18%" class="table__td text-right" >
+									16,670
+								</td>
+								<td width="18%" class="table__td text-right" >
+									17,440
+								</td>
+								<td width="18%" class="table__td text-right" >
+									18,158
+								</td>
+								<td width="18%" class="table__td text-right" >
+									17,913
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Cash Flow from Investing</td>
+
+								<td width="18%" class="table__td text-right" >
+									-1,885
+								</td>
+								<td width="18%" class="table__td text-right" >
+									-1,815
+								</td>
+								<td width="18%" class="table__td text-right" >
+									-1,886
+								</td>
+								<td width="18%" class="table__td text-right" >
+									-1,731
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Cash Flow from Operations</td>
+
+								<td width="18%" class="table__td text-right" >
+									7,227
+								</td>
+								<td width="18%" class="table__td text-right" >
+									7,839
+								</td>
+								<td width="18%" class="table__td text-right" >
+									8,172
+								</td>
+								<td width="18%" class="table__td text-right" >
+									8,164
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Cash Flow from Financing</td>
+
+								<td width="18%" class="table__td text-right" >
+									-4,956
+								</td>
+								<td width="18%" class="table__td text-right" >
+									-5,018
+								</td>
+								<td width="18%" class="table__td text-right" >
+									-5,438
+								</td>
+								<td width="18%" class="table__td text-right" >
+									-5,219
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Cash Flow per Share</td>
+
+								<td width="18%" class="table__td text-right" >
+									12.86
+								</td>
+								<td width="18%" class="table__td text-right" >
+									13.53
+								</td>
+								<td width="18%" class="table__td text-right" >
+									14.35
+								</td>
+								<td width="18%" class="table__td text-right" >
+									-
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Free Cash Flow</td>
+
+								<td width="18%" class="table__td text-right" >
+									5,749
+								</td>
+								<td width="18%" class="table__td text-right" >
+									6,126
+								</td>
+								<td width="18%" class="table__td text-right" >
+									6,425
+								</td>
+								<td width="18%" class="table__td text-right" >
+									6,951
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Free Cash Flow per Share</td>
+
+								<td width="18%" class="table__td text-right" >
+									8.26
+								</td>
+								<td width="18%" class="table__td text-right" >
+									9.04
+								</td>
+								<td width="18%" class="table__td text-right" >
+									11.55
+								</td>
+								<td width="18%" class="table__td text-right" >
+									12.78
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Book Value per Share</td>
+
+								<td width="18%" class="table__td text-right" >
+									25.38
+								</td>
+								<td width="18%" class="table__td text-right" >
+									28.42
+								</td>
+								<td width="18%" class="table__td text-right" >
+									31.88
+								</td>
+								<td width="18%" class="table__td text-right" >
+									-
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Net Debt</td>
+
+								<td width="18%" class="table__td text-right" >
+									12,839
+								</td>
+								<td width="18%" class="table__td text-right" >
+									11,205
+								</td>
+								<td width="18%" class="table__td text-right" >
+									9,272
+								</td>
+								<td width="18%" class="table__td text-right" >
+									10,251
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Research & Development Exp.</td>
+
+								<td width="18%" class="table__td text-right" >
+									2,021
+								</td>
+								<td width="18%" class="table__td text-right" >
+									2,078
+								</td>
+								<td width="18%" class="table__td text-right" >
+									2,190
+								</td>
+								<td width="18%" class="table__td text-right" >
+									2,209
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Capital Expenditure</td>
+
+								<td width="18%" class="table__td text-right" >
+									1,602
+								</td>
+								<td width="18%" class="table__td text-right" >
+									1,728
+								</td>
+								<td width="18%" class="table__td text-right" >
+									1,782
+								</td>
+								<td width="18%" class="table__td text-right" >
+									1,731
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Selling, General & Admin. Exp.</td>
+
+								<td width="18%" class="table__td text-right" >
+									7,252
+								</td>
+								<td width="18%" class="table__td text-right" >
+									7,438
+								</td>
+								<td width="18%" class="table__td text-right" >
+									7,606
+								</td>
+								<td width="18%" class="table__td text-right" >
+									7,610
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Shareholder’s Equity</td>
+
+								<td width="18%" class="table__td text-right" >
+									14,460
+								</td>
+								<td width="18%" class="table__td text-right" >
+									15,693
+								</td>
+								<td width="18%" class="table__td text-right" >
+									16,528
+								</td>
+								<td width="18%" class="table__td text-right" >
+									17,194
+								</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td black" width="25%">Total Assets</td>
+
+								<td width="18%" class="table__td text-right" >
+									48,044
+								</td>
+								<td width="18%" class="table__td text-right" >
+									48,597
+								</td>
+								<td width="18%" class="table__td text-right" >
+									49,832
+								</td>
+								<td width="18%" class="table__td text-right" >
+									50,299
+								</td>
+					</tr>
+			</tbody>
+		</table>
+	</div>
+
+				<div class="grid--vertical-scrolling tab-region__content" data-tab-region-content="quarterly">
+
+
+
+
+<table class="table">
+	<colgroup>
+		<col class="width-10-vw width-auto-s-percent">
+		<col class="width-10-percent width-auto-s-percent">
+		<col class="width-10-percent width-auto-s-percent">
+		<col class="width-10-percent width-auto-s-percent">
+		<col class="width-10-percent width-auto-s-percent">
+		<col class="width-10-percent width-auto-s-percent">
+	</colgroup>
+		<thead class="table__thead">
+			<tr class="table__tr">
+				<th class="table__th" style="width: 15%">&nbsp;</th>
+				<th class="table__th text-right">
+					Previous Quarter <br/> ending 09/30/21
+				</th>
+				<th class="table__th text-right">
+					Current Quarter <br/> ending 12/31/21
+				</th>
+				<th class="table__th text-right">
+					Next Quarter <br/> ending 03/31/22
+				</th>
+				<th class="table__th text-right">
+					Current Year <br/> ending 12/31/21
+				</th>
+				<th class="table__th text-right">
+					Next Year <br/> ending 12/31/22
+				</th>
+			</tr>
+		</thead>
+		<tbody class="table__tbody">
+				<tr class="table__tr table__tr--no-vertical-border">
+					<td colspan="6" class="table__td">Earnings Estimates</td>
+				</tr>
+	<tr>
+		<td class="table__td font-color-dim-gray">No. of Analysts</td>
+		<td class="table__td text-right">
+			17
+		</td>
+		<td class="table__td text-right">
+			18
+		</td>
+		<td class="table__td text-right">
+			14
+		</td>
+		<td class="table__td text-right">
+			19
+		</td>
+		<td class="table__td text-right">
+			19
+		</td>
+	</tr>
+	<tr>
+		<td class="table__td font-color-dim-gray">Average Estimate</td>
+		<td class="table__td text-right">
+			2.205 USD
+		</td>
+		<td class="table__td text-right">
+			2.034 USD
+		</td>
+		<td class="table__td text-right">
+			2.562 USD
+		</td>
+		<td class="table__td text-right">
+			9.838 USD
+		</td>
+		<td class="table__td text-right">
+			10.409 USD
+		</td>
+	</tr>
+	<tr>
+		<td class="table__td font-color-dim-gray">Year Ago</td>
+		<td class="table__td text-right">
+			2.430 USD
+		</td>
+		<td class="table__td text-right">
+			2.380 USD
+		</td>
+		<td class="table__td text-right">
+			2.770 USD
+		</td>
+		<td class="table__td text-right">
+			8.740 USD
+		</td>
+		<td class="table__td text-right">
+			9.838 USD
+		</td>
+	</tr>
+	<tr>
+		<td class="table__td font-color-dim-gray">Publish Date</td>
+		<td class="table__td text-right">
+			10/26/2021
+		</td>
+		<td class="table__td text-right">
+			1/25/2022
+		</td>
+		<td class="table__td text-right">
+			4/26/2022
+		</td>
+		<td class="table__td text-right">
+			-
+		</td>
+		<td class="table__td text-right">
+			-
+		</td>
+	</tr>
+			<tr class="table__tr table__tr--no-vertical-border">
+				<td colspan="6" class="table__td">Revenue Estimates</td>
+			</tr>
+				<tr>
+		<td class="table__td font-color-dim-gray">No. of Analysts</td>
+		<td class="table__td text-right">
+			13
+		</td>
+		<td class="table__td text-right">
+			15
+		</td>
+		<td class="table__td text-right">
+			10
+		</td>
+		<td class="table__td text-right">
+			18
+		</td>
+		<td class="table__td text-right">
+			18
+		</td>
+	</tr>
+	<tr>
+		<td class="table__td font-color-dim-gray">Average Estimate</td>
+		<td class="table__td text-right">
+			8,655 USD
+		</td>
+		<td class="table__td text-right">
+			8,606 USD
+		</td>
+		<td class="table__td text-right">
+			9,000 USD
+		</td>
+		<td class="table__td text-right">
+			35,336 USD
+		</td>
+		<td class="table__td text-right">
+			36,621 USD
+		</td>
+	</tr>
+	<tr>
+		<td class="table__td font-color-dim-gray">Year Ago</td>
+		<td class="table__td text-right">
+			8,350 USD
+		</td>
+		<td class="table__td text-right">
+			8,583 USD
+		</td>
+		<td class="table__td text-right">
+			8,851 USD
+		</td>
+		<td class="table__td text-right">
+			32,184 USD
+		</td>
+		<td class="table__td text-right">
+			35,336 USD
+		</td>
+	</tr>
+	<tr>
+		<td class="table__td font-color-dim-gray">Publish Date</td>
+		<td class="table__td text-right">
+			10/26/2021
+		</td>
+		<td class="table__td text-right">
+			1/25/2022
+		</td>
+		<td class="table__td text-right">
+			4/26/2022
+		</td>
+		<td class="table__td text-right">
+			-
+		</td>
+		<td class="table__td text-right">
+			-
+		</td>
+	</tr>
+
+		</tbody>
+</table>
+
+
+				</div>
+						<div class="text_right note">
+							* Average Estimates in Million (e.g. Revenue) or per share (e.g. Dividend). Source: FactSet
+						</div>
+			</div>
+		</div>
+</div>
+
+
+									<div class="spacer-50 mobile-spacer-25"></div>
+<!--#EMPTYRESPONSE#-->									<div class="spacer-50 mobile-spacer-25"></div>
+
+<div class="graviton">
+			<h2 class="header-underline">Insider Activity</h2>
+
+
+	<div class="grid--vertical-scrolling">
+	<table class="table table--fixed table--suppresses-line-breaks" data-table-filter-table="">
+			<colgroup>
+					<col />
+					<col />
+					<col />
+					<col />
+					<col />
+					<col />
+					<col />
+			</colgroup>
+			<thead class="table__thead">
+				<tr class="table__tr">
+						<th class="table__th"  >
+Name						</th>
+						<th class="table__th text-center"  >
+Date						</th>
+						<th class="table__th text-center"  >
+shares traded						</th>
+						<th class="table__th text-center"  >
+shares held						</th>
+						<th class="table__th text-center"  >
+Price						</th>
+						<th class="table__th text-center"  >
+type (sell/buy)						</th>
+						<th class="table__th text-center"  >
+option						</th>
+				</tr>
+			</thead>
+		<tbody class="table__tbody">
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/eskew-michael-l-415478" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>ESKEW MICHAEL L</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										10/28/2021
+									</td>
+									<td class="table__td text-center"  >
+										243.23
+									</td>
+									<td class="table__td text-center"  >
+										49,215.17
+									</td>
+									<td class="table__td text-center"  >
+										179.87
+									</td>
+									<td class="table__td text-center"  >
+										Buy
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/woertz-patricia-a-593747" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>WOERTZ PATRICIA A</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										10/28/2021
+									</td>
+									<td class="table__td text-center"  >
+										215.43
+									</td>
+									<td class="table__td text-center"  >
+										4,693.12
+									</td>
+									<td class="table__td text-center"  >
+										179.87
+									</td>
+									<td class="table__td text-center"  >
+										Buy
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/henkel-herbert-l-390296" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>HENKEL HERBERT L</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										10/28/2021
+									</td>
+									<td class="table__td text-center"  >
+										187.64
+									</td>
+									<td class="table__td text-center"  >
+										42,978.99
+									</td>
+									<td class="table__td text-center"  >
+										179.87
+									</td>
+									<td class="table__td text-center"  >
+										Buy
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/lavers-jeffrey-r-1124965" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Lavers Jeffrey R</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/10/2021
+									</td>
+									<td class="table__td text-center"  >
+										6,025.00
+									</td>
+									<td class="table__td text-center"  >
+										4,948.19
+									</td>
+									<td class="table__td text-center"  >
+										200.00
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/lavers-jeffrey-r-1124965" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Lavers Jeffrey R</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/10/2021
+									</td>
+									<td class="table__td text-center"  >
+										6,025.00
+									</td>
+									<td class="table__td text-center"  >
+										10,973.19
+									</td>
+									<td class="table__td text-center"  >
+										101.49
+									</td>
+									<td class="table__td text-center"  >
+										Buy
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/banovetz-john-patrick-1027733" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Banovetz John Patrick</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/09/2021
+									</td>
+									<td class="table__td text-center"  >
+										3,236.00
+									</td>
+									<td class="table__td text-center"  >
+										10,513.10
+									</td>
+									<td class="table__td text-center"  >
+										197.93
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/banovetz-john-patrick-1027733" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Banovetz John Patrick</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/09/2021
+									</td>
+									<td class="table__td text-center"  >
+										3,236.00
+									</td>
+									<td class="table__td text-center"  >
+										13,749.10
+									</td>
+									<td class="table__td text-center"  >
+										87.89
+									</td>
+									<td class="table__td text-center"  >
+										Buy
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/ashish-khandpur-k-940331" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Ashish Khandpur K</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/08/2021
+									</td>
+									<td class="table__td text-center"  >
+										100.00
+									</td>
+									<td class="table__td text-center"  >
+										20,349.74
+									</td>
+									<td class="table__td text-center"  >
+										196.91
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/ashish-khandpur-k-940331" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Ashish Khandpur K</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/08/2021
+									</td>
+									<td class="table__td text-center"  >
+										101.00
+									</td>
+									<td class="table__td text-center"  >
+										20,449.74
+									</td>
+									<td class="table__td text-center"  >
+										196.89
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/ashish-khandpur-k-940331" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Ashish Khandpur K</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/08/2021
+									</td>
+									<td class="table__td text-center"  >
+										6,304.00
+									</td>
+									<td class="table__td text-center"  >
+										20,550.74
+									</td>
+									<td class="table__td text-center"  >
+										196.86
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/ashish-khandpur-k-940331" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Ashish Khandpur K</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/08/2021
+									</td>
+									<td class="table__td text-center"  >
+										6,505.00
+									</td>
+									<td class="table__td text-center"  >
+										26,854.74
+									</td>
+									<td class="table__td text-center"  >
+										101.49
+									</td>
+									<td class="table__td text-center"  >
+										Buy
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/hammes-eric-d.-937423" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Hammes Eric D.</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/02/2021
+									</td>
+									<td class="table__td text-center"  >
+										906.00
+									</td>
+									<td class="table__td text-center"  >
+										6,131.24
+									</td>
+									<td class="table__td text-center"  >
+										201.70
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/hammes-eric-d.-937423" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Hammes Eric D.</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/02/2021
+									</td>
+									<td class="table__td text-center"  >
+										34.00
+									</td>
+									<td class="table__td text-center"  >
+										7,037.24
+									</td>
+									<td class="table__td text-center"  >
+										201.69
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/hammes-eric-d.-937423" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Hammes Eric D.</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/02/2021
+									</td>
+									<td class="table__td text-center"  >
+										199.00
+									</td>
+									<td class="table__td text-center"  >
+										7,071.24
+									</td>
+									<td class="table__td text-center"  >
+										201.68
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/hammes-eric-d.-937423" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Hammes Eric D.</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/02/2021
+									</td>
+									<td class="table__td text-center"  >
+										625.00
+									</td>
+									<td class="table__td text-center"  >
+										6,131.24
+									</td>
+									<td class="table__td text-center"  >
+										202.08
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/hammes-eric-d.-937423" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Hammes Eric D.</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/02/2021
+									</td>
+									<td class="table__td text-center"  >
+										0.57
+									</td>
+									<td class="table__td text-center"  >
+										6,756.24
+									</td>
+									<td class="table__td text-center"  >
+										202.04
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/hammes-eric-d.-937423" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Hammes Eric D.</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/02/2021
+									</td>
+									<td class="table__td text-center"  >
+										1,139.00
+									</td>
+									<td class="table__td text-center"  >
+										7,270.24
+									</td>
+									<td class="table__td text-center"  >
+										87.89
+									</td>
+									<td class="table__td text-center"  >
+										Buy
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/rutherford-denise-r-1082360" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Rutherford Denise R</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/01/2021
+									</td>
+									<td class="table__td text-center"  >
+										6.00
+									</td>
+									<td class="table__td text-center"  >
+										8,221.77
+									</td>
+									<td class="table__td text-center"  >
+										198.20
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/rutherford-denise-r-1082360" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Rutherford Denise R</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/01/2021
+									</td>
+									<td class="table__td text-center"  >
+										200.00
+									</td>
+									<td class="table__td text-center"  >
+										8,227.77
+									</td>
+									<td class="table__td text-center"  >
+										198.19
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/rutherford-denise-r-1082360" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Rutherford Denise R</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/01/2021
+									</td>
+									<td class="table__td text-center"  >
+										1,286.00
+									</td>
+									<td class="table__td text-center"  >
+										8,427.77
+									</td>
+									<td class="table__td text-center"  >
+										198.19
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/rutherford-denise-r-1082360" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Rutherford Denise R</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/01/2021
+									</td>
+									<td class="table__td text-center"  >
+										541.00
+									</td>
+									<td class="table__td text-center"  >
+										9,713.77
+									</td>
+									<td class="table__td text-center"  >
+										198.18
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/rutherford-denise-r-1082360" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Rutherford Denise R</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/01/2021
+									</td>
+									<td class="table__td text-center"  >
+										100.00
+									</td>
+									<td class="table__td text-center"  >
+										10,254.77
+									</td>
+									<td class="table__td text-center"  >
+										198.17
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/rutherford-denise-r-1082360" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Rutherford Denise R</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/01/2021
+									</td>
+									<td class="table__td text-center"  >
+										1.00
+									</td>
+									<td class="table__td text-center"  >
+										10,354.77
+									</td>
+									<td class="table__td text-center"  >
+										198.16
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/rutherford-denise-r-1082360" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Rutherford Denise R</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/01/2021
+									</td>
+									<td class="table__td text-center"  >
+										152.00
+									</td>
+									<td class="table__td text-center"  >
+										10,355.77
+									</td>
+									<td class="table__td text-center"  >
+										198.15
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td"  >
+										<a href="/stocks/insideractivitytrader/rutherford-denise-r-1082360" onclick="silentTrackPI()"onclick="silentTrackPI()"><strong>Rutherford Denise R</strong></a>
+									</td>
+									<td class="table__td text-center"  >
+										08/01/2021
+									</td>
+									<td class="table__td text-center"  >
+										849.00
+									</td>
+									<td class="table__td text-center"  >
+										10,507.77
+									</td>
+									<td class="table__td text-center"  >
+										198.14
+									</td>
+									<td class="table__td text-center"  >
+										Sell
+									</td>
+									<td class="table__td text-center"  >
+										No
+									</td>
+					</tr>
+		</tbody>
+	</table>
+	</div>
+
+
+
+
+</div>
+
+
+									<div class="spacer-50 mobile-spacer-25"></div>
+
+<div class="graviton">
+			<h2 class="header-underline">Dividend Calendar 3M</h2>
+
+
+	<div class="grid--vertical-scrolling">
+	<table class="table table--fixed table--suppresses-line-breaks" data-table-filter-table="">
+			<colgroup>
+					<col />
+					<col />
+					<col />
+					<col />
+					<col />
+			</colgroup>
+			<thead class="table__thead">
+				<tr class="table__tr">
+						<th class="table__th" width="10%" >
+Date						</th>
+						<th class="table__th" width="25%" >
+Name						</th>
+						<th class="table__th text-center" width="9%" >
+Dividend						</th>
+						<th class="table__th text-center" width="10%" >
+*yield						</th>
+						<th class="table__th text-center" width="15%" >
+Currency						</th>
+				</tr>
+			</thead>
+		<tbody class="table__tbody">
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2020
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										5.88
+									</td>
+									<td class="table__td text-center"  >
+										3.36
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2019
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										5.76
+									</td>
+									<td class="table__td text-center"  >
+										3.26
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2018
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										5.44
+									</td>
+									<td class="table__td text-center"  >
+										2.86
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2017
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										4.70
+									</td>
+									<td class="table__td text-center"  >
+										2.00
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2016
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										4.44
+									</td>
+									<td class="table__td text-center"  >
+										2.49
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2015
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										4.10
+									</td>
+									<td class="table__td text-center"  >
+										2.72
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2015
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										4.10
+									</td>
+									<td class="table__td text-center"  >
+										2.61
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2014
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										3.42
+									</td>
+									<td class="table__td text-center"  >
+										2.08
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2013
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										2.54
+									</td>
+									<td class="table__td text-center"  >
+										1.81
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2012
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										2.36
+									</td>
+									<td class="table__td text-center"  >
+										2.54
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2011
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										2.20
+									</td>
+									<td class="table__td text-center"  >
+										2.69
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2010
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										2.10
+									</td>
+									<td class="table__td text-center"  >
+										2.43
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2009
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										2.04
+									</td>
+									<td class="table__td text-center"  >
+										2.47
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2008
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										2.00
+									</td>
+									<td class="table__td text-center"  >
+										3.48
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2007
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										1.92
+									</td>
+									<td class="table__td text-center"  >
+										2.28
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2006
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										1.84
+									</td>
+									<td class="table__td text-center"  >
+										2.36
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2005
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										1.68
+									</td>
+									<td class="table__td text-center"  >
+										2.17
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2004
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										1.44
+									</td>
+									<td class="table__td text-center"  >
+										1.75
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2003
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										1.32
+									</td>
+									<td class="table__td text-center"  >
+										1.55
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2002
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										1.24
+									</td>
+									<td class="table__td text-center"  >
+										2.01
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2001
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										1.20
+									</td>
+									<td class="table__td text-center"  >
+										2.03
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										2000
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										1.16
+									</td>
+									<td class="table__td text-center"  >
+										1.93
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+					<tr class="table__tr">
+									<td class="table__td" width="20%" >
+										1999
+									</td>
+									<td class="table__td"  >
+										3M Co.
+									</td>
+									<td class="table__td text-center"  >
+										1.12
+									</td>
+									<td class="table__td text-center"  >
+										-
+									</td>
+									<td class="table__td text-center"  >
+										USD
+									</td>
+					</tr>
+		</tbody>
+	</table>
+	</div>
+
+
+
+
+			<div class="note margin-top--large">*Yield of the Respective Date</div>
+</div>
+
+
+									<div class="spacer-50 mobile-spacer-25"></div>
+
+<div class="graviton">
+		<h2 class="header-underline">
+			3M Co. Calendar
+		</h2>
+	<div class="grid--vertical-scrolling">
+		<table class="table table--suppresses-line-breaks">
+			<thead class="table__thead">
+				<tr class="table__tr">
+					<th class="table__th">Event</th>
+					<th class="text-center table__th">Estimate</th>
+					<th class="text-center table__th">Info</th>
+					<th class="text-center table__th">Date</th>
+				</tr>
+			</thead>
+			<tbody class="table__tbody">
+					<tr class="table__tr">
+						<td class="table__td">Earnings Report</td>
+						<td class="text-center table__td">2.034 USD </td>
+						<td class="text-center table__td">Q4 2021 Earnings Release</td>
+						<td class="text-center table__td">01/25/2022</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td">Earnings Report</td>
+						<td class="text-center table__td">2.562 USD </td>
+						<td class="text-center table__td">Q1 2022 Earnings Release</td>
+						<td class="text-center table__td">04/26/2022</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td">Earnings Report</td>
+						<td class="text-center table__td">- </td>
+						<td class="text-center table__td">Q2 2022 Earnings Release</td>
+						<td class="text-center table__td">07/26/2022</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td">Earnings Report</td>
+						<td class="text-center table__td">- </td>
+						<td class="text-center table__td">Q3 2022 Earnings Release</td>
+						<td class="text-center table__td">10/25/2022</td>
+					</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+									<div class="spacer-50 mobile-spacer-25"></div>
+<div class="graviton">
+	<h2 class="header-underline">3M Co. Past Events</h2>
+	<div class="grid--vertical-scrolling">
+		<table class="table table--suppresses-line-breaks">
+			<thead class="table__thead">
+				<tr class="table__tr">
+					<th class="table__th">Event</th>
+					<th class="text-center table__th">Actual EPS</th>
+					<th class="text-center table__th">Info</th>
+					<th class="text-center table__th">Date</th>
+				</tr>
+			</thead>
+			<tbody class="table__tbody">
+					<tr class="table__tr">
+						<td class="table__td">Earnings Report </td>
+						<td class="text-center table__td">2.450 USD</td>
+						<td class="text-center table__td">Q3 2021 Earnings Release</td>
+						<td class="text-center table__td">10/26/2021</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td">Shareholders' Meeting </td>
+						<td class="text-center table__td">-</td>
+						<td class="text-center table__td">-</td>
+						<td class="text-center table__td">05/11/2021</td>
+					</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+									<div class="spacer-50 mobile-spacer-25"></div>
+<div id='lgPositiondianomi'></div><div class='responsivePosition' id='dianomi'>
+			<script id="dianomi_context_script" src="https://www.dianomi.com/js/contextfeed.js?id=122"></script>
+			<div class="dianomi-ad-placeholder dianomi-ad-placeholder--left-quotes-detail dianomi_context" data-dianomi-context-id="122"></div>
+									<div class="spacer-50 mobile-spacer-25"></div>
+</div><div class="graviton">
+  <aside class="side-panel-right side-panel-right--no-scrolling" data-side-panel="addInstrument" data-add-instrument-form="addInstrument">
+
+    <header class="user-region__header">
+      <div class="user-region__close-button">
+        <button class="button button--icon-only button--border-hidden button--hover-blue button--size-large" data-side-panel-close="addInstrument">
+          <span class="icon icon-close"></span>
+        </button>
+      </div>
+      <div class="user-region__caption">
+        <a href="#" class="logo logo-markets-insider logo--size-auto" title="Insider">Insider</a>
+      </div>
+    </header>
+
+
+    <main class="user-region__content">
+      <div class="user-region__greeting">
+        <p class="spacer-zero text-center" data-add-instrument-text>Add instrument to watchlist</p>
+      </div>
+      <div class="user-region__actions grid grid__row">
+        <div class="grid__col--12">
+          <div class="select select--stretch" data-add-instrument-select>
+            <select class="select__list"></select>
+          </div>
+        </div>
+        <div class="grid__col--12 margin-top--small">
+          <button class="button button--stretch button--pill button--size-large" data-side-panel-close="addInstrument" data-add-instrument-submit>Add</button>
+        </div>
+        <div class="grid__col--12 margin-top--small">
+          <button class="button button--rounded button--stretch button--size-large" data-side-panel-close="addInstrument">Cancel</button>
+        </div>
+      </div>
+    </main>
+  </aside>
+</div></div><div class="site-content__col site-content__col--right"><div id='lgPositionsnapshot'></div><div class='responsivePosition' id='snapshot'>
+<div class="graviton">
+	<h2 class="header-underline header-underline--no-margin-top">Stock Snapshot</h2>
+	<div class="snapshot">
+			<div class="snapshot__data-item">
+				0.00
+				<div class="snapshot__header">Bid</div>
+			</div>
+			<div class="snapshot__data-item">
+				0.00
+				<div class="snapshot__header">Bid Size</div>
+			</div>
+			<div class="snapshot__data-item">
+				0.00
+				<div class="snapshot__header">Ask</div>
+			</div>
+			<div class="snapshot__data-item">
+				0.00
+				<div class="snapshot__header">Ask Size</div>
+			</div>
+			<div class="snapshot__data-item">
+				12/29/2021
+				<div class="snapshot__header">Date</div>
+			</div>
+			<div class="snapshot__data-item">
+				8:03 AM
+				<div class="snapshot__header">Time</div>
+			</div>
+			<div class="snapshot__data-item">
+				0.00
+				<div class="snapshot__header">Volume</div>
+			</div>
+			<div class="snapshot__data-item">
+				177.63
+				<div class="snapshot__header">Prev. Close</div>
+			</div>
+			<div class="snapshot__data-item">
+				0.00
+				<div class="snapshot__header">Open</div>
+			</div>
+			<div class="snapshot__data-item">
+				101.68 B
+				<div class="snapshot__header">Market Cap</div>
+			</div>
+			<div class="snapshot__data-item">
+				576.25 M
+				<div class="snapshot__header">Number of Shares</div>
+			</div>
+					<div class="snapshot__line"></div>
+		<div id="snapshot-highlow" class="snapshot__highlow-container">
+							<div class="snapshot__highlow">
+					<div class="snapshot__data-item snapshot__data-item--small">
+						163.43
+						<div class="snapshot__header">52 Week Low</div>
+					</div>
+					<div class="snapshot__data-item snapshot__data-item--small snapshot__data-item--right">
+						208.95
+						<div class="snapshot__header">52 Week High</div>
+					</div>
+					<div class="progress progress--31-percent">
+						<div class="progress__bar"></div>
+						<div class="progress__position">
+							<div class="progress__marker"></div>
+							<div class="progress__label snapshot__price-label">177.64</div>
+						</div>
+					</div>
+				</div>
+		</div>
+						<div class="snapshot__line"></div>
+			<div class="snapshot__data-item">
+				5.88
+				<div class="snapshot__header">Dividend</div>
+			</div>
+			<div class="snapshot__data-item">
+				3.29
+				<div class="snapshot__header">Dividend Yield</div>
+			</div>
+			<div class="snapshot__data-item">
+				19.91
+				<div class="snapshot__header">P/E Ratio</div>
+			</div>
+			<div class="snapshot__data-item">
+				99.89
+				<div class="snapshot__header">Free Float in %</div>
+			</div>
+			<div class="snapshot__data-item">
+				9.84
+				<div class="snapshot__header">EPS 2021</div>
+			</div>
+			<div class="snapshot__data-item">
+				25.40
+				<div class="snapshot__header">Book Value per Share</div>
+			</div>
+			<div class="snapshot__data-item">
+				12.89
+				<div class="snapshot__header">Cash Flow per Share</div>
+			</div>
+	</div>
+</div>
+									<div class="spacer-50 mobile-spacer-25"></div>
+</div>
+	<!-- code from Primis - Markets Insider - MarketsInsider -->
+	<div class="htl-ad-placeholder htl-ad-placeholder--primisVideo PrimisResponsiveStyle" data-primis-video="https://live.primis.tech/live/liveView.php?s=108074">
+	</div>
+									<div class="spacer-50 mobile-spacer-25"></div>
+	<div class="graviton">
+			<h2 class="header-underline">
+Profile 3M            </h2>
+
+			<div class="note">
+				3M Co. is a technology company, which manufactures industrial, safety and consumer products. It operates through the following segments: Safety and Industrial, Transportation and Electronics, Health Care, and Consumer. The Safety and Industrial segment consists of personal safety, industrial adhesives and tapes, abrasives, closure and masking systems, electrical markets, automotive aftermarket, and roofing granules. The Transportation and Electronics segment consists of electronics, automotive and aerospace, commercial solutions, advanced materials, and transportation safety. The Health Care segment includes medical and surgical supplies, skin health and infection prevention products, oral care solutions, separation and purification sciences, health information systems, inhalation and transdermal drug delivery systems, and food safety products. The Electronics & Energy segment involves in the optical films solutions for electronic displays, packaging and interconnection devices; insulating and splicing solutions; touch screens and touch monitors; renewable energy component solutions; and infrastructure protection products. The Consumer segment products includes office supply products, stationery products, home improvement products, home care products, protective material products, certain consumer retail personal safety products, and consumer health care products.
+			</div>
+
+	</div>
+									<div class="spacer-50 mobile-spacer-25"></div>
+<!--#EMPTYRESPONSE#-->									<div class="spacer-50 mobile-spacer-25"></div>
+
+		<div class="htlad-middle_300"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Quote"
+				 data-prebid="0x0:|960x0:Stocks/Quote/halfpage_flex"></div>
+
+
+<div class="graviton">
+	<h2 class="header-underline">Moody’s Daily Credit Risk Score</h2>
+    <div class="moodys-rating">
+        <span class="moodys-rating__label">Risk</span>
+        <ul class="moodys-rating__legend">
+            <li class="moodys-rating__point">Low</li>
+            <li class="moodys-rating__point moodys-rating__point--medium">Medium</li>
+            <li class="moodys-rating__point moodys-rating__point--high">High</li>
+        </ul>
+        <div class="moodys-rating__container">
+            <div class="moodys-rating__chart logo logo-moodys-rating">
+                <div class="icon icon-moodys-rating-arrow moodys-rating__arrow moodys-rating__arrow--rating-3"></div>
+            </div>
+            <span class="moodys-rating__rating">3</span>
+        </div>
+        <div class="moodys-rating__description">
+            Moody’s Daily Credit Risk Score is a 1-10 score of a company’s credit risk, based on an analysis of the firm’s
+            balance sheet and inputs from the stock market. The score provides a forward-looking, one-year measure of credit
+            risk, allowing investors to make better decisions and streamline their work ow. Updated daily, it takes into
+            account day-to-day movements in market value compared to a company’s liability structure.
+        </div>
+    </div>
+</div>
+
+
+									<div class="spacer-50 mobile-spacer-25"></div>
+
+		<div class="htlad-lower_300"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Quote"
+				 data-prebid="0x0:|960x0:Stocks/Quote/halfpage_flex"></div>
+	<div class="graviton">
+		<h2 class="header-underline">Shareholder</h2>
+
+		<table class="table">
+			<colgroup>
+				<col class="width-80-percent" />
+				<col />
+			</colgroup>
+			<thead class="table__thead">
+				<tr class="table__tr">
+					<th class="table__th table--allow-wrap">Owner</th>
+					<th class="table__th text-right">in %</th>
+				</tr>
+			</thead>
+			<tbody class="table__tbody">
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Freefloat</td>
+						<td class="table__td text-right">99.90</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">DWS Vermoegensmandat - Balance</td>
+						<td class="table__td text-right">39.19</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">DWS Vermoegensmandat - Dynamik</td>
+						<td class="table__td text-right">13.13</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Vanguard Group, Inc. (Subfiler)</td>
+						<td class="table__td text-right">8.28</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">The Vanguard Group, Inc.</td>
+						<td class="table__td text-right">7.82</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">State Street Corp.</td>
+						<td class="table__td text-right">5.30</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Vanguard Total Stock Market Index Fund</td>
+						<td class="table__td text-right">2.84</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">BlackRock Fund Advisors</td>
+						<td class="table__td text-right">2.66</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">DWS Vermoegensmandat - Defensiv</td>
+						<td class="table__td text-right">2.23</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">BlackRock Institutional Trust Co. NA</td>
+						<td class="table__td text-right">2.18</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Geode Capital Management LLC</td>
+						<td class="table__td text-right">1.85</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Charles Schwab Investment Management, Inc.</td>
+						<td class="table__td text-right">1.77</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Newport Trust Co.</td>
+						<td class="table__td text-right">1.76</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">State Farm Investment Management Corp.</td>
+						<td class="table__td text-right">1.66</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Flossbach von Storch AG</td>
+						<td class="table__td text-right">1.59</td>
+					</tr>
+			</tbody>
+		</table>
+		<div class="note margin-top--small">
+			Shareholder percentage totals can add to more than 100% because some holders are included in the free float.
+		</div>
+	</div>
+	<div class="spacer-50 mobile-spacer-25"></div>
+	<div class="graviton">
+		<h2 class="header-underline">Management</h2>
+
+		<table class="table table--fixed">
+			<colgroup>
+				<col class="width-50-percent" />
+				<col />
+			</colgroup>
+			<thead class="table__thead">
+				<tr class="table__tr">
+					<th class="table__th table--allow-wrap">Name</th>
+					<th class="table__th text-right">Job</th>
+				</tr>
+			</thead>
+			<tbody class="table__tbody">
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">John Patrick Banovetz</td>
+						<td class="table__td text-right">CTO &amp; EVP-Environmental Responsibility</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Michael F. Roman</td>
+						<td class="table__td text-right">Chairman, President &amp; Chief Executive Officer</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Theresa E. Reinseth</td>
+						<td class="table__td text-right">Chief Accounting Officer, VP &amp; Controller</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Denise Rutherford</td>
+						<td class="table__td text-right">Chief Corporate Affairs Officer &amp; SVP</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Zoe Dickson</td>
+						<td class="table__td text-right">Chief Human Resources Officer &amp; Executive VP</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Karina Chavez</td>
+						<td class="table__td text-right">Chief Strategy Officer &amp; Senior Vice President</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Gayle Schueller</td>
+						<td class="table__td text-right">Chief Sustainability Officer &amp; Vice President</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Eric D. Hammes</td>
+						<td class="table__td text-right">EVP &amp; Chief Country Governance &amp; Services Officer</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Monish Patolawala</td>
+						<td class="table__td text-right">EVP, Chief Financial &amp; Transformation Officer</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Ashish K. Khandpur</td>
+						<td class="table__td text-right">EVP-Transportation &amp; Electronics Business Group</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Mark W. Murphy</td>
+						<td class="table__td text-right">Executive VP, Chief Information &amp; Digital Officer</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Michael G. Vale</td>
+						<td class="table__td text-right">Executive VP-Safety &amp; Industrial Business Group</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Mojdeh Poul</td>
+						<td class="table__td text-right">Group President-Health Care</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Ahmet Muhtar Kent</td>
+						<td class="table__td text-right">Independent Director</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Dambisa F. Moyo</td>
+						<td class="table__td text-right">Independent Director</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Herbert L. Henkel</td>
+						<td class="table__td text-right">Independent Director</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Thomas K. Brown</td>
+						<td class="table__td text-right">Independent Director</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Patricia Ann Woertz</td>
+						<td class="table__td text-right">Independent Director</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Gregory R. Page</td>
+						<td class="table__td text-right">Independent Director</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Amy E. Hood</td>
+						<td class="table__td text-right">Independent Director</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Pamela J. Craig</td>
+						<td class="table__td text-right">Independent Director</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">James R. Fitterling</td>
+						<td class="table__td text-right">Independent Director</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">David B. Dillon</td>
+						<td class="table__td text-right">Independent Director</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Michael L. Eskew</td>
+						<td class="table__td text-right">Lead Independent Director</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Penny Destache</td>
+						<td class="table__td text-right">Manager-IT Infrastructure DevOps Services</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Ivan K. Fong</td>
+						<td class="table__td text-right">Secretary, EVP, Chief Legal &amp; Policy Officer</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Sarah Mary Grauze</td>
+						<td class="table__td text-right">Treasurer &amp; Vice President</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Debarati Sen</td>
+						<td class="table__td text-right">VP &amp; General Manager-Abrasives Systems</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Karen V Carroll</td>
+						<td class="table__td text-right">Vice President &amp; General Auditor</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Michael A. Duran</td>
+						<td class="table__td text-right">Vice President, Chief Ethics &amp; Compliance Officer</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Bruce Jermeland</td>
+						<td class="table__td text-right">Vice President-Investor Relations</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td table--allow-wrap">Laurie Altman</td>
+						<td class="table__td text-right">Vice President-Marketing &amp; Sales Operations</td>
+					</tr>
+			</tbody>
+		</table>
+	</div>
+
+									<div class="spacer-50 mobile-spacer-25"></div>
+
+		<div class="htlad-lower_300"
+				 data-htlad="true"
+				 data-unit="Markets-Insider/Stocks/Quote"
+				 data-prebid="0x0:|960x0:Stocks/Quote/halfpage_flex"></div>
+<div id="xsPositiondianomi"></div></div>
+				</div>
+					<div class="spacer-10"></div>
+</div>
+	</main>
+
+	<!-- Markets Insider Page Footer -->
+	<div class="graviton">
+
+<footer class="site-footer">
+	<div class="site-footer__row">
+		<div class="site-footer__mi-logo">
+			<a href="https://markets.businessinsider.com/" class="logo logo-markets-insider logo--size-auto" title="Markets Insider">Markets Insider</a>
+		</div>
+		<div class="site-footer__social-media">
+			<a href="http://www.twitter.com/mktsinsider" target="_blank" class="button button--icon-only button--border-blue"><span class="icon icon-social-media-twitter"></span></a>
+			<a href="https://www.facebook.com/BusinessInsider.Finance" target="_blank" class="button button--icon-only button--border-blue margin-left--medium"><span class="icon icon-social-media-facebook"></span></a>
+		</div>
+		<div class="site-footer__additional-logos">
+			<span class="site-footer__see-also">see also:</span>
+			<a href="https://www.insider.com/" class="logo logo-insider logo-insider--left-side-panel" title="Insider">Insider</a>
+			<a href="https://www.businessinsider.com" class="logo logo-business-insider logo--size-m" title="Business Insider">Business Insider</a>
+		</div>
+	</div>
+	<div class="site-footer__row">
+		<div class="site-footer__alphabetics-stocks">
+			S&amp;P500 Stocks:
+			<a href="/index/components/s&amp;p_500">ALL</a>
+			<a href="/index/components/s&amp;p_500/0-9">0-9</a>
+				<a href="/index/components/s&amp;p_500/a">a</a>
+				<a href="/index/components/s&amp;p_500/b">b</a>
+				<a href="/index/components/s&amp;p_500/c">c</a>
+				<a href="/index/components/s&amp;p_500/d">d</a>
+				<a href="/index/components/s&amp;p_500/e">e</a>
+				<a href="/index/components/s&amp;p_500/f">f</a>
+				<a href="/index/components/s&amp;p_500/g">g</a>
+				<a href="/index/components/s&amp;p_500/h">h</a>
+				<a href="/index/components/s&amp;p_500/i">i</a>
+				<a href="/index/components/s&amp;p_500/j">j</a>
+				<a href="/index/components/s&amp;p_500/k">k</a>
+				<a href="/index/components/s&amp;p_500/l">l</a>
+				<a href="/index/components/s&amp;p_500/m">m</a>
+				<a href="/index/components/s&amp;p_500/n">n</a>
+				<a href="/index/components/s&amp;p_500/o">o</a>
+				<a href="/index/components/s&amp;p_500/p">p</a>
+				<a href="/index/components/s&amp;p_500/q">q</a>
+				<a href="/index/components/s&amp;p_500/r">r</a>
+				<a href="/index/components/s&amp;p_500/s">s</a>
+				<a href="/index/components/s&amp;p_500/t">t</a>
+				<a href="/index/components/s&amp;p_500/u">u</a>
+				<a href="/index/components/s&amp;p_500/v">v</a>
+				<a href="/index/components/s&amp;p_500/w">w</a>
+				<a href="/index/components/s&amp;p_500/x">x</a>
+				<a href="/index/components/s&amp;p_500/y">y</a>
+				<a href="/index/components/s&amp;p_500/z">z</a>
+		</div>
+		<div class="site-footer__named-stocks">
+			<a href="/index/dow_jones">Dow Jones</a>
+			<a href="/commodities/gold-price">Gold Price</a>
+			<a href="/commodities/oil-price?type=wti">Oil Price</a>
+			<a href="/currencies/eur-usd">EURO DOLLAR</a>
+			<a href="/currencies/usd-cad">CAD USD</a>
+			<a href="/currencies/usd-mxn">PESO USD</a>
+			<a href="/currencies/gbp-usd">POUND USD</a>
+			<a href="/currencies/usd-inr">USD INR</a>
+			<a href="/currencies/btc-usd">Bitcoin Price</a>
+			<a href="/currency-converter">Currency Converter</a>
+			<a href="/currencies">Exchange Rates</a>
+			<a href="/index/realtime-chart">Realtime Quotes</a>
+			<a href="/premarket">Premarket</a>
+			<a href="/stocks/goog-stock">Google Stock</a>
+			<a href="/stocks/aapl-stock">Apple Stock</a>
+			<a href="/stocks/fb-stock">Facebook Stock</a>
+			<a href="/stocks/amzn-stock">Amazon Stock</a>
+			<a href="/stocks/tsla-stock">Tesla Stock</a>
+		</div>
+		<div class="site-footer__copyright-stocks">
+			<span>* &copy; 2021 Insider Inc. and <a href="https://www.finanzen.net/impressum">finanzen.net</a> GmbH (Imprint). All rights reserved.</span>
+			<span>Registration on or use of this site constitutes acceptance of our <a href="http://www.businessinsider.com/terms">Terms of Service</a> and <a href="https://www.insider-inc.com/privacy-policy#ccpa">Privacy Policy</a>.</span>
+			<span><a href="http://www.businessinsider.com/terms" rel="sponsored">Disclaimer</a> | <a href="https://www.insider-inc.com/accessibility" rel="sponsored">Accessibility Statement</a> |<a href="http://www.businessinsider.com/commerce-on-business-insider" rel="sponsored">Commerce Policy</a> | <a href="http://nytm.org/made" rel="sponsored">Made In NYC</a> | Stock quotes by <a href="https://www.finanzen.net/">finanzen.net</a></span>
+		</div>
+		<div class="site-footer__conteact-us">
+			<a href="/contact">Need help? Contact us!</a>
+		</div>
+	</div>
+</footer>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	var mdsngStarter = document.getElementById("mdsng_starter");
+	if (!!mdsngStarter && "clientApi" in window === false) {
+		clientApi = new MDSnG.ClientApi.ClientApi();
+		clientApi.connect();
+		if (window.buildChart) {
+			try {
+				if (!!window.settings !== false) {
+					buildChart(settings.Settings);
+				}
+
+			} catch (e) { }
+		}
+	}
+	// start the clientApi on load event if it is not already started
+	window.addEventListener('load', function () {
+		if ("clientApi" in window === false) {
+			clientApi = new MDSnG.ClientApi.ClientApi();
+			clientApi.connect();
+			if (window.buildChart) {
+				try {
+					if (!!window.settings !== false) {
+						buildChart(settings.Settings);
+					}
+
+				} catch (e) { }
+			}
+		}
+
+	}, false);
+</script>
+
+
+
+
+	<script>
+		var currentRoute = 'Markets/Shares/Index';
+		var webPushSettings = {
+			firebaseTopic: "news-push-web",
+			isTestRun: false
+
+		}
+	</script>
+<script async="async" src="/Content/Scripts/web-push/init.min.js?v=b9adf487"></script>
+</body>
+</html>

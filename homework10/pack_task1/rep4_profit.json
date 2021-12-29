@@ -1,71 +1,82 @@
-{
-  "code": "ALB",
-  "name": "Albemarle Corp. ",
-  "price": 0.0,
-  "growth": 52.13,
-  "PE": 35.35,
-  "max_profit": 117.75
-}{
-  "code": "ATVI",
-  "name": "Activision Blizzard Inc. ",
-  "price": 0.0,
-  "growth": -28.36,
-  "PE": 26.4,
-  "max_profit": 85.34
-}{
-  "code": "ACN",
-  "name": "Accenture plc ",
-  "price": 0.0,
-  "growth": 56.76,
-  "PE": 32.42,
-  "max_profit": 72.57
-}{
-  "code": "AAP",
-  "name": "Advance Auto Parts Inc. ",
-  "price": 0.0,
-  "growth": 44.52,
-  "PE": 18.27,
-  "max_profit": 69.75
-}{
-  "code": "ADBE",
-  "name": "Adobe Inc. ",
-  "price": 0.0,
-  "growth": 13.96,
-  "PE": 47.1,
-  "max_profit": 66.25
-}{
-  "code": "AOS",
-  "name": "A.O. Smith Corp. ",
-  "price": 0.0,
-  "growth": 49.11,
-  "PE": 25.06,
-  "max_profit": 64.52
-}{
-  "code": "ALK",
-  "name": "Alaska Air Group Inc. ",
-  "price": 0.0,
-  "growth": 1.47,
-  "PE": -5.1,
-  "max_profit": 60.44
-}{
-  "code": "A",
-  "name": "Agilent Technologies Inc. ",
-  "price": 0.0,
-  "growth": 34.54,
-  "PE": 30.82,
-  "max_profit": 59.66
-}{
-  "code": "ALGN",
-  "name": "Align Technology Inc. ",
-  "price": 0.0,
-  "growth": 23.85,
-  "PE": 98.94,
-  "max_profit": 49.15
-}{
-  "code": "ABMD",
-  "name": "ABIOMED Inc. ",
-  "price": 0.0,
-  "growth": 16.08,
-  "PE": 63.24,
-  "max_profit": 48.28
-}
+[
+  {
+    "code": "MRK",
+    "name": "Merck Co. ",
+    "price": 5658.64,
+    "growth": -1.08,
+    "PE": 13.66,
+    "max_profit": 496.61
+  },
+  {
+    "code": "MRNA",
+    "name": "Moderna Inc ",
+    "price": 17782.39,
+    "growth": 102.6,
+    "PE": -59.95,
+    "max_profit": 384.29
+  },
+  {
+    "code": "DISCA",
+    "name": "Discovery Communications Inc  (A) ",
+    "price": 1791.94,
+    "growth": -14.53,
+    "PE": 9.18,
+    "max_profit": 260.76
+  },
+  {
+    "code": "PENN",
+    "name": "Penn National Gaming Inc. ",
+    "price": 3633.96,
+    "growth": -45.7,
+    "PE": -17.5,
+    "max_profit": 227.26
+  },
+  {
+    "code": "DISCK",
+    "name": "Discovery Communications Inc  (C) ",
+    "price": 1732.28,
+    "growth": -6.25,
+    "PE": 8.03,
+    "max_profit": 219.6
+  },
+  {
+    "code": "DVN",
+    "name": "Devon Energy Corp. ",
+    "price": 3276.75,
+    "growth": 174.19,
+    "PE": -167.13,
+    "max_profit": 201.72
+  },
+  {
+    "code": "NVDA",
+    "name": "NVIDIA Corp. ",
+    "price": 22332.58,
+    "growth": 128.11,
+    "PE": 51.8,
+    "max_profit": 199.44
+  },
+  {
+    "code": "FTNT",
+    "name": "Fortinet Inc ",
+    "price": 26956.41,
+    "growth": 133.01,
+    "PE": 43.03,
+    "max_profit": 170.73
+  },
+  {
+    "code": "MRO",
+    "name": "Marathon Oil Corp. ",
+    "price": 1213.78,
+    "growth": 140.96,
+    "PE": -5.6,
+    "max_profit": 170.2
+  },
+  {
+    "code": "NUE",
+    "name": "Nucor Corp. ",
+    "price": 8426.46,
+    "growth": 116.15,
+    "PE": 15.99,
+    "max_profit": 168.69
+  }
+]

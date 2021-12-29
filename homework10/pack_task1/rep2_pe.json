@@ -1,71 +1,82 @@
-{
-  "code": "ALK",
-  "name": "Alaska Air Group Inc. ",
-  "price": 0.0,
-  "growth": 1.47,
-  "PE": -5.1,
-  "max_profit": 60.44
-}{
-  "code": "AFL",
-  "name": "Aflac Inc ",
-  "price": 0.0,
-  "growth": 31.56,
-  "PE": 8.88,
-  "max_profit": 36.71
-}{
-  "code": "ABBV",
-  "name": "AbbVie Inc ",
-  "price": 0.0,
-  "growth": 28.86,
-  "PE": 9.91,
-  "max_profit": 32.85
-}{
-  "code": "AES",
-  "name": "AES Corp. ",
-  "price": 0.0,
-  "growth": 1.2,
-  "PE": 15.98,
-  "max_profit": 28.57
-}{
-  "code": "AAP",
-  "name": "Advance Auto Parts Inc. ",
-  "price": 0.0,
-  "growth": 44.52,
-  "PE": 18.27,
-  "max_profit": 69.75
-}{
-  "code": "MMM",
-  "name": "3M Co. ",
-  "price": 0.0,
-  "growth": 0.17,
-  "PE": 19.91,
-  "max_profit": 27.85
-}{
-  "code": "AKAM",
-  "name": "Akamai Inc. ",
-  "price": 0.0,
-  "growth": 8.13,
-  "PE": 20.32,
-  "max_profit": 34.83
-}{
-  "code": "LNT",
-  "name": "Alliant Energy Corp. ",
-  "price": 0.0,
-  "growth": 19.05,
-  "PE": 20.65,
-  "max_profit": 35.57
-}{
-  "code": "APD",
-  "name": "Air Products and Chemicals Inc. ",
-  "price": 0.0,
-  "growth": 11.66,
-  "PE": 24.93,
-  "max_profit": 28.74
-}{
-  "code": "AOS",
-  "name": "A.O. Smith Corp. ",
-  "price": 0.0,
-  "growth": 49.11,
-  "PE": 25.06,
-  "max_profit": 64.52
-}
+[
+  {
+    "code": "VNO",
+    "name": "Vornado Realty Trust ",
+    "price": 3066.11,
+    "growth": 14.77,
+    "PE": -893.45,
+    "max_profit": 45.3
+  },
+  {
+    "code": "CVX",
+    "name": "Chevron Corp. ",
+    "price": 8735.06,
+    "growth": 36.26,
+    "PE": -427.45,
+    "max_profit": 42.26
+  },
+  {
+    "code": "DVN",
+    "name": "Devon Energy Corp. ",
+    "price": 3276.75,
+    "growth": 174.19,
+    "PE": -167.13,
+    "max_profit": 201.72
+  },
+  {
+    "code": "XOM",
+    "name": "ExxonMobil Corp. (Exxon Mobil) ",
+    "price": 4544.29,
+    "growth": 46.67,
+    "PE": -125.36,
+    "max_profit": 62.02
+  },
+  {
+    "code": "PSX",
+    "name": "Phillips 66 ",
+    "price": 5445.78,
+    "growth": 4.6,
+    "PE": -76.53,
+    "max_profit": 49.27
+  },
+  {
+    "code": "UAA",
+    "name": "Under Armour Inc. ",
+    "price": 1542.26,
+    "growth": 18.51,
+    "PE": -64.5,
+    "max_profit": 63.16
+  },
+  {
+    "code": "INCY",
+    "name": "Incyte Corp. ",
+    "price": 5398.65,
+    "growth": -15.91,
+    "PE": -63.09,
+    "max_profit": 63.9
+  },
+  {
+    "code": "TWTR",
+    "name": "Twitter ",
+    "price": 3201.63,
+    "growth": -18.2,
+    "PE": -62.1,
+    "max_profit": 96.88
+  },
+  {
+    "code": "MRNA",
+    "name": "Moderna Inc ",
+    "price": 17782.39,
+    "growth": 102.6,
+    "PE": -59.95,
+    "max_profit": 384.29
+  },
+  {
+    "code": "UA",
+    "name": "Under Armour Inc When Issued ",
+    "price": 1308.05,
+    "growth": 16.53,
+    "PE": -55.67,
+    "max_profit": 58.33
+  }
+]

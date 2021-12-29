@@ -1,71 +1,82 @@
-{
-  "code": "ACN",
-  "name": "Accenture plc ",
-  "price": 0.0,
-  "growth": 56.76,
-  "PE": 32.42,
-  "max_profit": 72.57
-}{
-  "code": "ALB",
-  "name": "Albemarle Corp. ",
-  "price": 0.0,
-  "growth": 52.13,
-  "PE": 35.35,
-  "max_profit": 117.75
-}{
-  "code": "AOS",
-  "name": "A.O. Smith Corp. ",
-  "price": 0.0,
-  "growth": 49.11,
-  "PE": 25.06,
-  "max_profit": 64.52
-}{
-  "code": "AAP",
-  "name": "Advance Auto Parts Inc. ",
-  "price": 0.0,
-  "growth": 44.52,
-  "PE": 18.27,
-  "max_profit": 69.75
-}{
-  "code": "A",
-  "name": "Agilent Technologies Inc. ",
-  "price": 0.0,
-  "growth": 34.54,
-  "PE": 30.82,
-  "max_profit": 59.66
-}{
-  "code": "AFL",
-  "name": "Aflac Inc ",
-  "price": 0.0,
-  "growth": 31.56,
-  "PE": 8.88,
-  "max_profit": 36.71
-}{
-  "code": "ABBV",
-  "name": "AbbVie Inc ",
-  "price": 0.0,
-  "growth": 28.86,
-  "PE": 9.91,
-  "max_profit": 32.85
-}{
-  "code": "ABT",
-  "name": "Abbott Laboratories ",
-  "price": 0.0,
-  "growth": 28.39,
-  "PE": 29.76,
-  "max_profit": 35.26
-}{
-  "code": "ARE",
-  "name": "Alexandria Real Estate Equities Inc. ",
-  "price": 0.0,
-  "growth": 24.69,
-  "PE": 28.92,
-  "max_profit": 44.35
-}{
-  "code": "ALGN",
-  "name": "Align Technology Inc. ",
-  "price": 0.0,
-  "growth": 23.85,
-  "PE": 98.94,
-  "max_profit": 49.15
-}
+[
+  {
+    "code": "DVN",
+    "name": "Devon Energy Corp. ",
+    "price": 3276.75,
+    "growth": 174.19,
+    "PE": -167.13,
+    "max_profit": 201.72
+  },
+  {
+    "code": "BBWI",
+    "name": "Bath & Body Works ",
+    "price": 5053.96,
+    "growth": 144.13,
+    "PE": 14.17,
+    "max_profit": 1.29
+  },
+  {
+    "code": "MRO",
+    "name": "Marathon Oil Corp. ",
+    "price": 1213.78,
+    "growth": 140.96,
+    "PE": -5.6,
+    "max_profit": 170.2
+  },
+  {
+    "code": "FTNT",
+    "name": "Fortinet Inc ",
+    "price": 26956.41,
+    "growth": 133.01,
+    "PE": 43.03,
+    "max_profit": 170.73
+  },
+  {
+    "code": "F",
+    "name": "Ford Motor Co. ",
+    "price": 1529.74,
+    "growth": 128.67,
+    "PE": 21.51,
+    "max_profit": 154.92
+  },
+  {
+    "code": "NVDA",
+    "name": "NVIDIA Corp. ",
+    "price": 22332.58,
+    "growth": 128.11,
+    "PE": 51.8,
+    "max_profit": 199.44
+  },
+  {
+    "code": "FANG",
+    "name": "Diamondback Energy Inc ",
+    "price": 8113.44,
+    "growth": 119.56,
+    "PE": 15.58,
+    "max_profit": 154.78
+  },
+  {
+    "code": "NUE",
+    "name": "Nucor Corp. ",
+    "price": 8426.46,
+    "growth": 116.15,
+    "PE": 15.99,
+    "max_profit": 168.69
+  },
+  {
+    "code": "IT",
+    "name": "Gartner Inc. ",
+    "price": 24508.24,
+    "growth": 105.0,
+    "PE": 32.29,
+    "max_profit": 146.43
+  },
+  {
+    "code": "MRNA",
+    "name": "Moderna Inc ",
+    "price": 17782.39,
+    "growth": 102.6,
+    "PE": -59.95,
+    "max_profit": 384.29
+  }
+]

@@ -1,71 +1,82 @@
-{
-  "code": "MMM",
-  "name": "3M Co. ",
-  "price": 0.0,
-  "growth": 0.17,
-  "PE": 19.91,
-  "max_profit": 27.85
-}{
-  "code": "AOS",
-  "name": "A.O. Smith Corp. ",
-  "price": 0.0,
-  "growth": 49.11,
-  "PE": 25.06,
-  "max_profit": 64.52
-}{
-  "code": "ABT",
-  "name": "Abbott Laboratories ",
-  "price": 0.0,
-  "growth": 28.39,
-  "PE": 29.76,
-  "max_profit": 35.26
-}{
-  "code": "ABBV",
-  "name": "AbbVie Inc ",
-  "price": 0.0,
-  "growth": 28.86,
-  "PE": 9.91,
-  "max_profit": 32.85
-}{
-  "code": "ABMD",
-  "name": "ABIOMED Inc. ",
-  "price": 0.0,
-  "growth": 16.08,
-  "PE": 63.24,
-  "max_profit": 48.28
-}{
-  "code": "ACN",
-  "name": "Accenture plc ",
-  "price": 0.0,
-  "growth": 56.76,
-  "PE": 32.42,
-  "max_profit": 72.57
-}{
-  "code": "ATVI",
-  "name": "Activision Blizzard Inc. ",
-  "price": 0.0,
-  "growth": -28.36,
-  "PE": 26.4,
-  "max_profit": 85.34
-}{
-  "code": "ADBE",
-  "name": "Adobe Inc. ",
-  "price": 0.0,
-  "growth": 13.96,
-  "PE": 47.1,
-  "max_profit": 66.25
-}{
-  "code": "AAP",
-  "name": "Advance Auto Parts Inc. ",
-  "price": 0.0,
-  "growth": 44.52,
-  "PE": 18.27,
-  "max_profit": 69.75
-}{
-  "code": "AES",
-  "name": "AES Corp. ",
-  "price": 0.0,
-  "growth": 1.2,
-  "PE": 15.98,
-  "max_profit": 28.57
-}
+[
+  {
+    "code": "NVR",
+    "name": "NVR Inc. ",
+    "price": 431600.89,
+    "growth": 39.93,
+    "PE": 17.87,
+    "max_profit": 53.77
+  },
+  {
+    "code": "AMZN",
+    "name": "Amazon ",
+    "price": 251388.43,
+    "growth": 7.84,
+    "PE": 79.54,
+    "max_profit": 30.96
+  },
+  {
+    "code": "GOOGL",
+    "name": "Alphabet A (ex Google) ",
+    "price": 216074.06,
+    "growth": 69.44,
+    "PE": 30.0,
+    "max_profit": 77.96
+  },
+  {
+    "code": "GOOG",
+    "name": "Alphabet C (ex Google) ",
+    "price": 215722.0,
+    "growth": 69.24,
+    "PE": 30.01,
+    "max_profit": 78.71
+  },
+  {
+    "code": "BKNG",
+    "name": "Booking Holdings Inc Registered Shs ",
+    "price": 175799.26,
+    "growth": 15.03,
+    "PE": 460.92,
+    "max_profit": 44.42
+  },
+  {
+    "code": "AZO",
+    "name": "AutoZone Inc. ",
+    "price": 151802.16,
+    "growth": 67.11,
+    "PE": 16.27,
+    "max_profit": 88.49
+  },
+  {
+    "code": "CMG",
+    "name": "Chipotle Mexican Grill Inc. ",
+    "price": 129121.95,
+    "growth": 23.85,
+    "PE": 129.05,
+    "max_profit": 55.9
+  },
+  {
+    "code": "MTD",
+    "name": "Mettler-Toledo International Inc. ",
+    "price": 123371.99,
+    "growth": 42.5,
+    "PE": 43.78,
+    "max_profit": 64.83
+  },
+  {
+    "code": "TSLA",
+    "name": "Tesla ",
+    "price": 80167.34,
+    "growth": 61.23,
+    "PE": 299.31,
+    "max_profit": 130.49
+  },
+  {
+    "code": "BLK",
+    "name": "BlackRock Inc. ",
+    "price": 67859.45,
+    "growth": 29.09,
+    "PE": 20.99,
+    "max_profit": 45.16
+  }
+]
