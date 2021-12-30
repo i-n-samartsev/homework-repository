@@ -1,0 +1,82 @@
+[
+    {
+        "name": "NVR",
+        "growth": "40.22",
+        "code": "NVR",
+        "price": 437071.71,
+        "p_e": 17.87,
+        "lost_profit": 2093.16
+    },
+    {
+        "name": "Alphabet C",
+        "growth": "66.73",
+        "code": "GOOG",
+        "price": 215629.2,
+        "p_e": 30.01,
+        "lost_profit": 1337.33
+    },
+    {
+        "name": "Alphabet A",
+        "growth": "66.75",
+        "code": "GOOGL",
+        "price": 216061.54,
+        "p_e": 30.0,
+        "lost_profit": 1322.72
+    },
+    {
+        "name": "AutoZone",
+        "growth": "71.72",
+        "code": "AZO",
+        "price": 153670.7,
+        "p_e": 16.27,
+        "lost_profit": 1002.36
+    },
+    {
+        "name": "Amazon",
+        "growth": "3.33",
+        "code": "AMZN",
+        "price": 250243.89,
+        "p_e": 79.54,
+        "lost_profit": 892.08
+    },
+    {
+        "name": "Booking Holdings",
+        "growth": "12.00",
+        "code": "BKNG",
+        "price": 177091.11,
+        "p_e": 460.92,
+        "lost_profit": 826.56
+    },
+    {
+        "name": "Tesla",
+        "growth": "64.83",
+        "code": "TSLA",
+        "price": 80295.49,
+        "p_e": 299.31,
+        "lost_profit": 704.0
+    },
+    {
+        "name": "Chipotle Mexican Grill",
+        "growth": "26.14",
+        "code": "CMG",
+        "price": 129176.45,
+        "p_e": 129.05,
+        "lost_profit": 702.28
+    },
+    {
+        "name": "Mettler-Toledo International",
+        "growth": "47.71",
+        "code": "MTD",
+        "price": 125080.7,
+        "p_e": 43.78,
+        "lost_profit": 677.5
+    },
+    {
+        "name": "Moderna",
+        "growth": "21.62",
+        "code": "MRNA",
+        "price": 18429.79,
+        "p_e": -59.95,
+        "lost_profit": 394.51
+    }
+]

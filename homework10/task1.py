@@ -67,14 +67,14 @@ async def fetch_response(url: str) -> str:
             return text
 
 
-async def fetch_responses(urls: list[str]) -> list[str]:
+async def fetch_responses(urls):
     tasks = [asyncio.create_task(fetch_response(url)) for url in urls]
     await asyncio.gather(*tasks)
     return [task.result() for task in tasks]
 
 
-def parse_companies_list(data: str) -> list[dict]:
-    soup = BeautifulSoup(data, "html.parser")
+def parse_companies_list(data):
+    soup = bs4.BeautifulSoup(data, "html.parser")
     table = soup.find("tbody")
     companies_data = dict()
     companies_data["name"] = [link.get("title") for link in table.find_all("a")]
@@ -157,8 +157,8 @@ def parse_company_page(data: str) -> dict:
     return company_data
 
 
-async def dict_constructor() -> list[dict]:
-    companies_lists = await fetch_responses(companies_list_urls)
+async def dict_constructor():
+    companies_lists = await fetch_responses(COMPANIES_LIST_URLS)
     companies_dicts = []
     for companies_list in companies_lists:
         companies_dicts += parse_companies_list(companies_list)
@@ -169,6 +169,6 @@ async def dict_constructor() -> list[dict]:
     companies_pages = await fetch_responses(companies_urls)
     for company_page, company_dict in zip(companies_pages, companies_dicts):
         company_data = parse_company_page(company_page)
-        company_dict |= company_data
+        company_dict.update(company_data)
 
     return companies_dicts
