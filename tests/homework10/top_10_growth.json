@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Arista Networks",
+        "growth": "97.68",
+        "code": "ANET"
+    },
+    {
+        "name": "Extra Space Storage",
+        "growth": "95.75",
+        "code": "EXR"
+    },
+    {
+        "name": "Baker Hughes",
+        "growth": "9.92",
+        "code": "BKR"
+    },
+    {
+        "name": "Atmos Energy",
+        "growth": "9.76",
+        "code": "ATO"
+    },
+    {
+        "name": "Huntington Ingalls Industries",
+        "growth": "9.54",
+        "code": "HII"
+    },
+    {
+        "name": "General Electric",
+        "growth": "9.38",
+        "code": "GE"
+    },
+    {
+        "name": "Starbucks",
+        "growth": "9.34",
+        "code": "SBUX"
+    },
+    {
+        "name": "Stryker",
+        "growth": "9.07",
+        "code": "SYK"
+    },
+    {
+        "name": "APA Corporation Registered Shs",
+        "growth": "89.50",
+        "code": "APA"
+    },
+    {
+        "name": "Simon Property Group",
+        "growth": "87.44",
+        "code": "SPG"
+    }
+]

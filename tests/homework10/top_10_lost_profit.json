@@ -1,0 +1,52 @@
+[
+    {
+        "name": "NVR",
+        "code": "NVR",
+        "lost_profit": 2093.16
+    },
+    {
+        "name": "Alphabet C",
+        "code": "GOOG",
+        "lost_profit": 1314.78
+    },
+    {
+        "name": "Alphabet A",
+        "code": "GOOGL",
+        "lost_profit": 1307.62
+    },
+    {
+        "name": "AutoZone",
+        "code": "AZO",
+        "lost_profit": 1002.36
+    },
+    {
+        "name": "Amazon",
+        "code": "AMZN",
+        "lost_profit": 892.08
+    },
+    {
+        "name": "Booking Holdings",
+        "code": "BKNG",
+        "lost_profit": 826.56
+    },
+    {
+        "name": "Tesla",
+        "code": "TSLA",
+        "lost_profit": 704.0
+    },
+    {
+        "name": "Chipotle Mexican Grill",
+        "code": "CMG",
+        "lost_profit": 702.28
+    },
+    {
+        "name": "Mettler-Toledo International",
+        "code": "MTD",
+        "lost_profit": 681.35
+    },
+    {
+        "name": "Moderna",
+        "code": "MRNA",
+        "lost_profit": 385.68
+    }
+]
