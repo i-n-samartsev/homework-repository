@@ -2,6 +2,7 @@ import asyncio
 import copy
 import heapq
 import json
+import os
 
 from homework10.task1 import create_companies_data
 
@@ -111,7 +112,7 @@ def create_companies_data_indicator(companies_data, indicator: str):
 async def main_task():
     test_data = []
     for i in range(0, 10):
-        with open(f"page_{i}.html") as fi:
+        with open(os.getcwd() + f"page_{i}.html") as fi:
             test_data.append(fi.read())
     companies_data = await create_companies_data(test_data)
 
