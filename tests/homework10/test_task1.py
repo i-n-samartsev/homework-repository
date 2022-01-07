@@ -20,20 +20,20 @@ test_data_dict = {
         {"name": "Under Armour", "code": "UA", "p_e": -55.67},
     ],
     "price": [
-        {"name": "NVR", "code": "NVR", "price": 429279.75},
-        {"name": "Amazon", "code": "AMZN", "price": 246535.5},
-        {"name": "Alphabet A", "code": "GOOGL", "price": 206662.5},
-        {"name": "Alphabet C", "code": "GOOG", "price": 206480.25},
-        {"name": "Booking Holdings", "code": "BKNG", "price": 180997.5},
-        {"name": "AutoZone", "code": "AZO", "price": 152442.0},
-        {"name": "Chipotle Mexican Grill", "code": "CMG", "price": 119662.5},
+        {"name": "NVR", "code": "NVR", "price": 411042.0},
+        {"name": "Amazon", "code": "AMZN", "price": 243303.0},
+        {"name": "Alphabet C", "code": "GOOG", "price": 205053.0},
+        {"name": "Alphabet A", "code": "GOOGL", "price": 204915.0},
+        {"name": "Booking Holdings", "code": "BKNG", "price": 182858.25},
+        {"name": "AutoZone", "code": "AZO", "price": 151247.25},
+        {"name": "Chipotle Mexican Grill", "code": "CMG", "price": 120300.0},
         {
             "name": "Mettler-Toledo International",
             "code": "MTD",
-            "price": 118747.5,
+            "price": 116502.0,
         },
-        {"name": "Tesla", "code": "TSLA", "price": 81609.0},
-        {"name": "BlackRock", "code": "BLK", "price": 66921.75},
+        {"name": "Tesla", "code": "TSLA", "price": 76067.25},
+        {"name": "BlackRock", "code": "BLK", "price": 66857.25},
     ],
     "growth": [
         {"name": "Arista Networks", "growth": "97.68", "code": "ANET"},
@@ -104,7 +104,7 @@ def create_companies_data_indicator(companies_data, indicator: str):
 async def main_task():
     test_data = []
     for i in range(0, 10):
-        with open(os.getcwd() + f"/page_{i}.html") as fi:
+        with open(os.getcwd() + f"/tests/homework10/page_{i}.html") as fi:
             test_data.append(fi.read())
     companies_data = await create_companies_data(test_data)
 
@@ -125,8 +125,8 @@ async def main_task():
 def test_main_task():
     asyncio.run(main_task())
     for key in ["growth", "price", "lost_profit"]:
-        with open(os.getcwd() + f"/top_10_{key}.json") as fi:
+        with open(os.getcwd() + f"/tests/homework10/top_10_{key}.json") as fi:
             assert json.loads(fi.read()) == test_data_dict[key]
 
-    with open(os.getcwd() + f"/less_10_p_e.json") as fi:
+    with open(os.getcwd() + "/tests/homework10/less_10_p_e.json") as fi:
         assert json.loads(fi.read()) == test_data_dict["p_e"]
