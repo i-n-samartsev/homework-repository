@@ -48,7 +48,10 @@ COMPANIES_LIST_URLS = [
 
 
 @lru_cache(1)
-def get_usd_to_rub() -> float:
+def get_usd_to_rub(test) -> float:
+    if test:
+        return 75
+
     usd_to_rub = requests.get("http://www.cbr.ru/key-indicators/")
     soup = bs4.BeautifulSoup(usd_to_rub.text, "html.parser")
     inf_of_usd = soup.find(
@@ -70,7 +73,7 @@ async def fetch_responses(urls):
     return [task.result() for task in tasks]
 
 
-def parse_companies_list(data):
+def parse_companies_list(data: str):
     soup = bs4.BeautifulSoup(data, "html.parser")
     table = soup.find("tbody")
     companies_data = dict()
@@ -94,7 +97,7 @@ def parse_companies_list(data):
     ]
 
 
-def get_price(soup: bs4.BeautifulSoup) -> float:
+def get_price(soup: bs4.BeautifulSoup, test) -> float:
     try:
         return round(
             float(
@@ -102,7 +105,7 @@ def get_price(soup: bs4.BeautifulSoup) -> float:
                 .get_text()
                 .replace(",", "")
             )
-            * get_usd_to_rub(),
+            * get_usd_to_rub(test),
             2,
         )
     except AttributeError:
@@ -142,11 +145,11 @@ def get_p_e(soup: bs4.BeautifulSoup) -> float:
         return 0
 
 
-def parse_company_page(data: str) -> dict:
+def parse_company_page(data: str, test) -> dict:
     soup = bs4.BeautifulSoup(data, "html.parser")
     company_data = dict()
     company_data["code"] = soup.title.get_text().split()[0]
-    company_data["price"] = get_price(soup)
+    company_data["price"] = get_price(soup, test)
     company_data["p_e"] = get_p_e(soup)
     low_52 = get_low_52(soup)
     high_52 = get_high_52(soup)
@@ -160,15 +163,17 @@ async def create_companies_data(test_data=None):
         companies_lists = await fetch_responses(COMPANIES_LIST_URLS)
         for companies_list in companies_lists:
             companies_data += parse_companies_list(companies_list)
+        test = False
     else:
         for data in test_data:
             companies_data += parse_companies_list(data)
+        test = True
 
     companies_urls = [
         company_data.pop("url") for company_data in companies_data
     ]
     companies_pages = await fetch_responses(companies_urls)
     for company_page, company_data in zip(companies_pages, companies_data):
-        company_data.update(parse_company_page(company_page))
+        company_data.update(parse_company_page(company_page, test))
 
     return companies_data

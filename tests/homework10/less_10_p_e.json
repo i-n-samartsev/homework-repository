@@ -20,11 +20,6 @@
         "p_e": -125.36
     },
     {
-        "name": "Phillips 66",
-        "code": "PSX",
-        "p_e": -76.53
-    },
-    {
         "name": "Under Armour",
         "code": "UAA",
         "p_e": -64.5
@@ -48,5 +43,10 @@
         "name": "Under Armour",
         "code": "UA",
         "p_e": -55.67
+    },
+    {
+        "name": "PVH",
+        "code": "PVH",
+        "p_e": -44.03
     }
 ]

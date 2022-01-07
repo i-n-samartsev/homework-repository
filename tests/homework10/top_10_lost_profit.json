@@ -1,10 +1,5 @@
 [
     {
-        "name": "NVR",
-        "code": "NVR",
-        "lost_profit": 2093.16
-    },
-    {
         "name": "Alphabet C",
         "code": "GOOG",
         "lost_profit": 1314.78
@@ -13,6 +8,11 @@
         "name": "Alphabet A",
         "code": "GOOGL",
         "lost_profit": 1307.62
+    },
+    {
+        "name": "AutoZone",
+        "code": "AZO",
+        "lost_profit": 1002.36
     },
     {
         "name": "Amazon",
