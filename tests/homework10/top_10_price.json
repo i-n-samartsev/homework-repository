@@ -2,51 +2,51 @@
     {
         "name": "NVR",
         "code": "NVR",
-        "price": 408092.97
+        "price": 407903.52
     },
     {
         "name": "Amazon",
         "code": "AMZN",
-        "price": 241381.11
+        "price": 242015.57
     },
     {
         "name": "Alphabet A",
         "code": "GOOGL",
-        "price": 203233.35
+        "price": 203264.55
     },
     {
         "name": "Alphabet C",
         "code": "GOOG",
-        "price": 203125.63
+        "price": 203134.54
     },
     {
         "name": "Booking Holdings",
         "code": "BKNG",
-        "price": 182039.9
+        "price": 182143.91
     },
     {
         "name": "AutoZone",
         "code": "AZO",
-        "price": 149911.32
+        "price": 149823.66
     },
     {
         "name": "Chipotle Mexican Grill",
         "code": "CMG",
-        "price": 120602.15
+        "price": 120522.66
     },
     {
         "name": "Mettler-Toledo International",
         "code": "MTD",
-        "price": 117236.69
+        "price": 116470.74
     },
     {
         "name": "Tesla",
         "code": "TSLA",
-        "price": 76671.45
+        "price": 76756.89
     },
     {
         "name": "BlackRock",
         "code": "BLK",
-        "price": 66098.13
+        "price": 66219.97
     }
 ]
