@@ -15,11 +15,6 @@
         "lost_profit": 1307.62
     },
     {
-        "name": "AutoZone",
-        "code": "AZO",
-        "lost_profit": 1002.36
-    },
-    {
         "name": "Amazon",
         "code": "AMZN",
         "lost_profit": 892.08
@@ -48,5 +43,10 @@
         "name": "Moderna",
         "code": "MRNA",
         "lost_profit": 385.68
+    },
+    {
+        "name": "Intuit",
+        "code": "INTU",
+        "lost_profit": 357.53
     }
 ]

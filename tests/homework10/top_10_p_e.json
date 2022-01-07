@@ -1,52 +1,52 @@
 [
     {
-        "name": "Bath & Body Works",
-        "code": "BBWI",
+        "name": "Ulta Beauty",
+        "code": "ULTA",
         "lost_profit": 0
     },
     {
-        "name": "Honeywell",
-        "code": "HON",
+        "name": "VeriSign",
+        "code": "VRSN",
         "lost_profit": 0
     },
     {
-        "name": "Organon & Company",
-        "code": "OGN",
+        "name": "WestRock",
+        "code": "WRK",
         "lost_profit": 0
     },
     {
-        "name": "Seagate Technology Holdings",
-        "code": "STX",
+        "name": "Williams Companies",
+        "code": "WMB",
         "lost_profit": 0
     },
     {
-        "name": "Amcor",
-        "code": "AMCR",
-        "lost_profit": 2.59
+        "name": "Xylem",
+        "code": "XYL",
+        "lost_profit": 0
     },
     {
-        "name": "Huntington Bancstocks",
-        "code": "HBAN",
-        "lost_profit": 4.31
+        "name": "A.O. Smith",
+        "code": "AOS",
+        "lost_profit": 0
     },
     {
-        "name": "PPL",
-        "code": "PPL",
-        "lost_profit": 4.57
+        "name": "Abbott Laboratories",
+        "code": "ABT",
+        "lost_profit": 0
     },
     {
-        "name": "Kinder Morgan",
-        "code": "KMI",
-        "lost_profit": 5.54
+        "name": "Accenture",
+        "code": "ACN",
+        "lost_profit": 0
     },
     {
-        "name": "Hewlett Packard Enterprise",
-        "code": "HPE",
-        "lost_profit": 5.68
+        "name": "Advance Auto Parts",
+        "code": "AAP",
+        "lost_profit": 0
     },
     {
-        "name": "Host Hotels & Resorts",
-        "code": "HST",
-        "lost_profit": 5.86
+        "name": "AES",
+        "code": "AES",
+        "lost_profit": 0
     }
 ]

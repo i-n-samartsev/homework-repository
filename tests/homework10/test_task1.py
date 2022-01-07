@@ -8,24 +8,16 @@ from homework10.task1 import create_companies_data
 
 test_data_dict = {
     "p_e": [
-        {"name": "Bath & Body Works", "code": "BBWI", "lost_profit": 0},
-        {"name": "Honeywell", "code": "HON", "lost_profit": 0},
-        {"name": "Organon & Company", "code": "OGN", "lost_profit": 0},
-        {
-            "name": "Seagate Technology Holdings",
-            "code": "STX",
-            "lost_profit": 0,
-        },
-        {"name": "Amcor", "code": "AMCR", "lost_profit": 2.59},
-        {"name": "Huntington Bancstocks", "code": "HBAN", "lost_profit": 4.31},
-        {"name": "PPL", "code": "PPL", "lost_profit": 4.57},
-        {"name": "Kinder Morgan", "code": "KMI", "lost_profit": 5.63},
-        {
-            "name": "Hewlett Packard Enterprise",
-            "code": "HPE",
-            "lost_profit": 5.78,
-        },
-        {"name": "Host Hotels & Resorts", "code": "HST", "lost_profit": 5.86},
+        {"name": "Vornado Realty Trust", "code": "VNO", "p_e": -893.45},
+        {"name": "Chevron", "code": "CVX", "p_e": -427.45},
+        {"name": "Devon Energy", "code": "DVN", "p_e": -167.13},
+        {"name": "ExxonMobil", "code": "XOM", "p_e": -125.36},
+        {"name": "Phillips 66", "code": "PSX", "p_e": -76.53},
+        {"name": "Under Armour", "code": "UAA", "p_e": -64.5},
+        {"name": "Incyte", "code": "INCY", "p_e": -63.09},
+        {"name": "Twitter", "code": "TWTR", "p_e": -62.1},
+        {"name": "Moderna", "code": "MRNA", "p_e": -59.95},
+        {"name": "Under Armour", "code": "UA", "p_e": -55.67},
     ],
     "price": [
         {"name": "NVR", "code": "NVR", "price": 429279.75},
@@ -112,7 +104,7 @@ def create_companies_data_indicator(companies_data, indicator: str):
 async def main_task():
     test_data = []
     for i in range(0, 10):
-        with open(os.getcwd() + f"\page_{i}.html") as fi:
+        with open(os.getcwd() + f"\\page_{i}.html") as fi:
             test_data.append(fi.read())
     companies_data = await create_companies_data(test_data)
 
@@ -133,5 +125,8 @@ async def main_task():
 def test_main_task():
     asyncio.run(main_task())
     for key in ["growth", "p_e"]:
-        with open(os.getcwd() + f"\top_10_{key}.json") as fi:
+        with open(os.getcwd() + f"\\top_10_{key}.json") as fi:
             assert json.loads(fi.read()) == test_data_dict[key]
+
+    with open(os.getcwd() + f"\\less_10_p_e.json") as fi:
+        assert json.loads(fi.read()) == test_data_dict["p_e"]
