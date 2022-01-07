@@ -124,12 +124,10 @@ async def main_task():
             top_10 = get_top_10(companies_data_ind, key)
             json.dump(top_10, file, indent=4)
 
-    with open("top_10_p_e.json", "w") as file:
-        companies_data_ind = create_companies_data_indicator(
-            companies_data, key
-        )
-        top_10 = get_less_10(companies_data_ind, key)
-        json.dump(top_10, file, indent=4)
+    companies_data_ind = create_companies_data_indicator(companies_data, "p_e")
+    with open("less_10_p_e.json", "w") as file:
+        less_10 = get_less_10(companies_data_ind, "p_e")
+        json.dump(less_10, file, indent=4)
 
 
 def test_main_task():
