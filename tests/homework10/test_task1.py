@@ -116,19 +116,23 @@ async def main_task():
     companies_data = await create_companies_data(test_data)
 
     for key in ["price", "growth", "lost_profit"]:
-        companies_data_ind = create_companies_data_indicator(companies_data, key)
+        companies_data_ind = create_companies_data_indicator(
+            companies_data, key
+        )
         with open(f"top_10_{key}.json", "w") as file:
             top_10 = get_top_10(companies_data_ind, key)
             json.dump(top_10, file, indent=4)
 
     with open("top_10_p_e.json", "w") as file:
-        companies_data_ind = create_companies_data_indicator(companies_data, key)
+        companies_data_ind = create_companies_data_indicator(
+            companies_data, key
+        )
         top_10 = get_less_10(companies_data_ind, key)
         json.dump(top_10, file, indent=4)
 
 
 def test_main_task():
     asyncio.run(main_task())
-    for key in ["p_e"]:
+    for key in ["growth"]:
         with open(f"top_10_{key}.json") as fi:
             assert json.loads(fi.read()) == test_data_dict[key]

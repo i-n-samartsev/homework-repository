@@ -7,12 +7,12 @@
     {
         "name": "Alphabet C",
         "code": "GOOG",
-        "lost_profit": 1337.33
+        "lost_profit": 1314.78
     },
     {
         "name": "Alphabet A",
         "code": "GOOGL",
-        "lost_profit": 1322.72
+        "lost_profit": 1307.62
     },
     {
         "name": "AutoZone",
@@ -47,6 +47,6 @@
     {
         "name": "Moderna",
         "code": "MRNA",
-        "lost_profit": 389.97
+        "lost_profit": 385.68
     }
 ]

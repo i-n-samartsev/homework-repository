@@ -27,7 +27,7 @@
     {
         "name": "Huntington Bancstocks",
         "code": "HBAN",
-        "lost_profit": 4.31
+        "lost_profit": 4.3
     },
     {
         "name": "PPL",
@@ -37,12 +37,12 @@
     {
         "name": "Kinder Morgan",
         "code": "KMI",
-        "lost_profit": 5.63
+        "lost_profit": 5.54
     },
     {
         "name": "Hewlett Packard Enterprise",
         "code": "HPE",
-        "lost_profit": 5.78
+        "lost_profit": 5.68
     },
     {
         "name": "Host Hotels & Resorts",
