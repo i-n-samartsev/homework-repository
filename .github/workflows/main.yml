@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Run script
         run: |
-          pip install flake8 isort black pytest
+          pip install flake8 isort black pytest aiohttp bs4 requests
           ls -la
           flake8 --ignore=E203 /__w/homework-repository/homework-repository/homework2/task5.py /__w/homework-repository/homework-repository/homework7/task2.py
           isort --check .
