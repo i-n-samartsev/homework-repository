@@ -1,82 +1,52 @@
 [
     {
-        "name": "CF Industries Holdings",
-        "growth": "98.47",
-        "code": "CF",
-        "price": 5330.89,
-        "p_e": 24.94,
-        "lost_profit": 37.83
-    },
-    {
-        "name": "APA Corporation Registered Shs",
-        "growth": "96.83",
-        "code": "APA",
-        "price": 2012.89,
-        "p_e": -13.09,
-        "lost_profit": 17.11
+        "name": "Arista Networks",
+        "growth": "97.68",
+        "code": "ANET"
     },
     {
         "name": "Extra Space Storage",
-        "growth": "94.73",
-        "code": "EXR",
-        "price": 16589.98,
-        "p_e": 30.52,
-        "lost_profit": 119.64
-    },
-    {
-        "name": "Applied Materials",
-        "growth": "91.73",
-        "code": "AMAT",
-        "price": 11796.74,
-        "p_e": 0,
-        "lost_profit": 77.85
-    },
-    {
-        "name": "Devon Energy",
-        "growth": "90.55",
-        "code": "DVN",
-        "price": 3237.72,
-        "p_e": -167.13,
-        "lost_profit": 30.31
-    },
-    {
-        "name": "Akamai",
-        "growth": "9.92",
-        "code": "AKAM",
-        "price": 8676.13,
-        "p_e": 20.32,
-        "lost_profit": 32.27
+        "growth": "95.75",
+        "code": "EXR"
     },
     {
         "name": "Baker Hughes",
         "growth": "9.92",
-        "code": "BKR",
-        "price": 1769.11,
-        "p_e": 684.57,
-        "lost_profit": 8.9
+        "code": "BKR"
+    },
+    {
+        "name": "Atmos Energy",
+        "growth": "9.76",
+        "code": "ATO"
+    },
+    {
+        "name": "Huntington Ingalls Industries",
+        "growth": "9.54",
+        "code": "HII"
+    },
+    {
+        "name": "General Electric",
+        "growth": "9.38",
+        "code": "GE"
     },
     {
         "name": "Starbucks",
-        "growth": "9.47",
-        "code": "SBUX",
-        "price": 8592.17,
-        "p_e": 29.83,
-        "lost_profit": 30.38
-    },
-    {
-        "name": "Verisk Analytic a",
         "growth": "9.34",
-        "code": "VRSK",
-        "price": 16863.22,
-        "p_e": 40.63,
-        "lost_profit": 71.71
+        "code": "SBUX"
     },
     {
-        "name": "Fortive",
-        "growth": "9.31",
-        "code": "FTV",
-        "price": 5621.81,
-        "p_e": 32.41,
-        "lost_profit": 15.29
+        "name": "Stryker",
+        "growth": "9.07",
+        "code": "SYK"
+    },
+    {
+        "name": "APA Corporation Registered Shs",
+        "growth": "89.50",
+        "code": "APA"
+    },
+    {
+        "name": "Simon Property Group",
+        "growth": "87.44",
+        "code": "SPG"
     }
 ]

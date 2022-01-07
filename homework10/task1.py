@@ -35,7 +35,6 @@ For scrapping you cans use `beautifulsoup4` <br>
 For requesting `aiohttp`
 """
 import asyncio
-import datetime
 from functools import lru_cache
 
 import aiohttp
@@ -50,14 +49,12 @@ COMPANIES_LIST_URLS = [
 
 @lru_cache(1)
 def get_usd_to_rub() -> float:
-    today = datetime.date.today().strftime("%d/%m/%Y")
-    usd_to_rub = requests.get(
-        "http://www.cbr.ru/scripts/XML_dynamic.asp"
-        f"?date_req1={today}&date_req2={today}&VAL_NM_RQ=R01235"
+    usd_to_rub = requests.get("http://www.cbr.ru/key-indicators/")
+    soup = bs4.BeautifulSoup(usd_to_rub.text, "html.parser")
+    inf_of_usd = soup.find(
+        "td", class_="value td-w-4 _bold _end mono-num _with-icon _up _red"
     )
-    return float(
-        usd_to_rub.text.split("<Value>")[1].split("<")[0].replace(",", ".")
-    )
+    return float(str(inf_of_usd).split(">")[1].split("<")[0].replace(",", "."))
 
 
 async def fetch_response(url: str) -> str:
@@ -157,18 +154,21 @@ def parse_company_page(data: str) -> dict:
     return company_data
 
 
-async def dict_constructor():
-    companies_lists = await fetch_responses(COMPANIES_LIST_URLS)
-    companies_dicts = []
-    for companies_list in companies_lists:
-        companies_dicts += parse_companies_list(companies_list)
+async def create_companies_data(test_data=None):
+    companies_data = []
+    if not test_data:
+        companies_lists = await fetch_responses(COMPANIES_LIST_URLS)
+        for companies_list in companies_lists:
+            companies_data += parse_companies_list(companies_list)
+    else:
+        for data in test_data:
+            companies_data += parse_companies_list(data)
 
     companies_urls = [
-        company_data.pop("url") for company_data in companies_dicts
+        company_data.pop("url") for company_data in companies_data
     ]
     companies_pages = await fetch_responses(companies_urls)
-    for company_page, company_dict in zip(companies_pages, companies_dicts):
-        company_data = parse_company_page(company_page)
-        company_dict.update(company_data)
+    for company_page, company_data in zip(companies_pages, companies_data):
+        company_data.update(parse_company_page(company_page))
 
-    return companies_dicts
+    return companies_data

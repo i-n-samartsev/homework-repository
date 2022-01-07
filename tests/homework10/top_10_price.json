@@ -1,82 +1,52 @@
 [
     {
         "name": "NVR",
-        "growth": "40.22",
         "code": "NVR",
-        "price": 437071.71,
-        "p_e": 17.87,
-        "lost_profit": 2093.16
+        "price": 425230.78
     },
     {
         "name": "Amazon",
-        "growth": "3.33",
         "code": "AMZN",
-        "price": 250243.89,
-        "p_e": 79.54,
-        "lost_profit": 892.08
+        "price": 244210.18
     },
     {
         "name": "Alphabet A",
-        "growth": "66.75",
         "code": "GOOGL",
-        "price": 216061.54,
-        "p_e": 30.0,
-        "lost_profit": 1322.72
+        "price": 204713.26
     },
     {
         "name": "Alphabet C",
-        "growth": "66.73",
         "code": "GOOG",
-        "price": 215629.2,
-        "p_e": 30.01,
-        "lost_profit": 1337.33
+        "price": 204532.73
     },
     {
         "name": "Booking Holdings",
-        "growth": "12.00",
         "code": "BKNG",
-        "price": 177091.11,
-        "p_e": 460.92,
-        "lost_profit": 826.56
+        "price": 179290.33
     },
     {
         "name": "AutoZone",
-        "growth": "71.72",
         "code": "AZO",
-        "price": 153670.7,
-        "p_e": 16.27,
-        "lost_profit": 1002.36
+        "price": 151004.17
     },
     {
         "name": "Chipotle Mexican Grill",
-        "growth": "26.14",
         "code": "CMG",
-        "price": 129176.45,
-        "p_e": 129.05,
-        "lost_profit": 702.28
+        "price": 118533.84
     },
     {
         "name": "Mettler-Toledo International",
-        "growth": "47.71",
         "code": "MTD",
-        "price": 125080.7,
-        "p_e": 43.78,
-        "lost_profit": 677.5
+        "price": 117627.47
     },
     {
         "name": "Tesla",
-        "growth": "64.83",
         "code": "TSLA",
-        "price": 80295.49,
-        "p_e": 299.31,
-        "lost_profit": 704.0
+        "price": 80839.26
     },
     {
         "name": "BlackRock",
-        "growth": "29.83",
         "code": "BLK",
-        "price": 67439.64,
-        "p_e": 20.99,
-        "lost_profit": 302.72
+        "price": 66290.54
     }
 ]

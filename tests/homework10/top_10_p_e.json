@@ -1,82 +1,52 @@
 [
     {
-        "name": "Vornado Realty Trust",
-        "growth": "12.63",
-        "code": "VNO",
-        "price": 3128.71,
-        "p_e": -893.45,
-        "lost_profit": 15.87
+        "name": "Bath & Body Works",
+        "code": "BBWI",
+        "lost_profit": 0
     },
     {
-        "name": "Chevron",
-        "growth": "39.92",
-        "code": "CVX",
-        "price": 8651.09,
-        "p_e": -427.45,
-        "lost_profit": 35.45
+        "name": "Honeywell",
+        "code": "HON",
+        "lost_profit": 0
     },
     {
-        "name": "Devon Energy",
-        "growth": "90.55",
-        "code": "DVN",
-        "price": 3237.72,
-        "p_e": -167.13,
-        "lost_profit": 30.31
+        "name": "Organon & Company",
+        "code": "OGN",
+        "lost_profit": 0
     },
     {
-        "name": "ExxonMobil",
-        "growth": "48.33",
-        "code": "XOM",
-        "price": 4493.47,
-        "p_e": -125.36,
-        "lost_profit": 25.41
+        "name": "Seagate Technology Holdings",
+        "code": "STX",
+        "lost_profit": 0
     },
     {
-        "name": "Phillips 66",
-        "growth": "4.96",
-        "code": "PSX",
-        "price": 5347.09,
-        "p_e": -76.53,
-        "lost_profit": 31.14
+        "name": "Amcor",
+        "code": "AMCR",
+        "lost_profit": 2.59
     },
     {
-        "name": "Under Armour",
-        "growth": "21.02",
-        "code": "UAA",
-        "price": 1563.62,
-        "p_e": -64.5,
-        "lost_profit": 10.32
+        "name": "Huntington Bancstocks",
+        "code": "HBAN",
+        "lost_profit": 4.31
     },
     {
-        "name": "Incyte",
-        "growth": "14.32",
-        "code": "INCY",
-        "price": 5531.96,
-        "p_e": -63.09,
-        "lost_profit": 39.56
+        "name": "PPL",
+        "code": "PPL",
+        "lost_profit": 4.57
     },
     {
-        "name": "Twitter",
-        "growth": "18.59",
-        "code": "TWTR",
-        "price": 3292.95,
-        "p_e": -62.1,
-        "lost_profit": 39.73
+        "name": "Kinder Morgan",
+        "code": "KMI",
+        "lost_profit": 5.63
     },
     {
-        "name": "Moderna",
-        "growth": "21.62",
-        "code": "MRNA",
-        "price": 18429.79,
-        "p_e": -59.95,
-        "lost_profit": 394.51
+        "name": "Hewlett Packard Enterprise",
+        "code": "HPE",
+        "lost_profit": 5.78
     },
     {
-        "name": "Under Armour",
-        "growth": "18.44",
-        "code": "UA",
-        "price": 1331.62,
-        "p_e": -55.67,
-        "lost_profit": 8.36
+        "name": "Host Hotels & Resorts",
+        "code": "HST",
+        "lost_profit": 5.86
     }
 ]
