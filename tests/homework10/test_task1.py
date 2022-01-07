@@ -104,7 +104,7 @@ def create_companies_data_indicator(companies_data, indicator: str):
 async def main_task():
     test_data = []
     for i in range(0, 10):
-        with open(os.getcwd() + f"\\page_{i}.html") as fi:
+        with open(os.getcwd() + f"/page_{i}.html") as fi:
             test_data.append(fi.read())
     companies_data = await create_companies_data(test_data)
 
@@ -124,9 +124,9 @@ async def main_task():
 
 def test_main_task():
     asyncio.run(main_task())
-    for key in ["growth", "p_e"]:
-        with open(os.getcwd() + f"\\top_10_{key}.json") as fi:
+    for key in ["growth", "price", "lost_profit"]:
+        with open(os.getcwd() + f"/top_10_{key}.json") as fi:
             assert json.loads(fi.read()) == test_data_dict[key]
 
-    with open(os.getcwd() + f"\\less_10_p_e.json") as fi:
+    with open(os.getcwd() + f"/less_10_p_e.json") as fi:
         assert json.loads(fi.read()) == test_data_dict["p_e"]
