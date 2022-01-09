@@ -124,9 +124,6 @@ async def main_task():
 
 def test_main_task():
     asyncio.run(main_task())
-    for key in ["growth", "price", "lost_profit"]:
+    for key in ["growth"]:
         with open(os.getcwd() + f"/tests/homework10/top_10_{key}.json") as fi:
             assert json.loads(fi.read()) == test_data_dict[key]
-
-    with open(os.getcwd() + "/tests/homework10/less_10_p_e.json") as fi:
-        assert json.loads(fi.read()) == test_data_dict["p_e"]
